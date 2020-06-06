@@ -227,7 +227,7 @@
 		margin: 0;
 		input{
 			width: 60%;
-			height: 2.5rem;
+			height: 3.5rem;
 			float: left;
 		}
 		label, br{
@@ -241,7 +241,7 @@
 		}
 		button{
 			width: 40%;
-			height: 2.5rem;
+			height: 3.5rem;
 			margin: 0;
 		}
 	}
@@ -330,9 +330,8 @@
 	vertical-align: middle;
 	line-height: 100%;
 	&:after{
-		display: block;
-		vertical-align: middle;
 		content: "\f324";
+		display: block;
 		font-family: 'dashicons';
 		font-size: 2rem;
 		margin: 1.5rem auto;
