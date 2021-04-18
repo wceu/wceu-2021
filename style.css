@@ -4086,17 +4086,13 @@ h6 + .notation {
 }
 .single .entry-image {
   order: 3;
+  margin: 0 auto;
 }
 .single .entry-image img {
   display: block;
-  width: auto;
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .single .entry-image img {
-    width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 .single .entry-title {
   color: #CF006C;
