@@ -2570,12 +2570,11 @@ body.admin-bar .site-header {
 .widget.widget_eu_cookie_law_widget #eu-cookie-law {
   max-width: 22rem;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 120%;
+  font-size: 0.875rem;
+  line-height: 140%;
   color: #333333;
   padding: 1.25rem 1.25rem 4rem 1.25rem;
-  background-color: #157573;
-  border: 0.25rem solid #333333;
+  background-color: #FCE2E2;
 }
 .widget.widget_eu_cookie_law_widget #eu-cookie-law form {
   position: absolute;
@@ -2588,17 +2587,16 @@ body.admin-bar .site-header {
   display: block;
   font-size: 1rem;
   font-weight: 600;
-  color: #157573;
+  color: #333333;
   padding: 0.5rem 1rem;
-  background-color: #333333;
-  border: 3px solid #333333;
+  background-color: #157573;
   border-radius: 0;
   margin-left: auto;
 }
 @media not all and (hover: none) {
   .widget.widget_eu_cookie_law_widget #eu-cookie-law form input[type=submit]:hover {
     color: #333333;
-    background-color: #157573;
+    background-color: #8ABAB9;
   }
 }
 @media only screen and (max-width: 666px) {
