@@ -21,9 +21,7 @@
 			width: 50%;
 			height: 100%;
 			max-height: 100%;
-			background-image: url(../assets/images/dot.svg);
-			background-size: 15px;
-			background-position: bottom right;
+			@extend .dotted-bg;
 			z-index: -1;
 		}
 	}
