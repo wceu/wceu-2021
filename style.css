@@ -4068,7 +4068,7 @@ h6 + .notation {
   flex-flow: column wrap;
   position: relative;
   padding: 8rem 1.5rem 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 769px) {
   .single .entry-header {
@@ -4087,8 +4087,6 @@ h6 + .notation {
   z-index: -1;
 }
 .single .entry-image {
-  margin-bottom: -4rem;
-  overflow: hidden;
   order: 3;
 }
 .single .entry-image img {
@@ -4138,9 +4136,6 @@ h6 + .notation {
 }
 .single .entry-meta .byline {
   display: none;
-}
-.single .entry-content {
-  margin-top: 6rem;
 }
 
 .single .site-content a:focus, .single .site-content a:hover,
@@ -4263,9 +4258,9 @@ h6 + .notation {
 .tags-links a {
   display: inline-block;
   line-height: 100%;
-  color: #333333;
-  background-color: #157573;
-  padding: 0.125rem 0.25rem;
+  color: #157573;
+  background-color: #DADADD;
+  padding: 0.25rem 0.5rem;
   margin-bottom: 0.5rem;
 }
 .tags-links a:before {
@@ -4276,7 +4271,7 @@ h6 + .notation {
   margin-right: 0.25rem;
   font-size: 0.875rem;
   text-decoration: none;
-  color: #CF006C;
+  color: #157573;
   border: none;
 }
 
