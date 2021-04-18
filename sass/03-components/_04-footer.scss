@@ -12,8 +12,7 @@
 }
 
 #footer-widgets{
-	background-image: url(../assets/images/dot.svg);
-	background-size: 15px;
+	@extend .dotted-bg;
 	background-position: top left;
 	padding: 3rem 0;
 }

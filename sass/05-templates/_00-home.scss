@@ -34,10 +34,8 @@
 		left: 0;
 		width: 50%;
 		height: 100%;
-		background-image: url(../assets/images/dot.svg);
-		background-size: 15px;
-		background-position: bottom right;
 		z-index: -1;
+		@extend .dotted-bg;
 	}
 	.wp-block-group__inner-container{
 		margin-top: 0;

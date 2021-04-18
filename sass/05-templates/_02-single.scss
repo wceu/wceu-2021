@@ -105,8 +105,7 @@
 		> h2:not(:first-child){
 			max-width: 800px !important;
 			padding: 1rem 2rem;
-			background-image: url(../assets/images/dot.svg);
-			background-size: 15px;
+			@extend .dotted-bg;
 			background-position: top left;
 			margin-left: 1rem !important;
 			margin-right: 1rem !important;

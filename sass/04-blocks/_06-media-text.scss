@@ -22,8 +22,7 @@
 			left: -2rem;
 			width: 100%;
 			height: 100%;
-			background-image: url(../assets/images/dot.svg);
-			background-size: 15px;
+			@extend .dotted-bg;
 			background-position: bottom left;
 			z-index: -1;
 		}
@@ -51,7 +50,7 @@
 			&:after{
 				right: -1.5rem;
 				left: initial;
-				background-position: bottom right;
+				@extend .dotted-bg;
 			}
 		}
 	}

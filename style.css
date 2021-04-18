@@ -1653,6 +1653,13 @@ body.admin-bar .site-header {
   margin-bottom: 9rem;
 }
 
+.dotted-bg, .single .entry-content > h2:not(:first-child),
+.page .entry-content > h2:not(:first-child), .home-big-hero:before, .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media:after, .wp-block-media-text .wp-block-media-text__media:after, #footer-widgets {
+  background-image: url(https://robertotunon.com/wceu2021/wp-content/themes/wceu2021-campsite2017/assets/images/dot.svg);
+  background-size: 15px;
+  background-position: bottom right;
+}
+
 /*_______ Site header _______*/
 .site-header {
   position: fixed;
@@ -2205,8 +2212,6 @@ body.admin-bar .site-header {
 }
 
 #footer-widgets {
-  background-image: url(../assets/images/dot.svg);
-  background-size: 15px;
   background-position: top left;
   padding: 3rem 0;
 }
@@ -2961,8 +2966,6 @@ table thead th {
   left: -2rem;
   width: 100%;
   height: 100%;
-  background-image: url(../assets/images/dot.svg);
-  background-size: 15px;
   background-position: bottom left;
   z-index: -1;
 }
@@ -2993,7 +2996,6 @@ table thead th {
 .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media:after {
   right: -1.5rem;
   left: initial;
-  background-position: bottom right;
 }
 .wp-block-media-text h1, .wp-block-media-text h2, .wp-block-media-text h3,
 .wp-block-media-text h4, .wp-block-media-text h5, .wp-block-media-text h6 {
@@ -3746,9 +3748,6 @@ h6 + .notation {
   left: 0;
   width: 50%;
   height: 100%;
-  background-image: url(../assets/images/dot.svg);
-  background-size: 15px;
-  background-position: bottom right;
   z-index: -1;
 }
 .home-big-hero .wp-block-group__inner-container {
@@ -4222,8 +4221,6 @@ h6 + .notation {
 .page .entry-content > h2:not(:first-child) {
   max-width: 800px !important;
   padding: 1rem 2rem;
-  background-image: url(../assets/images/dot.svg);
-  background-size: 15px;
   background-position: top left;
   margin-left: 1rem !important;
   margin-right: 1rem !important;
