@@ -1,22 +1,22 @@
 /*_______ Notation block (paragraph highlighted with background color) _______*/
-.gray-bg {
-	background-color: $color__tertiary;
-	padding: 2rem;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-.inverted-text{
-	color: $color__secondary;
-}
-
 .notation{
-	padding: 2rem;
-	background-color: $color__tertiary;
-	border: .25rem solid;
+	padding: 1rem;
+	background-color: $color__secondary-third;
 	margin-bottom: 2rem;
-	#{headings(1,6)}{
-		margin-top: 0;
+	@media (min-width: 375px){
+		padding: 2rem;
+	}
+	%headings{
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	.wp-block-group__inner-container{
+		margin: 0;
+	}
+	%headings,
+	p{
+		color: $color__primary;
 	}
 	p{
 		font-size: 1.25rem;
@@ -27,10 +27,20 @@
 	}
 	ul, ol{
 		margin-top: 0;
+		color: $color__primary;
 		padding-left: 1rem;
 	}
-	&.toc{
-		background-color: transparent;
+	.wp-block-jetpack-contact-form,
+	.contact-form{
+		margin: 0;
+	}
+	&.dark{
+		background-color: $color__primary;
+		%headings,
+		p,
+		label{
+			color: white !important;
+		}
 	}
 }
 

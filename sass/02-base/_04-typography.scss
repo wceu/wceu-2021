@@ -12,42 +12,50 @@ body{
 }
 
 h1{
-	@include font-size(3);
-	line-height: 100%;
+	font-size: 20vw;
+	font-weight: 700;
+	line-height: 80%;
 	margin-top: 0;
-	margin-bottom: 1em;
+	margin-bottom: .5em;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
 	@media (min-width: 769px){
-		@include font-size(3.5);
+		@include font-size(10);
 	}
 }
 
 h2{
-	@include font-size(2.375);
+	font-size: 12vw;
 	line-height: 100%;
 	margin-top: 0;
 	margin-bottom: .5em;
+	@media (min-width: 480px){
+		font-size: 7vw;
+	}
 	@media (min-width: 769px){
-		@include font-size(2.875);
+		@include font-size(4.5);
 	}
 }
 
 h3{
-	@include font-size(2);
+	font-size: 8vw;
 	line-height: 100%;
 	margin-top: 0;
 	margin-bottom: .5em;
 	@media (min-width: 769px){
-		@include font-size(2.5);
+		@include font-size(3);
 	}
 }
 
 h4{
-	@include font-size(1.75);
+	@include font-size(2);
 	line-height: 100%;
 	margin-top: 0;
 	margin-bottom: .25em;
 	@media (min-width: 769px){
-		@include font-size(2);
+		@include font-size(2.5);
 	}
 }
   
@@ -57,7 +65,7 @@ h5{
 	margin-top: 0;
 	margin-bottom: .25em;
 	@media (min-width: 769px){
-		@include font-size(1.75);
+		@include font-size(2);
 	}
 }
 
@@ -94,6 +102,7 @@ p {
 		@include font-size(1.5);
 	}
 	a{
+		color: $color__tertiary;
 		text-decoration: underline;
 		word-break: break-word;
 		&:visited {
@@ -189,13 +198,14 @@ dd {
 /*_______ Links _______*/
 a {
 	text-decoration: none;
+	color: $color__tertiary;
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__grey-light;
+		color: $color__secondary;
 	}
 	&:focus {
-		outline: .125rem solid $color__secondary;
+		outline: .0625rem solid $color__tertiary;
 	}
 	&:hover,
 	&:active {
@@ -210,6 +220,15 @@ a {
 }
 
 .entry-content{
+	h2{
+		a{
+			color: $color__secondary;
+			text-decoration: none;
+			&:hover{
+				color: $color__primary !important;
+			}
+		}
+	}
 	a {
 		color: inherit;
 		text-decoration: underline;

@@ -1,10 +1,13 @@
 /*_______ Big separators _______*/
 .wp-block-separator{
+	background-color: $color__secondary;
+	border: none;
+	margin: 4rem auto;
 	&.is-style-wide {
 		margin: 4rem auto;
 	}
 	&.is-style-dots{
-		margin: 8rem auto 0;
+		margin: 5rem auto;
 		&:before{
 			content: '···';
 			font-weight: 800;

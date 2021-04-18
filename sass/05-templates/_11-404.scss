@@ -1,29 +1,54 @@
 /*_______ 404 page _______*/
 .error404{
 	.page-header{
-		padding: 7rem 2rem;
-		@extend .pattern01;
+		padding: 4rem 2rem 4rem;
 		.page-title{
 			@extend %inner-tiny;
 			text-align: center;
-			margin: 0;
-			color: $color__primary;
-			padding: 1.5rem;
+			font-size: 13vw;
+			line-height: 90%;
+			color: $color__secondary;
+			padding: 2rem;
+			background-color: $color__primary;
+			border: .5rem solid $color__tertiary;
+			border-radius: 2rem;
+			box-shadow: .5rem .5rem 0 $color__tertiary;
 			margin: 0 auto;
-			background-color: $color__tertiary;
+			@media (min-width: 480px){
+				font-size: 8rem;
+			}
+			&:before{
+				content: "\f530";
+				display: block;
+				font-family: 'dashicons';
+				font-weight: 400;
+				margin-bottom: 1rem;
+				// color: $color__tertiary;
+				@media (min-width: 769px){
+					font-size: 5rem;
+				}
+			}
 		}
 	}
 	.page-content{
+		display: flex;
+		flex-flow: row wrap;
 		@extend %inner-tiny;
 		@extend %inner-padding;
 		> p{
-			padding: 1.5rem;
-			margin: -4rem auto 4rem;
-			background-color: $color__tertiary;
+			flex: 1 1 100%;
+			font-size: 1.5rem;
+			text-align: center;
+			padding: 1.5rem 0 0;
+			margin: -2rem auto 0;
+			@media (min-width: 480px){
+				font-size: 2rem;
+			}
 		}
 		.search-form{
+			flex: 1 1 100%;
 			max-width: $size__content-supertiny;
-			margin: 4rem auto;
+			margin: 2rem auto 4rem;
 			label, input{
 				display: inline-block;
 				margin: 0;
@@ -53,11 +78,11 @@
 			@media (min-width: 480px){
 				width: 45%;
 				&:first-of-type{
-					float: left;
+					
 				}
 				&:nth-of-type(2),
 				&:nth-of-type(3){
-					float: right;
+					
 				}
 			}
 			.widgettitle,
@@ -73,11 +98,9 @@
 					padding-left: .5rem;
 					border-left: .25rem solid $color__secondary;
 					a{
+						color: $color__tertiary;
 						text-decoration: underline;
 						@extend %transition;
-						&:visited{
-							color: $color__primary;
-						}
 						&:hover{
 							color: $color__secondary;	
 						}

@@ -2,8 +2,8 @@
 /*!
 Theme Name: WCEU online 2020 (based on CampSite 2017 theme)
 Theme URI: http://underscores.me/
-Author: Bernhard Kau, Roberto Tuñón, Helder Vilela
-Author URI: https://kau-boys.com, https://robertotunon.com, https://heldervilela.com/
+Author: Bernhard Kau, styles by Roberto Tuñón
+Author URI: https://kau-boys.com, https://robertotunon.com
 Description: New styles for the CampSite 2017 theme, a WordCamp Base Theme. For a quicker start, check out the <a href="https://2017.europe.wordcamp.org/2017/05/09/using-style-guides-for-modular-wordcamp-designs/">style guide</a>.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -20,70 +20,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Variables
-	## Mixins
-	## Colors
-	## Fonts
-	## Structure
-	## Columns
-
-# Base
-	## Normalize
-	## Accessibility
-	## Elements
-	## Alignments
-	## Typography
-	## Forms
-	## Buttons
-	## Galleries
-	## Media
-	## Posts and pages
-	## Comments
-	## Infinite-scroll
-	## Admin bar fix
-
-# Components
-	## General layout
-	## Header
-	## Navigation
-	## Sidebar
-	## Footer
-	## Widgets
-	## Cookies advise
-
-# Layouts
-	## Content - Sidebar
-	## Sidebar - Content
-	## No Sidebar
-	## Full width
-
-# Blocks
-	## Group block
-	## High links (custom block)
-	## High links inline (custom block)
-	## Latest posts block
-	## Quotes blocks
-	## Notations (custom block)
-	## Media-text block
-	## Address (custom block)
-	## Separators
-	## Image-contents (custom block)
-	## Numbers (custom block)
-	## Home header
-
-# Templates
-	## Home
-	## Blog feed
-	## Single
-	## Page
-	## Contact form
-	## Organisers
-	## Tickets
-	## Sponsors
 
 /*--------------------------------------------------------------
 # Variables
@@ -138,10 +74,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "04-blocks/10-high-links";
 @import "04-blocks/11-high-links-inline";
 @import "04-blocks/12-notations";
-@import "04-blocks/13-address";
-@import "04-blocks/14-home-header";
-@import "04-blocks/15-image-contents";
-@import "04-blocks/16-numbers";
+@import "04-blocks/13-preformatted";
 @import "04-blocks/17-tags";
 @import "04-blocks/18-share";
 @import "04-blocks/19-camptix-elements";

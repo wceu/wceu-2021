@@ -11,18 +11,21 @@
 		list-style: none;
 		margin: 0 10% 0 0;
 		position: fixed;
-		top: 5rem;
+		top: 0;
 		right: -200%;
-		width: 100vw;
+		width: 60vw;
 		height: 100vh;
-		padding: 5vh 10vw 10vh;
-		background-color: $color__black_blue;
+		padding: 10vh 10vw 10vh;
+		background-color: $color__lightcream;
+		text-shadow: none;
+		box-shadow: 0 0 1rem transparentize($color__primary, .75);
 		margin:0;
 		overflow-y: auto;
 		z-index: 10;
 		@extend %transition;
 		@media (min-width: 480px){
 			width: 60vw;
+			box-shadow: none;
 		}
 		@media (min-width: 900px){
 			position: initial;
@@ -34,17 +37,18 @@
 			padding: 1rem 0;
 			background-color: transparent;
 			overflow-y: visible;
+			text-shadow: .0625rem .0625rem 0 $color__lightcream;
 		}
 		.menu-item{
 			margin: 0 0 1.5rem;
 			@extend %transition;
 			@media (min-width: 900px){
 				flex: 0 0 auto;
-				margin: 0;
+				margin: 0 0 0 1rem;
 			}
 			a{
 				display: block;
-				font-weight: 700;
+				font-weight: 600;
 				font-size: 1.5rem;
 				line-height: 100%;
 				color: $color__tertiary;
@@ -54,62 +58,65 @@
 					padding: .5rem;
 				}
 				@media (min-width: 1025px){
-					font-size: 1.125rem;
+					font-size: 1.25rem;
 				}
 			}
 			&:focus,
 			&:focus-within,
 			&:hover{
-				@media (min-width: 900px){
-					background-color: $color__secondary;
+				> a{
+					@media (min-width: 900px){
+						color: $color__secondary;
+					}
 				}
 			}
 			&.current-menu-item{
 				> a{
-					color: $color__grey_morelight;
-					@media (min-width: 900px){
-						color: $color__tertiary;
-						border-bottom: .125rem solid;
-					}
+					color: $color__tertiary_half;
 				}
 			}
 			&.emphasised{
 				text-align: center;
 				text-decoration: none;
-				background-color: $color__secondary;
-				box-shadow: -.25em .25em 0 $color__black_blue;
+				background-color: transparent;
+				border: .125rem solid $color__tertiary;
 				@media (min-width: 900px){
 					width: auto;
 					margin: 0 0 0 1rem;
 				}
 				a{
-					color: $color__primary;
+					color: $color__tertiary;
 					padding: .5rem .75rem;
+					text-shadow: none;
+					@media (min-width: 900px){
+						text-shadow: .0625rem .0625rem 0 $color__lightcream;
+					}
 				}
 				&:focus,
 				&:focus-within,
 				&:hover{
 					@media (min-width: 900px){
-						background-color: $color__tertiary;
-						box-shadow: -.125em .125em 0 $color__black_blue;
+						border-color: $color__secondary;
+						box-shadow: 0 0 0 $color__tertiary;
+						a{
+							color: $color__secondary;
+						}
 					}
 				}
 				&:active{
 					@media (min-width: 900px){
-						background-color: $color__black_blue;
-						box-shadow: 0 0 0 $color__black_blue;
+						background-color: $color__tertiary;
+						box-shadow: 0 0 0 $color__tertiary;
 						a{
 							color: $color__tertiary;
 						}
 					}
 				}
 				&.current-menu-item{
+					border-color: $color__tertiary_half;
 					box-shadow: none;
-					a{
-						color: $color__primary;
-						background-color: $color__tertiary;
-						box-shadow: -0.125em 0.125rem 0 $color__black-blue;
-						border:none;
+					> a{
+						color: $color__tertiary_half;
 					}
 				}
 			}
@@ -119,7 +126,7 @@
 				@media (min-width: 900px){
 					> a{
 						&:after{
-							content: '';
+							content: "\f543";
 							font-family: 'dashicons';
 							display: inline-block;
 							vertical-align: middle;
@@ -136,9 +143,9 @@
 				> a:focus,
 				> a:hover{
 					@media (min-width: 900px){
-						background-color: $color__secondary;
+						color: $color__secondary;
 						a:after{
-							transform: rotate(180deg);
+							color: $color__primary;
 						}
 						.sub-menu{
 							max-height: 30rem;
@@ -150,8 +157,9 @@
 				}
 				&.current-menu-parent{
 					@media (min-width: 900px){
-						color: $color__tertiary;
-						border-bottom: .125rem solid;
+						> a{
+							color: $color__tertiary_half;
+						}
 					}
 				}
 			}
@@ -166,9 +174,10 @@
 		overflow: hidden;
 		height: auto;
 		padding: 0 0 0 .5rem;
-		border-left: .125rem solid $color__tertiary;
-		margin: 1rem 0 0;
+		margin: .25rem 0 0;
+		text-shadow: none;
 		z-index: 10;
+		@extend %transition;
 		@media (min-width: 900px){
 			position: absolute;
 			top: 1rem;
@@ -176,16 +185,14 @@
 			width: 12rem;
 			max-height: 0;
 			padding: 0;
-			border: none;
-			background-color: $color__secondary;
+			background-color: $color__tertiary;
 			overflow: hidden;
-			transition: all .25s ease-in-out;
 		}
 		@media (min-width: 1025px){
 			top: 1.25rem;
 		}
 		@media (min-width: 1200px){
-			top: 1.5rem;
+			top: 1.75rem;
 		}
 		.menu-item{
 			width: 100%;
@@ -203,28 +210,34 @@
 			}
 			a{
 				font-size: 1.25rem;
-				color: $color__tertiary;	
+				color: $color__tertiary;
 				padding: .5rem .25rem;
+				@extend %transition;
 				@media (min-width: 900px){
-					padding: 1rem;
 					font-size: 1rem;
+					color: $color__lightcream;
+					padding: 1rem;
 				}
 				@media (min-width: 1025px){
-					font-size: 1.25rem;
+					font-size: 1.125rem;
 				}
 			}
 			&:focus,
 			&:focus-within,
 			&:hover{
-				background-color: $color__grey_blue;
+				background-color: $color__tertiary_half;
+				a{
+					color: $color__primary !important;
+				}
 			}
 			&:active{
 				background-color: $color__primary;
 			}
 			&.current-menu-item{
-				background-color: $color__grey_blue;
-				a{
-					border: none;
+				> a{
+					@media (min-width: 900px){
+						color: $color__tertiary_half;
+					}
 				}
 			}
 			
@@ -250,50 +263,29 @@
 }
 .more-info{
 	display: block;
-	font-size: 0;
-	font-weight: 700;
+	width: 3rem;
+	font-weight: 600;
+	font-size: 1rem;
 	line-height: 100%;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
+	text-shadow: .0625rem .0625rem 0 $color__lightcream;
+	color: $color__tertiary !important;
 	padding: 0;
-	background-color: $color__tertiary;
 	@extend %transition;
 	@media (min-width: 900px){
-		font-size: .875rem;
-		width: 4.5rem;
-		padding: .5rem;
+		font-size: 1rem;
+		width: 5rem;
+		padding: 0;
 	}
 	@media (min-width: 1200px){
 		top: 1rem;
-	}
-	&:after{
-		width: 2rem;
-		height: 2rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		content: "\f346";
-		font-family: 'dashicons';
-		font-size: .875rem;
-		@extend %transition;
-		@media (min-width: 900px){
-			width: auto;
-			height: auto;
-			display: inline-block;
-			vertical-align: middle;
-			font-size: .5rem;
-			margin-left: .25rem;
-		}
-		@media (min-width: 1200px){
-			font-size: .875rem;
-		}
 	}
 	&:focus{
 		outline: .125rem solid $color__tertiary;
 	}
 	&:hover{
-		color: $color__primary !important;
-		background-color: $color__secondary;
+		color: $color__secondary !important;
 	}
 }
 
@@ -303,12 +295,10 @@
 	top: 1.5rem;
 	right: 4rem;
 	display: block;
-	width: 2.5rem;
-	height: 2rem;
 	font-weight: 400;
 	font-size: 0;
 	padding:0;
-	background-color: transparent;
+	background-color: transparent !important;
 	border:none;
 	margin: 0;
 	z-index: 20;
@@ -323,12 +313,14 @@
 		display: none;
 	}
 	&:before{
-	    content: "\f333";
-		font-family: 'dashicons';
-		font-size: 3rem;
+	    content: "menu";
+		font-weight: 600;
+		font-size: 1rem;
 		line-height: 2rem;
 		text-align: center;
-		color: $color__secondary;
+		text-transform: uppercase;
+		color: $color__tertiary;
+		text-shadow: .0625rem .0625rem 0 $color__lightcream;
 	}
 	&:focus{
 		outline: 0;
@@ -344,8 +336,11 @@
 			&:before{
 				content: "\f335";
 				font-family: 'dashicons';
-				font-weight: normal;
-				color: $color__tertiary;
+				font-weight: 400;
+				font-size: 3rem;
+				color: $color__primary;
+				background-color: transparent;
+				text-shadow: none;
 			}
 		}
 	}

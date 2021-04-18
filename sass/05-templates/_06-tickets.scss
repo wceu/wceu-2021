@@ -22,13 +22,12 @@
 			}
 		}
 		tr[class^="tix-ticket-"] {
+			@extend %camptix-item;
 			flex-flow: row wrap;
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
 			text-align: center;
-			background-color: white;
-			border: .5rem solid;
 			margin: 0 auto 2rem;
 			&:focus{
 				box-shadow: 0 0 25px rgba(0, 0, 0, .2);
@@ -53,9 +52,8 @@
 		font-size: 2rem;
 		font-weight: 700;
 		line-height: 100%;
-		color: white;
+		color: $color__secondary;
 		padding: 1rem;
-		background-color: $color__primary;
 		margin-bottom: 1rem;
 	}
 	.tix-ticket-excerpt {
@@ -64,13 +62,14 @@
 		line-height: 120%;
 		padding: 0 2rem;
 	}
-	// .tix-column-price {
-	// 	font-size: 2rem;
-	// 	font-weight: 700;
-	// 	text-align: center;
-	// 	line-height: 100%;
-	// 	margin: auto auto .5rem;
-	// }
+	.tix-column-price {
+		font-size: 2rem;
+		font-weight: 700;
+		text-align: center;
+		line-height: 100%;
+		color: $color__secondary;
+		margin: auto auto .5rem;
+	}
 	.tix-column-quantity, .tix-column-remaining {
 		flex: 0 1 100%;
 		margin: auto auto 0;
@@ -369,7 +368,7 @@
 				flex: 1 1 auto;
 				&:hover {
 					color: white;
-					background-color: $color__black_blue;
+					background-color: $color__tertiary;
 					outline: none;
 					border: 0;
 				}
@@ -409,15 +408,10 @@
 		.tix-checkout-button{
 			float: none;
 			letter-spacing: 0;
+			font-weight: 700;
+			font-size: 1.5rem;
+			line-height: 100%;
 			text-transform: none;
-			padding: .75em 1.25em;
-			border: .25rem solid $color__primary;
-			border-radius: 0;
-			&:focus,
-			&:hover{
-				color: $color__tertiary;
-				background-color: $color__primary;
-			}
 		}
 	}
 }

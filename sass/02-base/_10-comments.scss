@@ -1,7 +1,8 @@
 /*_______ Comments area _______*/
 .comments-area{
 	padding: 5rem 0;
-	background-color: $color__tertiary;
+	// background-color: $color__secondary-lighter;
+	border-top: .125rem solid $color__secondary;
 }
 
 .comments-title, .comment-respond,.comment-list{
@@ -39,7 +40,7 @@
 	.comment-meta{
 		margin-bottom: 1rem;
 		a{
-			color: $color__primary;
+			color: $color__tertiary;
 		}
 	}
 	.comment-author{
@@ -57,13 +58,13 @@
 		line-height: 100%;
 		a{
 			display: block;
-			color: $color__secondary;
+			color: $color__grey_light;
 		}
 	}
 	.comment-awaiting-moderation{
 		display: block;
 		font-size: 1rem;
-		color: $color__grey_blue;
+		color: $color__grey_dark;
 		border-left: .125rem solid;
 		padding-left: .5rem;
 	}
@@ -73,7 +74,7 @@
 			margin-bottom: 1rem;
 		}
 		a{
-			color: $color__primary;
+			color: $color__tertiary;
 			text-decoration: underline;
 		}
 	}
@@ -82,7 +83,7 @@
 			display: inline-block;
 			font-weight: 700;
 			font-size: 1rem;
-			color: $color__primary;
+			color: $color__tertiary;
 			text-decoration: none;
 			padding: .25em .75em;
 			border: .125rem solid;
@@ -120,12 +121,7 @@
 	}
 	.form-submit{
 		.submit{
-			color: $color__tertiary;
-			background-color: $color__primary;
-			&:hover{
-				color: $color__primary;
-				background-color: $color__tertiary;
-			}
+		
 		}
 	}
 }

@@ -10,7 +10,7 @@ body {
 	color: $color__primary;
 	margin: 0;
 	padding: 0;
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: $color__lightcream; /* Fallback for when there is no custom background color defined. */
 	overflow-x: hidden;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -28,10 +28,10 @@ body {
 
 *{
 	&::selection{		
-		background-color: $color__tertiary;
+		background-color: transparentize($color__tertiary-third, .2);
 	}
 	&::-moz-selection{
-		background-color: $color__tertiary;
+		background-color: transparentize($color__tertiary-third, .2);
 	}
 }
 
@@ -50,7 +50,7 @@ img {
 
 figure {
 	margin: 0 auto;
-	overfow: hidden; /* Extra wide images within figure tags don't overflow the content area. */
+	overflow: hidden; /* Extra wide images within figure tags don't overflow the content area. */
 	> *{
 		width: 100%;
 		height: auto;
