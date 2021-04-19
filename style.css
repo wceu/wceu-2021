@@ -2332,8 +2332,9 @@ body.admin-bar .site-header {
   }
 }
 #footer-widget-2 .widget:nth-of-type(4) {
-  display: flex;
+  max-width: 180px;
   flex: 0 1 10%;
+  display: flex;
   margin: 0 auto;
 }
 @media (min-width: 480px) {
