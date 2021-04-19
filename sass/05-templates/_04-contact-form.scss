@@ -5,7 +5,6 @@
     justify-content: space-between;
     flex-direction: row;
 	@extend %inner;
-	@extend %inner-padding;
 	max-width: $size__content-tiny;
 	@media (min-width: 480px){
 		padding: 0;
@@ -53,7 +52,7 @@
 			flex: 1 1 100%;
 			margin-right: 0;
 			@media (min-width: 768px){
-				flex: 0 0 48%;
+				flex: 0 0 50%;
 			}
 		}
 	}

@@ -115,7 +115,7 @@ input[type=submit] {
   }
 }
 
-.error404 .page-content, .wp-block-jetpack-contact-form, .single .entry-footer,
+.error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
 .archive .site-main,
@@ -124,7 +124,7 @@ input[type=submit] {
   margin-right: 2rem;
 }
 @media (min-width: 769px) {
-  .error404 .page-content, .wp-block-jetpack-contact-form, .single .entry-footer,
+  .error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
 .archive .site-main,
@@ -4548,7 +4548,7 @@ h6 + .notation {
 }
 @media (min-width: 768px) {
   .wp-block-jetpack-contact-form .grunion-field-wrap.grunion-field-width-50-wrap {
-    flex: 0 0 48%;
+    flex: 0 0 50%;
   }
 }
 .wp-block-jetpack-contact-form .contact-form-submission {
