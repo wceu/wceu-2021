@@ -139,6 +139,7 @@
 			}
 		}
 		&:nth-of-type(4){
+			display: flex;
 			flex: 0 1 10%;
 			margin: 0 auto;
 			@media(min-width: 480px){
@@ -152,6 +153,27 @@
 				display: block;
 				max-width: 11.25rem;
 				margin: 0 auto;
+			}
+			figcaption{
+				width: 100%;
+				font-weight: 700;
+				font-size: 1.25rem;
+				line-height: 100%;
+				text-align: left;
+				color: $color__tertiary;
+				margin-top: 1rem;
+				@media (min-width: 769px){
+				}
+				@media (min-width: 1024px){
+					font-size: 1.25rem;
+				}
+				@media (min-width: 1100px){
+				}
+				strong{
+					display: block;
+					color: $color__secondary;
+					margin-bottom: .25rem;
+				}
 			}
 		}
 	}
