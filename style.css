@@ -4507,7 +4507,7 @@ h6 + .notation {
   display: none;
 }
 
-/*_______ Contact form _______*/
+/*_______ Jetpack contact forms _______*/
 .wp-block-jetpack-contact-form {
   display: flex;
   flex-wrap: wrap;
@@ -4575,6 +4575,12 @@ h6 + .notation {
 .wp-block-jetpack-contact-form .contact-form-submission {
   padding: 1rem;
   background-color: #C4C4C4;
+}
+
+/*_______ Fighting against some Jetpack styles _______*/
+.contact-form label {
+  font-weight: 400;
+  margin-bottom: 0.25rem;
 }
 
 /*_______ WordCamp lists _______*/
