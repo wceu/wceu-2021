@@ -4579,8 +4579,8 @@ h6 + .notation {
 
 /*_______ Fighting against some Jetpack styles _______*/
 .contact-form label {
-  font-weight: 400;
-  margin-bottom: 0.25rem;
+  font-weight: 400 !important;
+  margin-bottom: 0.25rem !important;
 }
 
 /*_______ WordCamp lists _______*/
