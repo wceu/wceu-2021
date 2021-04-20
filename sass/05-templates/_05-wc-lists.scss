@@ -4,8 +4,11 @@
 .wordcamp-sessions
 // .wordcamp-post-list
 {
-	padding: 0 2rem;
+	padding: 0;
 	margin: 2rem auto;
+	@media (min-width: 480px){
+		padding: 0 2rem;
+	}
 	&.has-layout-list{
 		.wordcamp-post-list__post{
 			max-width: $size__content-supertiny;
@@ -79,13 +82,44 @@
 
 .personal-links,
 .organizer-links{
-	margin-bottom: 1rem;
+	margin-bottom: 1rem !important;
+	font-size: .875rem !important;
 	br{
 		display: none;
 	}
 	a{
 		@extend %camptix-nice-link;
-		display: table;
+		display: block;
+    	font-size: 1rem;
+	}
+}
+
+.wordcamp-organizer{
+	position: relative;
+	&.slug-svetlana-guzovskaia,
+	&.slug-justina-baskyte,
+	&.slug-sjoerd-blom,
+	&.slug-aleksandar-savkovic,
+	&.slug-abha-thakor,
+	&.slug-roberto-tunon,
+	&.slug-fotis-routsis,
+	&.slug-pantelis-orfanos,
+	&.slug-huri-adilova{
+		&:before{
+			content: 'Team Lead';
+			position: absolute;
+			top: -1.5rem;
+			right: -1.5rem;
+			font-size: 1rem;
+			line-height: 100%;
+			color: white;
+			padding: .25rem .5rem;
+			background-color: $color__secondary;
+			@media (min-width: 769px){
+				top: -2rem;
+				right: -2rem;
+			}
+		}
 	}
 }
 

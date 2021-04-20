@@ -4587,8 +4587,15 @@ h6 + .notation {
 .wordcamp-organizers,
 .wordcamp-speakers,
 .wordcamp-sessions {
-  padding: 0 2rem;
+  padding: 0;
   margin: 2rem auto;
+}
+@media (min-width: 480px) {
+  .wordcamp-organizers,
+.wordcamp-speakers,
+.wordcamp-sessions {
+    padding: 0 2rem;
+  }
 }
 .wordcamp-organizers.has-layout-list .wordcamp-post-list__post,
 .wordcamp-speakers.has-layout-list .wordcamp-post-list__post,
@@ -4691,7 +4698,8 @@ h6 + .notation {
 
 .personal-links,
 .organizer-links {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
+  font-size: 0.875rem !important;
 }
 .personal-links br,
 .organizer-links br {
@@ -4699,7 +4707,29 @@ h6 + .notation {
 }
 .personal-links a,
 .organizer-links a {
-  display: table;
+  display: block;
+  font-size: 1rem;
+}
+
+.wordcamp-organizer {
+  position: relative;
+}
+.wordcamp-organizer.slug-svetlana-guzovskaia:before, .wordcamp-organizer.slug-justina-baskyte:before, .wordcamp-organizer.slug-sjoerd-blom:before, .wordcamp-organizer.slug-aleksandar-savkovic:before, .wordcamp-organizer.slug-abha-thakor:before, .wordcamp-organizer.slug-roberto-tunon:before, .wordcamp-organizer.slug-fotis-routsis:before, .wordcamp-organizer.slug-pantelis-orfanos:before, .wordcamp-organizer.slug-huri-adilova:before {
+  content: "Team Lead";
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  font-size: 1rem;
+  line-height: 100%;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  background-color: #CF006C;
+}
+@media (min-width: 769px) {
+  .wordcamp-organizer.slug-svetlana-guzovskaia:before, .wordcamp-organizer.slug-justina-baskyte:before, .wordcamp-organizer.slug-sjoerd-blom:before, .wordcamp-organizer.slug-aleksandar-savkovic:before, .wordcamp-organizer.slug-abha-thakor:before, .wordcamp-organizer.slug-roberto-tunon:before, .wordcamp-organizer.slug-fotis-routsis:before, .wordcamp-organizer.slug-pantelis-orfanos:before, .wordcamp-organizer.slug-huri-adilova:before {
+    top: -2rem;
+    right: -2rem;
+  }
 }
 
 /*_______ WordCamp Speakers _______*/
