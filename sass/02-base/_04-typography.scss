@@ -31,6 +31,10 @@ h2{
 	line-height: 100%;
 	margin-top: 0;
 	margin-bottom: .5em;
+	word-break: break-word;
+	hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
 	@media (min-width: 480px){
 		font-size: 7vw;
 	}
