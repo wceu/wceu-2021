@@ -4,11 +4,8 @@
 .wordcamp-sessions
 // .wordcamp-post-list
 {
-	padding: 0;
+	padding: 0 2rem;
 	margin: 2rem auto;
-	@media (min-width: 480px){
-		padding: 0 2rem;
-	}
 	&.has-layout-list{
 		.wordcamp-post-list__post{
 			max-width: $size__content-supertiny;
@@ -23,6 +20,12 @@
 		grid-template-columns: 100%;
 		@media (min-width: 480px){
 			grid-template-columns: repeat(2, 1fr);
+		}
+		&.has-grid-columns-2{
+			padding: 0;
+			@media (min-width: 480px){
+				padding: 0 2rem;
+			}
 		}
 		&.has-grid-columns-3{
 			@media (min-width: 769px){

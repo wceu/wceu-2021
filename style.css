@@ -4591,15 +4591,8 @@ h6 + .notation {
 .wordcamp-organizers,
 .wordcamp-speakers,
 .wordcamp-sessions {
-  padding: 0;
+  padding: 0 2rem;
   margin: 2rem auto;
-}
-@media (min-width: 480px) {
-  .wordcamp-organizers,
-.wordcamp-speakers,
-.wordcamp-sessions {
-    padding: 0 2rem;
-  }
 }
 .wordcamp-organizers.has-layout-list .wordcamp-post-list__post,
 .wordcamp-speakers.has-layout-list .wordcamp-post-list__post,
@@ -4621,6 +4614,18 @@ h6 + .notation {
 .wordcamp-speakers.has-layout-grid,
 .wordcamp-sessions.has-layout-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+.wordcamp-organizers.has-layout-grid.has-grid-columns-2,
+.wordcamp-speakers.has-layout-grid.has-grid-columns-2,
+.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
+  padding: 0;
+}
+@media (min-width: 480px) {
+  .wordcamp-organizers.has-layout-grid.has-grid-columns-2,
+.wordcamp-speakers.has-layout-grid.has-grid-columns-2,
+.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
+    padding: 0 2rem;
   }
 }
 @media (min-width: 769px) {
