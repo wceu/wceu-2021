@@ -9,6 +9,10 @@
 	@media (min-width: 480px){
 		padding: 0;
 	}
+	label{
+		font-weight: 400 !important;
+		margin-bottom: .25rem !important;
+	}
 	input[type="submit"]{
 		display: block;
 		margin-left: auto;
@@ -56,16 +60,27 @@
 			}
 		}
 	}
-	.contact-form-submission{
-		padding:1rem;
-		background-color: $color__grey_verylight;
-	}
 }
 
-/*_______ Fighting against some Jetpack styles _______*/
-.contact-form{
-	label{
-		font-weight: 400 !important;
-		margin-bottom: .25rem !important;
+/*_______ Jetpack form post-submission message _______*/
+[id^="contact-form-"]{
+	h3{
+		a{
+			font-size: 80%;
+    		color: $color__tertiary;
+		}
+	}
+}
+.contact-form-submission{
+	padding: 2rem;
+	margin-bottom: 3rem;
+	background-color: $color__tertiary-lighter;
+	p{
+		font-size: 1.25rem;
+    	line-height: 110%;
+    	margin-bottom: 1rem;
+		br{
+			display: none;
+		}
 	}
 }

@@ -98,7 +98,6 @@
 }
 
 .wordcamp-organizer{
-	position: relative;
 	&.slug-svetlana-guzovskaia,
 	&.slug-justina-baskyte,
 	&.slug-sjoerd-blom,
@@ -107,20 +106,25 @@
 	&.slug-roberto-tunon,
 	&.slug-fotis-routsis,
 	&.slug-pantelis-orfanos,
-	&.slug-huri-adilova{
-		&:before{
-			content: 'Team Lead';
-			position: absolute;
-			top: -1.5rem;
-			right: -1.5rem;
-			font-size: 1rem;
-			line-height: 100%;
-			color: white;
-			padding: .25rem .5rem;
-			background-color: $color__secondary;
-			@media (min-width: 769px){
-				top: -2rem;
-				right: -2rem;
+	&.slug-laura-sacco{
+		.wordcamp-organizers__title{
+			position: relative;
+			margin-top: 1.5rem;
+			&:before{
+				content: 'Team Lead';
+				position: absolute;
+				top: -1.5rem;
+				left: 0;
+				display: inline;
+				font-size: .875rem;
+				font-weight: 400;
+				line-height: 100%;
+				color: white;
+				padding: .125rem .25rem;
+				background-color: $color__secondary;
+				@media (min-width: 769px){
+					
+				}
 			}
 		}
 	}

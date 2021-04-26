@@ -4524,6 +4524,10 @@ h6 + .notation {
     padding: 0;
   }
 }
+.wp-block-jetpack-contact-form label {
+  font-weight: 400 !important;
+  margin-bottom: 0.25rem !important;
+}
 .wp-block-jetpack-contact-form input[type=submit] {
   display: block;
   margin-left: auto;
@@ -4576,15 +4580,25 @@ h6 + .notation {
     flex: 0 0 50%;
   }
 }
-.wp-block-jetpack-contact-form .contact-form-submission {
-  padding: 1rem;
-  background-color: #C4C4C4;
+
+/*_______ Jetpack form post-submission message _______*/
+[id^=contact-form-] h3 a {
+  font-size: 80%;
+  color: #157573;
 }
 
-/*_______ Fighting against some Jetpack styles _______*/
-.contact-form label {
-  font-weight: 400 !important;
-  margin-bottom: 0.25rem !important;
+.contact-form-submission {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  background-color: #D0E3E3;
+}
+.contact-form-submission p {
+  font-size: 1.25rem;
+  line-height: 110%;
+  margin-bottom: 1rem;
+}
+.contact-form-submission p br {
+  display: none;
 }
 
 /*_______ WordCamp lists _______*/
@@ -4720,27 +4734,23 @@ h6 + .notation {
   font-size: 1rem;
 }
 
-.wordcamp-organizer {
+.wordcamp-organizer.slug-svetlana-guzovskaia .wordcamp-organizers__title, .wordcamp-organizer.slug-justina-baskyte .wordcamp-organizers__title, .wordcamp-organizer.slug-sjoerd-blom .wordcamp-organizers__title, .wordcamp-organizer.slug-aleksandar-savkovic .wordcamp-organizers__title, .wordcamp-organizer.slug-abha-thakor .wordcamp-organizers__title, .wordcamp-organizer.slug-roberto-tunon .wordcamp-organizers__title, .wordcamp-organizer.slug-fotis-routsis .wordcamp-organizers__title, .wordcamp-organizer.slug-pantelis-orfanos .wordcamp-organizers__title, .wordcamp-organizer.slug-laura-sacco .wordcamp-organizers__title {
   position: relative;
+  margin-top: 1.5rem;
 }
-.wordcamp-organizer.slug-svetlana-guzovskaia:before, .wordcamp-organizer.slug-justina-baskyte:before, .wordcamp-organizer.slug-sjoerd-blom:before, .wordcamp-organizer.slug-aleksandar-savkovic:before, .wordcamp-organizer.slug-abha-thakor:before, .wordcamp-organizer.slug-roberto-tunon:before, .wordcamp-organizer.slug-fotis-routsis:before, .wordcamp-organizer.slug-pantelis-orfanos:before, .wordcamp-organizer.slug-huri-adilova:before {
+.wordcamp-organizer.slug-svetlana-guzovskaia .wordcamp-organizers__title:before, .wordcamp-organizer.slug-justina-baskyte .wordcamp-organizers__title:before, .wordcamp-organizer.slug-sjoerd-blom .wordcamp-organizers__title:before, .wordcamp-organizer.slug-aleksandar-savkovic .wordcamp-organizers__title:before, .wordcamp-organizer.slug-abha-thakor .wordcamp-organizers__title:before, .wordcamp-organizer.slug-roberto-tunon .wordcamp-organizers__title:before, .wordcamp-organizer.slug-fotis-routsis .wordcamp-organizers__title:before, .wordcamp-organizer.slug-pantelis-orfanos .wordcamp-organizers__title:before, .wordcamp-organizer.slug-laura-sacco .wordcamp-organizers__title:before {
   content: "Team Lead";
   position: absolute;
   top: -1.5rem;
-  right: -1.5rem;
-  font-size: 1rem;
+  left: 0;
+  display: inline;
+  font-size: 0.875rem;
+  font-weight: 400;
   line-height: 100%;
   color: white;
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.25rem;
   background-color: #CF006C;
 }
-@media (min-width: 769px) {
-  .wordcamp-organizer.slug-svetlana-guzovskaia:before, .wordcamp-organizer.slug-justina-baskyte:before, .wordcamp-organizer.slug-sjoerd-blom:before, .wordcamp-organizer.slug-aleksandar-savkovic:before, .wordcamp-organizer.slug-abha-thakor:before, .wordcamp-organizer.slug-roberto-tunon:before, .wordcamp-organizer.slug-fotis-routsis:before, .wordcamp-organizer.slug-pantelis-orfanos:before, .wordcamp-organizer.slug-huri-adilova:before {
-    top: -2rem;
-    right: -2rem;
-  }
-}
-
 /*_______ WordCamp Speakers _______*/
 .wordcamp-speakers .wordcamp-post-list__post {
   display: flex;
