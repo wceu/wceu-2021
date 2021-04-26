@@ -1,57 +1,32 @@
 /*_______ Colums block _______*/
 .wp-block-columns {
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	@media (min-width: 769px){
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
 	.wp-block-column{
 		> %headings{
 			margin-top: 0;
 		}
 	}
 	&.highlighted-columns{
+		justify-content: center;
 		.wp-block-column:not(:empty){
 			@extend %camptix-item;
+			max-width: 34rem;
 			padding: 2rem !important;
-			h2{
-				@include font-size(2);
-				margin-bottom: .25em;
-				@media (min-width: 769px){
-					@include font-size(2.5);
-				}
-			}
-			h3{
-				@include font-size(1.5);
-				margin-bottom: .5em;
-				@media (min-width: 769px){
-					@include font-size(1.875);
-				}
-			}
-			h4{
-				@include font-size(1.25);
-				margin-bottom: .25em;
-				@media (min-width: 769px){
-					@include font-size(1.5);
-				}
-			}
-			h5{
-				@include font-size(1.125);
-				margin-bottom: .25em;
-				@media (min-width: 769px){
-					@include font-size(1.25);
-				}
-			}
-			h6{
-				@include font-size(1);
-				margin-bottom: .125em;
-				@media (min-width: 769px){
-					@include font-size(1.125);
-				}
-			}
+			margin-bottom: 2rem;
 			p,
 			ul,
 			ol{
 				font-size: 1.25rem;
-				&.address-block{
-					font-size: .875rem;
+				&.block-details{
+					font-size: 1.125rem;
+					line-height: 120%;
+					border-left: .25rem solid $color__secondary;
+					padding-left: .75rem;
 				}
 			}
 		}
