@@ -4230,6 +4230,10 @@ h6 + .notation {
 .page .entry-content p:not(.wp-block-button) a {
   color: #157573;
 }
+.single .entry-content p:not(.wp-block-button) a:hover,
+.page .entry-content p:not(.wp-block-button) a:hover {
+  color: #8ABAB9;
+}
 .single .entry-content a,
 .page .entry-content a {
   word-break: break-word;

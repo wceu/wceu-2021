@@ -122,6 +122,9 @@
 		p:not(.wp-block-button){
 			a{
 				color: $color__tertiary;
+				&:hover{
+					color: $color__tertiary_half;
+				}
 			}
 		}
 		a{
