@@ -40,6 +40,10 @@ h2{
 	}
 	@media (min-width: 769px){
 		@include font-size(4.5);
+		word-break: keep-all;
+		hyphens: none;
+		-ms-hyphens: none;
+		-moz-hyphens: none;
 	}
 }
 

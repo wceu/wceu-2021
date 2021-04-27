@@ -665,6 +665,10 @@ h2 {
   h2 {
     font-size: 72px;
     font-size: 4.5rem;
+    word-break: keep-all;
+    hyphens: none;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
   }
 }
 
