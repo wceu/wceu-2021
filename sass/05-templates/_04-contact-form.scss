@@ -64,7 +64,7 @@
 
 /*_______ Jetpack form post-submission message _______*/
 [id^="contact-form-"]{
-	h3{
+	> h3{
 		a{
 			font-size: 80%;
     		color: $color__tertiary;

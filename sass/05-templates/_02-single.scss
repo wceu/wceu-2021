@@ -131,7 +131,13 @@
 	.entry-footer{
 		@extend %inner-tiny;
 		@extend %inner-padding;
-		padding-top: 2rem;
+		.tags-links{
+			margin-top: 2rem;
+			display: block;
+		}
+		.edit-link{	
+			display: none;
+		}
 	}
 }
 

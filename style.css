@@ -1490,7 +1490,8 @@ input[type=submit].outlined:hover {
 
 /*_______ Comments area _______*/
 .comments-area {
-  padding: 5rem 0;
+  padding: 4rem 0;
+  margin-top: 4rem;
   border-top: 0.125rem solid #CF006C;
 }
 
@@ -2865,8 +2866,8 @@ table thead th {
 }
 @media (min-width: 769px) {
   .wp-block-columns.info-columns .wp-block-column:not(:empty) h3 {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 .wp-block-columns.info-columns .wp-block-column:not(:empty) h4 {
@@ -3237,18 +3238,19 @@ table thead th {
   text-decoration: none;
   color: #157573;
   padding: 0 0 0.125rem;
-  border-bottom: 0.125rem solid #157573;
+  border-bottom: 0.125rem solid;
   margin: 1rem 0 1rem auto;
 }
 .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a:after {
-  content: " ";
+  content: "";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
   margin-left: 0.25rem;
 }
 .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a:hover {
-  color: #CF006C;
+  text-decoration: none !important;
+  color: #8ABAB9;
 }
 
 /*_______ Block with highlighted links _______*/
@@ -4008,13 +4010,13 @@ h6 + .notation {
   text-decoration: none;
   color: #157573;
   padding-bottom: 0.125rem;
-  border-bottom: 0.125rem solid #157573;
+  border-bottom: 0.125rem solid;
   margin: 1rem 0 1rem auto;
 }
 .blog .hentry .more-link:hover,
 .archive .hentry .more-link:hover,
 .search-results .hentry .more-link:hover {
-  color: #CF006C;
+  color: #8ABAB9;
 }
 .blog .hentry .entry-footer,
 .archive .hentry .entry-footer,
@@ -4228,9 +4230,14 @@ h6 + .notation {
 .page .entry-content a {
   word-break: break-word;
 }
-.single .entry-footer,
-.page .entry-footer {
-  padding-top: 2rem;
+.single .entry-footer .tags-links,
+.page .entry-footer .tags-links {
+  margin-top: 2rem;
+  display: block;
+}
+.single .entry-footer .edit-link,
+.page .entry-footer .edit-link {
+  display: none;
 }
 
 .tags-links a {
@@ -4470,6 +4477,11 @@ h6 + .notation {
   display: none;
 }
 
+.page-template .entry-footer,
+.page-template-default .entry-footer {
+  display: none;
+}
+
 /*_______ Jetpack contact forms _______*/
 .wp-block-jetpack-contact-form {
   display: flex;
@@ -4541,7 +4553,7 @@ h6 + .notation {
 }
 
 /*_______ Jetpack form post-submission message _______*/
-[id^=contact-form-] h3 a {
+[id^=contact-form-] > h3 a {
   font-size: 80%;
   color: #157573;
 }

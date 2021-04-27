@@ -91,18 +91,19 @@
 				text-decoration: none;
 				color: $color__tertiary;
 				padding: 0 0 .125rem;
-				border-bottom: .125rem solid $color__tertiary;
+				border-bottom: .125rem solid;
 				margin: 1rem 0 1rem auto;
 				@extend %transition;
 				&:after{
-					content: " ";
+					content: "\f345";
 					font-family: 'dashicons';
 					display: inline-block;
 					vertical-align: middle;
 					margin-left: .25rem;
 				}
 				&:hover{
-					color: $color__secondary;
+					text-decoration: none !important;
+					color: $color__tertiary_half;
 				}
 			}
 		}
