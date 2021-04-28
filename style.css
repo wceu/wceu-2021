@@ -74,7 +74,7 @@ input[type=submit] {
   }
 }
 
-.error404 .page-content, .error404 .page-header .page-title, .single .entry-footer,
+.error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .search-no-results .content-area, .wp-block-group .wp-block-group__inner-container > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .no-comments, .comments-title, .comment-respond, .comment-list {
   max-width: 100%;
@@ -82,7 +82,7 @@ input[type=submit] {
   margin-right: auto;
 }
 @media (min-width: 769px) {
-  .error404 .page-content, .error404 .page-header .page-title, .single .entry-footer,
+  .error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .search-no-results .content-area, .wp-block-group .wp-block-group__inner-container > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .no-comments, .comments-title, .comment-respond, .comment-list {
     max-width: 720px;
@@ -6189,23 +6189,29 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 }
 /*_______ 404 page _______*/
 .error404 .page-header {
-  padding: 4rem 2rem 4rem;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 2rem;
 }
 .error404 .page-header .page-title {
+  width: 100%;
   text-align: center;
   font-size: 13vw;
   line-height: 90%;
   color: #CF006C;
-  padding: 2rem;
-  background-color: #333333;
-  border: 0.5rem solid #157573;
-  border-radius: 2rem;
-  box-shadow: 0.5rem 0.5rem 0 #157573;
-  margin: 0 auto;
+  padding: 8rem 2rem 4rem;
+  background-color: #F6D5D5;
+  margin: 0;
 }
 @media (min-width: 480px) {
   .error404 .page-header .page-title {
+    padding: 8rem 8rem 4rem;
+  }
+}
+@media (min-width: 769px) {
+  .error404 .page-header .page-title {
     font-size: 8rem;
+    padding: 8rem 20% 4rem;
   }
 }
 .error404 .page-header .page-title:before {
@@ -6249,6 +6255,9 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   float: left;
   width: 60%;
   height: 2.5rem;
+}
+.error404 .page-content .search-form .search-field {
+  height: 2.75rem;
 }
 .error404 .page-content .search-form .search-submit {
   font-size: 1.25rem;
@@ -6307,8 +6316,8 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   display: inline-block;
   font-size: 1.5rem !important;
   line-height: 120%;
-  color: #333333;
-  background-color: #157573;
+  text-decoration: underline;
+  color: #157573;
   padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
@@ -6321,7 +6330,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-right: 0.25rem;
   font-size: 0.875rem;
   text-decoration: none;
-  color: #CF006C;
+  color: #157573;
   border: none;
 }
 .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:focus, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:hover {
