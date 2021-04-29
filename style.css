@@ -3505,7 +3505,7 @@ h3 + .notation,
 h4 + .notation,
 h5 + .notation,
 h6 + .notation {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .schedule-time {
