@@ -97,7 +97,7 @@ input[type="submit"] {
 	&.is-style-outline{
 		.wp-block-button__link{
 			font-size: 1.25rem;
-			color: $color__tertiary;
+			color: $color__tertiary !important;
 			padding: .75em 1.25em;
 			background-color: transparent;
 			border: .125rem solid $color__tertiary;

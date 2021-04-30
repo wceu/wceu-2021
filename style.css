@@ -1286,7 +1286,7 @@ input[type=submit].outlined:hover {
 }
 .wp-block-button.is-style-outline .wp-block-button__link {
   font-size: 1.25rem;
-  color: #157573;
+  color: #157573 !important;
   padding: 0.75em 1.25em;
   background-color: transparent;
   border: 0.125rem solid #157573;
