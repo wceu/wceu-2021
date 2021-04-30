@@ -1,6 +1,8 @@
 /*_______ Comments area _______*/
 .comments-area{
-	padding: 4rem 0;
+	@extend %inner-med;
+	@extend %inner-padding;
+	padding-top: 4rem;
 	margin-top: 4rem;
 	// background-color: $color__secondary-lighter;
 	border-top: .125rem solid $color__secondary;
@@ -20,7 +22,7 @@
 .comment-list {
 	list-style: none;
 	padding: 0 0 1.5rem;
-	border-bottom: .125rem solid;
+	border-bottom: .0625rem solid $color__secondary;
 	margin-bottom: 4rem;
     & li {
 		margin-bottom: 2rem;
