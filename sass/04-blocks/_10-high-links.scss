@@ -12,12 +12,15 @@
 		flex-flow: column wrap;
 		padding: 1.5rem !important;
 		background-color: $color__secondary_third;
-		margin-left: 1%;
-		margin-right: 1%;
+		margin-left: 1% !important;
+		margin-right: 1% !important;
 		margin-bottom: 1rem;
 		@extend %transition;
 		@media (min-width: 768px){
-			flex: 0 1 25%;
+			flex: 0 1 31%;
+		}
+		@media (min-width: 1024px){
+			flex: 0 1 31%;
 		}
 		&:focus,
 		&:focus-within,
@@ -81,6 +84,7 @@
 			a{
 				display: block;
 				font-size: 1.75rem;
+				line-height: 100%;
 				color: $color__secondary;
 				text-decoration: none;
 				margin-top: auto;

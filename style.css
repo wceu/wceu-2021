@@ -3157,7 +3157,7 @@ table thead th {
   color: #157573;
 }
 .wp-block-latest-posts.is-grid {
-  padding: 0 2rem;
+  padding: 0 2rem !important;
 }
 @media (min-width: 769px) {
   .wp-block-latest-posts.is-grid {
@@ -3165,26 +3165,25 @@ table thead th {
   }
 }
 .wp-block-latest-posts.is-grid li {
-  flex: 1 1 100%;
-  width: 100%;
   border: none;
   padding: 0;
-  margin: 0 auto;
-  margin-bottom: 2rem;
   overflow: hidden;
-}
-@media (min-width: 480px) {
-  .wp-block-latest-posts.is-grid li {
-    flex: 0 0 48%;
-    max-width: 48%;
-    margin: 0 1% 1rem;
-  }
 }
 @media (min-width: 769px) {
   .wp-block-latest-posts.is-grid li {
+    margin-bottom: 0;
+  }
+}
+.wp-block-latest-posts.is-grid.columns-3 li {
+  flex: 1 1 100%;
+  width: 100%;
+  margin: 0 auto 2rem !important;
+}
+@media (min-width: 769px) {
+  .wp-block-latest-posts.is-grid.columns-3 li {
     flex: 0 0 31.333%;
     max-width: 31.333%;
-    margin-bottom: 0;
+    margin: 0 1% 1rem;
   }
 }
 .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image {
@@ -3192,6 +3191,11 @@ table thead th {
   height: 10rem;
   margin-bottom: 0.5rem;
   overflow: hidden;
+}
+@media (min-width: 375px) {
+  .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image {
+    height: 15rem;
+  }
 }
 @media (min-width: 768px) {
   .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image {
@@ -3204,7 +3208,12 @@ table thead th {
   height: 10rem;
   object-fit: cover;
 }
-@media (min-width: 480px) {
+@media (min-width: 375px) {
+  .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image img {
+    height: 15rem;
+  }
+}
+@media (min-width: 768px) {
   .wp-block-latest-posts.is-grid .wp-block-latest-posts__featured-image img {
     height: 13rem;
   }
@@ -3272,13 +3281,18 @@ table thead th {
   flex-flow: column wrap;
   padding: 1.5rem !important;
   background-color: #FCE2E2;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 1% !important;
+  margin-right: 1% !important;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .high-links .wp-block-column {
-    flex: 0 1 25%;
+    flex: 0 1 31%;
+  }
+}
+@media (min-width: 1024px) {
+  .high-links .wp-block-column {
+    flex: 0 1 31%;
   }
 }
 .high-links .wp-block-column:focus, .high-links .wp-block-column:focus-within, .high-links .wp-block-column:hover {
@@ -3362,6 +3376,7 @@ table thead th {
 .high-links .wp-block-column p a {
   display: block;
   font-size: 1.75rem;
+  line-height: 100%;
   color: #CF006C;
   text-decoration: none;
   margin-top: auto;
