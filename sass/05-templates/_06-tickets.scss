@@ -16,9 +16,12 @@
 		tbody{
 			display: flex;
 			flex-flow: column wrap;
-			justify-content: center;
+			justify-content: space-between;
 			@media (min-width: 650px) {
 				flex-flow: row wrap;
+			}
+			tr{
+				flex: 1 1 auto;
 			}
 		}
 		tr[class^="tix-ticket-"] {

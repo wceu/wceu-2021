@@ -4883,12 +4883,15 @@ h6 + .notation {
 .tix-js .tix_tickets_table tbody {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (min-width: 650px) {
   .tix-js .tix_tickets_table tbody {
     flex-flow: row wrap;
   }
+}
+.tix-js .tix_tickets_table tbody tr {
+  flex: 1 1 auto;
 }
 .tix-js .tix_tickets_table tr[class^=tix-ticket-] {
   flex-flow: row wrap;
