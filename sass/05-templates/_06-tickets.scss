@@ -41,23 +41,36 @@
 				margin: 0 2% 2rem;
 			}
 		}
-	}
-	.tix-column-description{
-		text-align: center;
-		padding: 0;
-		margin-bottom: 2rem;
-		br{
-			display: none;
+		.tix-column-description{
+			text-align: left;
+			line-height: 100%;
+			padding: 0;
+			margin-bottom: 2rem;
+			br{
+				display: none;
+			}
 		}
-	}
-	.tix-ticket-title {
-		display: block;
-		font-size: 2rem;
-		font-weight: 700;
-		line-height: 100%;
-		color: $color__secondary;
-		padding: 1rem;
-		margin-bottom: 1rem;
+		.tix-column-per-ticket,
+		.tix-column-quantity{
+			text-align: center;
+		}
+		.tix-ticket-title {
+			display: block;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 100%;
+			color: $color__secondary;
+			padding: 1rem;
+			margin-bottom: 1rem;
+		}
+		.tix-row-total {
+			font-size: 2rem;
+			font-weight: 700;
+			text-align: right;
+			line-height: 100%;
+			color: $color__secondary;
+			margin: auto auto .5rem;
+		}
 	}
 	.tix-ticket-excerpt {
 		display: block;
@@ -65,16 +78,9 @@
 		line-height: 120%;
 		padding: 0 2rem;
 	}
-	.tix-row-total {
-		font-size: 2rem;
-		font-weight: 700;
-		text-align: center;
-		line-height: 100%;
-		color: $color__secondary;
-		margin: auto auto .5rem;
-	}
-	.tix-column-quantity, .tix-column-remaining {
-		flex: 0 1 100%;
+	.tix-column-quantity,
+	.tix-column-remaining {
+		flex: 1 1 auto;
 		margin: auto auto 0;
 	}
 	.tix-column-remaining {
@@ -88,12 +94,6 @@
 		}
 	}
 	.tix-column-quantity{
-		// padding: 0 2rem;
-		// &:before {
-		// 	content: 'Choose your quantity';
-		// 	display:block;
-		// 	line-height: 100%;
-		// }
 		select{
 			font-weight: 700;
 			max-width: 8rem;

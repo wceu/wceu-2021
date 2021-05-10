@@ -4911,15 +4911,20 @@ h6 + .notation {
     margin: 0 2% 2rem;
   }
 }
-.tix-js .tix-column-description {
-  text-align: center;
+.tix-js .tix_tickets_table .tix-column-description {
+  text-align: left;
+  line-height: 100%;
   padding: 0;
   margin-bottom: 2rem;
 }
-.tix-js .tix-column-description br {
+.tix-js .tix_tickets_table .tix-column-description br {
   display: none;
 }
-.tix-js .tix-ticket-title {
+.tix-js .tix_tickets_table .tix-column-per-ticket,
+.tix-js .tix_tickets_table .tix-column-quantity {
+  text-align: center;
+}
+.tix-js .tix_tickets_table .tix-ticket-title {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -4928,22 +4933,23 @@ h6 + .notation {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+.tix-js .tix_tickets_table .tix-row-total {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: right;
+  line-height: 100%;
+  color: #CF006C;
+  margin: auto auto 0.5rem;
+}
 .tix-js .tix-ticket-excerpt {
   display: block;
   font-size: 1.125rem;
   line-height: 120%;
   padding: 0 2rem;
 }
-.tix-js .tix-row-total {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  line-height: 100%;
-  color: #CF006C;
-  margin: auto auto 0.5rem;
-}
-.tix-js .tix-column-quantity, .tix-js .tix-column-remaining {
-  flex: 0 1 100%;
+.tix-js .tix-column-quantity,
+.tix-js .tix-column-remaining {
+  flex: 1 1 auto;
   margin: auto auto 0;
 }
 .tix-js .tix-column-remaining {
