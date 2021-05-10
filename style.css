@@ -4908,15 +4908,15 @@ h6 + .notation {
     margin: 0 2% 2rem;
   }
 }
-.tix-js .tix-column-description {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-description {
   text-align: center;
   padding: 0;
   margin-bottom: 2rem;
 }
-.tix-js .tix-column-description br {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-description br {
   display: none;
 }
-.tix-js .tix-ticket-title {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-ticket-title {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -4925,13 +4925,13 @@ h6 + .notation {
   padding: 1rem;
   margin-bottom: 1rem;
 }
-.tix-js .tix-ticket-excerpt {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-ticket-excerpt {
   display: block;
   font-size: 1.125rem;
   line-height: 120%;
   padding: 0 2rem;
 }
-.tix-js .tix-column-price {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-price {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
@@ -4939,38 +4939,38 @@ h6 + .notation {
   color: #CF006C;
   margin: auto auto 0.5rem;
 }
-.tix-js .tix-column-quantity, .tix-js .tix-column-remaining {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-quantity, .tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-remaining {
   flex: 0 1 100%;
   margin: auto auto 0;
 }
-.tix-js .tix-column-remaining {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-remaining {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-.tix-js .tix-column-remaining:before {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-remaining:before {
   content: "Only ";
 }
-.tix-js .tix-column-remaining:after {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-remaining:after {
   content: " remaining";
 }
-.tix-js .tix-column-quantity select {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-column-quantity select {
   font-weight: 700;
   max-width: 8rem;
   margin: 1rem auto 2rem;
 }
-.tix-js .tix-row-coupon {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-row-coupon {
   flex: 1 1 100%;
   display: flex;
   text-align: center;
 }
-.tix-js .tix-row-coupon td {
+.tix-js .tix_tickets_table:not(.tix-order-summary) .tix-row-coupon td {
   width: 100%;
   text-align: center !important;
 }
-.tix-js #tix-coupon-container {
+.tix-js .tix_tickets_table:not(.tix-order-summary) #tix-coupon-container {
   text-align: center;
 }
-.tix-js #tix-coupon-container input {
+.tix-js .tix_tickets_table:not(.tix-order-summary) #tix-coupon-container input {
   display: inline !important;
   max-width: 20rem;
   vertical-align: middle;
@@ -4978,10 +4978,10 @@ h6 + .notation {
   box-sizing: border-box;
   margin: 0 auto 1rem !important;
 }
-.tix-js #tix-coupon-container#tix-coupon-input {
+.tix-js .tix_tickets_table:not(.tix-order-summary) #tix-coupon-container#tix-coupon-input {
   max-width: 30%;
 }
-.tix-js #tix-coupon-container input[type=submit] {
+.tix-js .tix_tickets_table:not(.tix-order-summary) #tix-coupon-container input[type=submit] {
   max-width: 12rem;
   font-size: 1.125rem;
   padding: 0.675rem;
