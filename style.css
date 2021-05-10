@@ -2226,7 +2226,7 @@ body.admin-bar .site-header {
   margin-top: 8rem;
   width: 100%;
   padding: 0;
-  clear: botch;
+  clear: both;
 }
 .site-footer:before {
   content: "";
