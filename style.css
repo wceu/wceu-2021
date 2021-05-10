@@ -983,9 +983,9 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 select:-webkit-autofill,
 select:-webkit-autofill:hover {
-  border: 0.1875rem solid #333333 !important;
+  border: 0.125rem solid #157573 !important;
   -webkit-text-fill-color: #333333 !important;
-  -webkit-box-shadow: 0 0 0px 1000px #157573 inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 input:-webkit-autofill:focus,
@@ -5282,6 +5282,10 @@ h6 + .notation {
   font-size: 1.5rem;
   line-height: 100%;
   text-transform: none;
+  border: none;
+  border-radius: 0;
+  padding: 0.75em 1.25em;
+  margin-top: 0;
 }
 
 /*_______ Sponsors list _______*/
