@@ -4934,7 +4934,7 @@ h6 + .notation {
   line-height: 120%;
   padding: 0 2rem;
 }
-.tix-js .tix-column-price {
+.tix-js .tix-row-total {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
