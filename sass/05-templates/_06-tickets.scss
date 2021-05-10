@@ -64,12 +64,14 @@
 			margin-bottom: 1rem;
 		}
 		.tix-row-total {
-			font-size: 2rem;
-			font-weight: 700;
-			text-align: right;
-			line-height: 100%;
-			color: $color__secondary;
-			margin: auto auto .5rem;
+			td{
+				font-size: 2rem;
+				font-weight: 700;
+				text-align: right;
+				line-height: 100%;
+				color: $color__secondary;
+				margin: auto auto .5rem;
+			}
 		}
 	}
 	.tix-ticket-excerpt {
