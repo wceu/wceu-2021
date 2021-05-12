@@ -5507,13 +5507,14 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   }
 }
 .tix-attendee-list li:hover {
-  background-color: #157573;
+  background-color: #FCE2E2;
 }
 .tix-attendee-list li .tix-field {
   margin-left: 0 !important;
 }
 .tix-attendee-list li .avatar {
   display: block;
+  float: none !important;
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
@@ -5522,6 +5523,8 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin-right: 1rem;
   margin-bottom: 1rem;
   background-color: #C4C4C4;
+  border-radius: 100%;
+  overflow: hidden;
 }
 .tix-attendee-list li .tix-attendee-name {
   font-size: 1.125rem !important;
@@ -5533,11 +5536,8 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   display: block !important;
   font-size: 0.875rem !important;
   line-height: 140%;
+  color: #157573;
   word-break: break-word;
-}
-.tix-attendee-list li .tix-attendee-twitter:hover,
-.tix-attendee-list li .tix-attendee-url:hover {
-  color: #CF006C;
 }
 .tix-attendee-list.tix-columns-2 li {
   flex: 0 0 80%;
