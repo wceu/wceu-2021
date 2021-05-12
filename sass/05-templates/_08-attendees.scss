@@ -48,6 +48,9 @@
 			line-height: 140%;
 			color: $color__tertiary;
 			word-break: break-word;
+			&:hover{
+				color: $color__secondary;
+			}
 		}
 	}
 	&.tix-columns-2{

@@ -5539,6 +5539,10 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   color: #157573;
   word-break: break-word;
 }
+.tix-attendee-list li .tix-attendee-twitter:hover,
+.tix-attendee-list li .tix-attendee-url:hover {
+  color: #CF006C;
+}
 .tix-attendee-list.tix-columns-2 li {
   flex: 0 0 80%;
   max-width: 100%;
