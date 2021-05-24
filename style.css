@@ -4694,6 +4694,7 @@ h6 + .notation {
   height: 6rem;
   margin-bottom: 1rem;
   overflow: hidden;
+  background-color: white;
 }
 .wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-title,
 .wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-title,
