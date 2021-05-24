@@ -5,7 +5,7 @@
 		display: block;
 	}
 	.entry-title{
-		@extend %inner-moretiny;
+		@extend %inner-tiny;
 		&:before{
 			content: '';
 			display: block;
@@ -19,19 +19,21 @@
 		}
 	}
 	.entry-content{
-		@extend %inner-moretiny;
 		margin: 0 auto;
 	}
 }
 
 .single-wcb_speaker{
 	.entry-header{
-		padding: 5rem 2rem 3rem;
+		padding: 7rem 2rem 3rem;
 		margin-bottom: -3rem;
 	}
 	.entry-title{
 		&:before{
-			background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-speaker.png);
+			content: "_Speaker";
+			font-weight: 400;
+			font-size: 1.5rem;
+			line-height: 100%;
 		}
 	}
 }
@@ -44,7 +46,10 @@
 	.entry-title{
 		text-align: left;
 		&:before{
-			background-image: url(https://2020.europe.wordcamp.org/files/2020/05/icon-session.png);
+			content: "_Session";
+			font-weight: 400;
+			font-size: 1.5rem;
+			line-height: 100%;
 			margin: 0 0 1rem;
 		}
 	}
@@ -52,11 +57,18 @@
 
 /*_______ Speaker single _______*/
 .speaker-avatar{
-	margin-bottom: 2rem;
-	z-index: 1;
+	display: block;
+    width: 6rem;
+	height: 6rem;
+    border-radius: 5rem;
+    margin-left: 0 !important;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    z-index: 1;
 	img{
 		display: block;
-		margin: 0 auto;
+		width: 100%;
+		height: auto;
 	}
 }
 .speaker-sessions{
