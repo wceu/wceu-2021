@@ -5,20 +5,14 @@
 		display: block;
 	}
 	.entry-title{
-		@extend %inner-tiny;
 		&:before{
 			content: '';
 			display: block;
-			width: 5rem;
-			height: 5rem;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
 			margin: 0 auto 1rem;
-			filter: contrast(0.5);
 		}
 	}
 	.entry-content{
+		@extend %inner-tiny;
 		margin: 0 auto;
 	}
 }
