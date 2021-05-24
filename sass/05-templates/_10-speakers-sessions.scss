@@ -5,6 +5,7 @@
 		display: block;
 	}
 	.entry-title{
+		@extend %inner;
 		&:before{
 			content: '';
 			display: block;
