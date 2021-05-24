@@ -6139,7 +6139,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   width: 6rem;
   height: 6rem;
   border-radius: 5rem;
-  margin-left: 0 !important;
+  margin-left: 1rem !important;
   margin-bottom: 2rem;
   overflow: hidden;
   z-index: 1;
