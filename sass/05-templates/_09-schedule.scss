@@ -359,14 +359,13 @@
 		color: white !important;
 		padding: .5rem;
 		background: $color__tertiary;
+		border: none;
 		border-radius: 0;
 		z-index: 9999;
 		@extend %transition;
 		&:hover{
-			color: $color__tertiary !important;
-			background-color: $color__primary;
-			box-shadow: -.125em .125em 0 $color__tertiary;
-			border-color: $color__primary;
+			color: $color__primary !important;
+			background-color: $color__tertiary_half;
 		}
 		.dashicons-star-filled{
 			&:before{
@@ -407,18 +406,19 @@
 }
 
 .fav-session-share-tab {
-	background-color: white;
+	background-color: $color__secondary-third;
 	border: none;
 	@extend %transition;
 	.fav-session-tablinks{
 		font-size: 1rem;
-		color: white;
+		color: $color__tertiary;
 		padding: .5rem 1rem;
 		&:hover{
 			background-color: $color__tertiary;
 		}
 		&.active {
 			font-weight: 700;
+			color: white;
 			background-color: $color__tertiary;
 		}
 	}

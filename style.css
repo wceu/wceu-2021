@@ -5784,14 +5784,13 @@ h6 + .notation {
   color: white !important;
   padding: 0.5rem;
   background: #157573;
+  border: none;
   border-radius: 0;
   z-index: 9999;
 }
 .entry-content a.show-email-form:hover {
-  color: #157573 !important;
-  background-color: #333333;
-  box-shadow: -0.125em 0.125em 0 #157573;
-  border-color: #333333;
+  color: #333333 !important;
+  background-color: #8ABAB9;
 }
 .entry-content a.show-email-form .dashicons-star-filled:before {
   content: "";
@@ -5830,12 +5829,12 @@ h6 + .notation {
 }
 
 .fav-session-share-tab {
-  background-color: white;
+  background-color: #FCE2E2;
   border: none;
 }
 .fav-session-share-tab .fav-session-tablinks {
   font-size: 1rem;
-  color: white;
+  color: #157573;
   padding: 0.5rem 1rem;
 }
 .fav-session-share-tab .fav-session-tablinks:hover {
@@ -5843,6 +5842,7 @@ h6 + .notation {
 }
 .fav-session-share-tab .fav-session-tablinks.active {
   font-weight: 700;
+  color: white;
   background-color: #157573;
 }
 
