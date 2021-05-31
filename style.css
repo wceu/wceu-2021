@@ -5764,6 +5764,11 @@ h6 + .notation {
   padding: 0.25rem 0.25rem;
   margin-bottom: 0.5rem;
 }
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-interview .wcb-session-cell-content:before {
+  content: "Interview";
+  padding: 0.25rem 0.25rem;
+  margin-bottom: 0.5rem;
+}
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel .wcb-session-cell-content:before {
   content: "Discussion panel";
   padding: 0.25rem 0.25rem;
@@ -5776,12 +5781,10 @@ h6 + .notation {
   bottom: 1rem;
   right: 1rem;
   line-height: 100%;
-  color: #333333 !important;
+  color: white !important;
   padding: 0.5rem;
-  background: #CF006C;
-  border: 0.125rem solid #CF006C;
+  background: #157573;
   border-radius: 0;
-  box-shadow: -0.25em 0.25em 0 #157573;
   z-index: 9999;
 }
 .entry-content a.show-email-form:hover {
@@ -5808,21 +5811,21 @@ h6 + .notation {
 
 .email-form {
   max-width: 300px;
-  right: 0.5rem;
-  bottom: 4rem;
   font-size: 1rem;
-  border-radius: 0;
 }
 @media (min-width: 375px) {
   .email-form {
-    max-width: 350px;
-    right: 1rem;
+    max-width: 400px;
+    right: 0rem;
   }
 }
 .email-form.fav-session-email-form-show {
+  right: 0.5rem;
+  bottom: 4rem;
   padding: 0;
-  border: 0.125rem solid #333333;
-  box-shadow: -0.25em 0.25em 0 #333333;
+  background-color: #FCE2E2;
+  border: none;
+  border-radius: 0;
   margin-bottom: 0;
 }
 
@@ -5832,6 +5835,7 @@ h6 + .notation {
 }
 .fav-session-share-tab .fav-session-tablinks {
   font-size: 1rem;
+  color: white;
   padding: 0.5rem 1rem;
 }
 .fav-session-share-tab .fav-session-tablinks:hover {
@@ -5845,17 +5849,23 @@ h6 + .notation {
 .fav-session-share-tabcontent {
   font-weight: 700;
   font-size: 1.25rem;
-  padding: 1rem;
-  background-color: white;
+  padding: 1rem !important;
+  background-color: #FCE2E2 !important;
+  border: none !important;
 }
 
 #fav-session-email-form {
+  line-height: 100% !important;
   margin: 0;
 }
 #fav-session-email-form #fav-sessions-email-address {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   padding: 0.5rem;
+}
+#fav-session-email-form #fav-sessions-email-address::placeholder {
+  font-size: 0.875rem !important;
+  color: #C4C4C4 !important;
 }
 #fav-session-email-form input[type=submit] {
   padding: 0.5rem 1.5rem;
@@ -5867,7 +5877,7 @@ h6 + .notation {
   font-weight: 700;
   font-size: 1rem;
   line-height: 100%;
-  color: #CF006C;
+  color: #157573;
   word-break: break-all;
   text-overflow: ellipsis;
   white-space: nowrap;
