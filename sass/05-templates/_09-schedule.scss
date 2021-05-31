@@ -204,38 +204,42 @@
 .wcpt-schedule{
 	td{
 		&.wcpt-session-type-session{
-			&:before{
-				display: inline-block;
-				font-weight: 400;
-				font-size: .875rem;
-				line-height: 100%;
-				color: $color__secondary;
-				background-color: white;
-				padding: .125rem .25rem;
-				margin-bottom: .5rem;
+			.wcpt-session-title{
+				&:before{
+					display: inline-block;
+					width: auto !important;
+					height: auto !important;
+					font-weight: 400;
+					font-size: .875rem;
+					line-height: 100%;
+					color: $color__secondary;
+					background-color: white;
+					padding: .125rem .25rem;
+					margin-bottom: .5rem;
+				}
 			}
 			&.wcb-session-category-talk{
-				&:before{
+				.wcpt-session-title:before{
 					content: "Talk";
 				}
 			}
 			&.wcb-session-category-lightning-talk{
-				&:before{
+				.wcpt-session-title:before{
 					content: "Lightning talk";
 				}
 			}
 			&.wcb-session-category-workshop{
-				&:before{
+				.wcpt-session-title:before{
 					content: "Workshop";
 				}
 			}
 			&.wcb-session-category-discussion-panel{
-				&:before{
+				.wcpt-session-title:before{
 					content: "Discussion Panel";
 				}
 			}
 			&.wcb-session-category-development{
-				&:before{
+				.wcpt-session-title:before{
 					content: "Development";
 				}
 			}
