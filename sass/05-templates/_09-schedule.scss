@@ -405,132 +405,76 @@
 			right: 1rem;
 			max-width: $size__content-supertiny;
 		}
-	}
-}
-
-.fav-session-share-tab {
-	background-color: $color__secondary-third !important;
-	border: none !important;
-	@extend %transition;
-	.fav-session-tablinks{
-		font-size: 1rem;
-		color: $color__tertiary;
-		padding: .5rem 1rem;
-		&:hover{
-			color: white;
-			background-color: $color__tertiary;
-		}
-		&.active {
-			font-weight: 700;
-			color: white;
-			background-color: $color__tertiary;
+		+ .show-email-form{
+			color: $color__primary !important;
+			background-color: $color__tertiary_half;
 		}
 	}
-}
-
-.fav-session-share-tabcontent {
-	font-weight: 700;
-	font-size: 1.25rem;
-	padding: 1rem !important;
-	background-color: $color__secondary-third !important;
-	border: none !important;
-}
-
-#fav-session-email-form{
-	line-height: 100% !important;
-	margin: 0;
-	#fav-sessions-email-address{
-		margin-top: .5rem;
-		margin-bottom: 1rem;
-		padding: .5rem;
-		&::placeholder{
-			font-size: .875rem !important;
-			color: $color__grey_verylight !important;
-		}
-	}
-	input[type="submit"]{
-		padding: .5rem 1.5rem;
-	}
-}
-
-#fav-sessions-link{
-	display: block;
-	width: 100%;
-	font-weight: 700;
-	font-size: 1rem;
-	line-height: 100%;
-	color: $color__tertiary;
-	word-break: break-all;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-	margin: 1rem auto;
-}
-
-#fav-session-print{
-	font-size: 1.25rem;
-	&:before{
-		content: "\f491";
-		font-family: 'dashicons';
-		vertical-align: middle;
-	}
-}
-
-/*_______ Sponsors Schedule table _______*/
-.sponsors-schedule{
-	empty-cells: hide;
-	thead{
-		tr{
-			th{
-				width: 22.75%;
-				&:first-of-type{
-					width: 100px;
-				}
+	.fav-session-share-tab {
+		background-color: $color__secondary-third !important;
+		border: none !important;
+		@extend %transition;
+		.fav-session-tablinks{
+			font-size: 1rem;
+			color: $color__tertiary;
+			padding: .5rem 1rem;
+			&:hover{
+				color: white;
+				background-color: $color__tertiary;
 			}
-		}
-	}
-	tbody{
-		tr{
-			td{
+			&.active {
 				font-weight: 700;
-				line-height: 120%;
-				&:first-of-type{
-					font-size: 1rem;
-					line-height: 120%;
-					&:after{
-						display: none;
-					}
-				}
-				&:empty{
-					&:before{
-						content: '';
-						display: block;
-						position: absolute;
-						top: -.5rem;
-						left: 0;
-						width: 100%;
-						height: .5rem;
-						background-color: white;
-					}
-				}
-				a{
-					@extend %camptix-nice-link;
-					text-align: center !important;
-					margin-bottom: .5rem;
-				}
+				color: white;
+				background-color: $color__tertiary;
 			}
 		}
 	}
-	&.three-areas{
-		thead{
-			tr{
-				th{
-					width: 30%;
-					&:first-of-type{
-						width: 100px;
-					}
-				}
+	
+	.fav-session-share-tabcontent {
+		font-weight: 700;
+		font-size: 1.25rem;
+		padding: 1rem !important;
+		background-color: $color__secondary-third !important;
+		border: none !important;
+	}
+	
+	#fav-session-email-form{
+		line-height: 100% !important;
+		margin: 0;
+		#fav-sessions-email-address{
+			margin-top: .5rem;
+			margin-bottom: 1rem;
+			padding: .5rem;
+			&::placeholder{
+				font-size: .875rem !important;
+				color: $color__grey_verylight !important;
 			}
+		}
+		input[type="submit"]{
+			padding: .5rem 1.5rem;
+		}
+	}
+	
+	#fav-sessions-link{
+		display: block;
+		width: 100%;
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 100%;
+		color: $color__tertiary;
+		word-break: break-all;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		margin: 1rem auto;
+	}
+	
+	#fav-session-print{
+		font-size: 1.25rem;
+		&:before{
+			content: "\f491";
+			font-family: 'dashicons';
+			vertical-align: middle;
 		}
 	}
 }
