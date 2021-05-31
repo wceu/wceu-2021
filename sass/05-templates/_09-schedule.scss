@@ -212,8 +212,8 @@
 					font-weight: 400;
 					font-size: .875rem;
 					line-height: 100%;
-					color: white;
-					background-color: $color__secondary;
+					color: $color__primary;
+					background-color: $color__grey_light;
 					padding: .125rem .25rem;
 					margin-left: 0;
 					margin-bottom: .5rem;
@@ -236,7 +236,7 @@
 			}
 			&.wcb-session-category-discussion-panel{
 				.wcpt-session-title:before{
-					content: "Discussion Panel";
+					content: "Discussion panel";
 				}
 			}
 			&.wcb-session-category-development{

@@ -5745,8 +5745,8 @@ h6 + .notation {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 100%;
-  color: white;
-  background-color: #CF006C;
+  color: #333333;
+  background-color: #968f88;
   padding: 0.125rem 0.25rem;
   margin-left: 0;
   margin-bottom: 0.5rem;
@@ -5761,7 +5761,7 @@ h6 + .notation {
   content: "Workshop";
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel .wcpt-session-title:before {
-  content: "Discussion Panel";
+  content: "Discussion panel";
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-development .wcpt-session-title:before {
   content: "Development";
