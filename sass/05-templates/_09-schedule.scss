@@ -173,6 +173,12 @@
 								content: "\f154";
 								@extend %transition;
 							}
+							&:hover{
+								&:before{
+									content: "\f155";
+									color: $color__secondary;
+								}
+							}
 						}
 					}
 				}
@@ -184,10 +190,13 @@
 							&:before{
 								content: "\f155";
 							}
+							&:hover{
+								&:before{
+									content: "\f154";
+									color: $color__tertiary;
+								}
+							}
 						}
-					}
-					&:hover{
-						background-color: $color__tertiary;
 					}
 				}
 				&.wcpt-session-empty {
@@ -256,101 +265,7 @@
 	}
 }
 
-/*_______ Adding 2 timezones to the schedule time cells - Sjoerd Blom (@vertizio) _______*/
-// .wcpt-schedule{
-// 	tbody{
-// 		tr{
-// 			&.wcpt-time-1300{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "15:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1315{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "15:15 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1400{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "16:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1445{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "16:45 CEST";
-// 					}
-// 				}
-// 			}
-
-// 			&.wcpt-time-1455{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "16:55 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1505{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "17:05 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1530{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "17:30 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1615{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "18:15 CEST";
-// 					}
-// 				}
-// 			}
-
-// 			&.wcpt-time-1700{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "19:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1745{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "19:45 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1800{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "20:00 CEST";
-// 					}
-// 				}
-// 			}
-// 			&.wcpt-time-1815{
-// 				.wcpt-time{
-// 					&:before {
-// 						content: "20:15 CEST";
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-/*_______ Favorite Sessions tool styles _______*/
+/*_______ Favorite Sessions tool _______*/
 .entry-content{
 	a.show-email-form {
 		bottom: 1rem;

@@ -5662,6 +5662,10 @@ h6 + .notation {
 .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before {
   content: "";
 }
+.wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:hover:before {
+  content: "";
+  color: #CF006C;
+}
 .wcpt-schedule tbody tr td.wcb-favourite-session {
   background-color: #B9D6D5;
 }
@@ -5671,8 +5675,9 @@ h6 + .notation {
 .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
   content: "";
 }
-.wcpt-schedule tbody tr td.wcb-favourite-session:hover {
-  background-color: #157573;
+.wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons:hover:before {
+  content: "";
+  color: #157573;
 }
 @media (max-width: 700px) {
   .wcpt-schedule tbody tr td.wcpt-session-empty {
@@ -5718,8 +5723,7 @@ h6 + .notation {
   margin-bottom: 0.25rem;
 }
 
-/*_______ Adding 2 timezones to the schedule time cells - Sjoerd Blom (@vertizio) _______*/
-/*_______ Favorite Sessions tool styles _______*/
+/*_______ Favorite Sessions tool _______*/
 .entry-content a.show-email-form {
   bottom: 1rem;
   right: 1rem;
