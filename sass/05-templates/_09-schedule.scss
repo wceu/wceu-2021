@@ -388,20 +388,23 @@
 }
 
 .email-form {
-	max-width: $size__content-minimun;
-	font-size: 1rem;
-	@media (min-width: 375px){
-		max-width: $size__content-supertiny;
-		right: 0rem;
-	}
 	&.fav-session-email-form-show{
+		left: .5rem;
 		right: .5rem;
 		bottom: 4rem;
+		max-width: auto;
+		font-size: 1rem;
 		padding: 0;
 		background-color: $color__secondary-third;
 		border: none;
 		border-radius: 0;
 		margin-bottom: 0;
+		box-shadow: 0 0 1rem transparentize($color__primary, .25);
+		@media (min-width: 480px){
+			left: inherit;
+			right: 1rem;
+			max-width: $size__content-supertiny;
+		}
 	}
 }
 

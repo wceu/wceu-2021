@@ -5808,24 +5808,25 @@ h6 + .notation {
   content: "Save favourites";
 }
 
-.email-form {
-  max-width: 300px;
-  font-size: 1rem;
-}
-@media (min-width: 375px) {
-  .email-form {
-    max-width: 400px;
-    right: 0rem;
-  }
-}
 .email-form.fav-session-email-form-show {
+  left: 0.5rem;
   right: 0.5rem;
   bottom: 4rem;
+  max-width: auto;
+  font-size: 1rem;
   padding: 0;
   background-color: #FCE2E2;
   border: none;
   border-radius: 0;
   margin-bottom: 0;
+  box-shadow: 0 0 1rem rgba(51, 51, 51, 0.75);
+}
+@media (min-width: 480px) {
+  .email-form.fav-session-email-form-show {
+    left: inherit;
+    right: 1rem;
+    max-width: 400px;
+  }
 }
 
 .fav-session-share-tab {
