@@ -1,84 +1,84 @@
 /*_______ WordCamp lists _______*/
-.wordcamp-organizers,
-.wordcamp-speakers,
-.wordcamp-sessions
-// .wordcamp-post-list
-{
-	padding: 0 2rem;
-	margin: 2rem auto;
-	&.has-layout-list{
-		.wordcamp-post-list__post{
-			max-width: $size__content-supertiny;
-			margin-left: auto;
-			margin-right: auto;
+.wordcamp-post-list{
+	&.wordcamp-organizers,
+	&.wordcamp-speakers,
+	&.wordcamp-sessions{
+		padding: 0 2rem;
+		margin: 2rem auto;
+		&.has-layout-list{
+			.wordcamp-post-list__post{
+				max-width: $size__content-supertiny;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
-	}
-	&.has-layout-grid {
-		display: grid;
-		grid-column-gap: 1rem;
-		grid-row-gap: 0;
-		grid-template-columns: 100%;
-		@media (min-width: 480px){
-			grid-template-columns: repeat(2, 1fr);
-		}
-		&.has-grid-columns-2{
-			padding: 0;
+		&.has-layout-grid {
+			display: grid;
+			grid-column-gap: 1rem;
+			grid-row-gap: 0;
+			grid-template-columns: 100%;
 			@media (min-width: 480px){
-				padding: 0 2rem;
+				grid-template-columns: repeat(2, 1fr);
+			}
+			&.has-grid-columns-2{
+				padding: 0;
+				@media (min-width: 480px){
+					padding: 0 2rem;
+				}
+			}
+			&.has-grid-columns-3{
+				@media (min-width: 769px){
+					grid-template-columns: repeat(23rem, 1fr);
+				}
+			}
+			&.has-grid-columns-4{
+				@media (min-width: 769px){
+					grid-template-columns: repeat(4, 1fr);
+				}
 			}
 		}
-		&.has-grid-columns-3{
+		.wordcamp-post-list__post{
+			@extend %camptix-item;
+			padding: 1.5rem;
 			@media (min-width: 769px){
-				grid-template-columns: repeat(23rem, 1fr);
+				padding: 2rem;
 			}
-		}
-		&.has-grid-columns-4{
-			@media (min-width: 769px){
-				grid-template-columns: repeat(4, 1fr);
+			.wordcamp-organizers__post,
+			.wordcamp-speakers__post{
+				position:relative;
+				display: flex;
+				flex-flow: column wrap;
 			}
-		}
-	}
-	.wordcamp-post-list__post{
-		@extend %camptix-item;
-		padding: 1.5rem;
-		@media (min-width: 769px){
-			padding: 2rem;
-		}
-		.wordcamp-organizers__post,
-		.wordcamp-speakers__post{
-			position:relative;
-			display: flex;
-			flex-flow: column wrap;
-		}
-		.wordcamp-image__avatar-container{
-			top: 0;
-			left: 0;
-			order: -1;
-			border-radius: 100%;
-			width: 6rem;
-			height: 6rem;
-			margin-bottom: 1rem;
-			overflow: hidden;
-			background-color: white;
-		}
-		.wordcamp-block__item-title{
-			font-size: 1.75rem;
-			line-height: 100%;
-			margin-top: 0;
-			margin-bottom: .5rem;
-			a{
-				text-decoration: none;
+			.wordcamp-image__avatar-container{
+				top: 0;
+				left: 0;
+				order: -1;
+				border-radius: 100%;
+				width: 6rem;
+				height: 6rem;
+				margin-bottom: 1rem;
+				overflow: hidden;
+				background-color: white;
 			}
-		}
-		.wordcamp-block__item-content{
-			display: flex;
-			flex-flow: column wrap;
-			p{
-				font-size: 1rem;
-				line-height: 140%;
-				margin-bottom: 0;
-				word-break: break-word;
-				white-space: normal;
+			.wordcamp-block__item-title{
+				font-size: 1.75rem;
+				line-height: 100%;
+				margin-top: 0;
+				margin-bottom: .5rem;
+				a{
+					text-decoration: none;
+				}
+			}
+			.wordcamp-block__item-content{
+				display: flex;
+				flex-flow: column wrap;
+				p{
+					font-size: 1rem;
+					line-height: 140%;
+					margin-bottom: 0;
+					word-break: break-word;
+					white-space: normal;
+				}
 			}
 		}
 	}

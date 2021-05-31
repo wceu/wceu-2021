@@ -31,11 +31,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .archive .hentry .more-link,
 .search-results .hentry .more-link, .blog .hentry,
 .archive .hentry,
-.search-results .hentry, #speaker-session-names img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session img, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-] img, .wordcamp-organizers .wordcamp-post-list__post img,
-.wordcamp-speakers .wordcamp-post-list__post img,
-.wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img, #speaker-session-names, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-], .wordcamp-organizers .wordcamp-post-list__post,
-.wordcamp-speakers .wordcamp-post-list__post,
-.wordcamp-sessions .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty), .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .high-links .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, #menu-social .menu-item a:before, .footer-widgets-block .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
+.search-results .hentry, #speaker-session-names img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session img, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-] img, .wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post img, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post img, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img, #speaker-session-names, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-], .wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty), .high-links-inline .wp-block-media-text .wp-block-media-text__content p a, .high-links-inline .wp-block-media-text .wp-block-media-text__media, .high-links-inline .wp-block-media-text, .high-links .wp-block-column, .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a, #menu-social .menu-item a:before, .footer-widgets-block .widget_nav_menu .menu .menu-item a, .custom-posts-pagination .page-numbers, .posts-navigation .nav-links a,
 .post-navigation .nav-links a, .menu-toggle, .more-info, .main-navigation .sub-menu .menu-item a, .main-navigation .sub-menu, .main-navigation .menu .menu-item a, .main-navigation .menu .menu-item, .main-navigation .menu, .custom-header .site-branding .custom-logo-link, .wp-block-button .wp-block-button__link, .btn,
 button,
 input[type=button],
@@ -3634,28 +3630,20 @@ h6 + .notation {
 }
 
 /*_______ General styles for some Camptix elements _______*/
-#speaker-session-names, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-], .wordcamp-organizers .wordcamp-post-list__post,
-.wordcamp-speakers .wordcamp-post-list__post,
-.wordcamp-sessions .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) {
+#speaker-session-names, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-], .wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) {
   padding: 1.25rem;
   background-color: #F6D5D5;
   margin-bottom: 1rem;
 }
-#speaker-session-names img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session img, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-] img, .wordcamp-organizers .wordcamp-post-list__post img,
-.wordcamp-speakers .wordcamp-post-list__post img,
-.wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img {
+#speaker-session-names img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session img, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-] img, .wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post img, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post img, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post img, .wp-block-columns.highlighted-columns .wp-block-column:not(:empty) img {
   display: block;
   filter: grayscale(100);
 }
-#speaker-session-names:hover, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-]:hover, .wordcamp-organizers .wordcamp-post-list__post:hover,
-.wordcamp-speakers .wordcamp-post-list__post:hover,
-.wordcamp-sessions .wordcamp-post-list__post:hover, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) {
+#speaker-session-names:hover, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-]:hover, .wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post:hover, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post:hover, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post:hover, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) {
   box-shadow: 0 0 0 #157573;
   z-index: 5;
 }
-#speaker-session-names:hover img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover img, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-]:hover img, .wordcamp-organizers .wordcamp-post-list__post:hover img,
-.wordcamp-speakers .wordcamp-post-list__post:hover img,
-.wordcamp-sessions .wordcamp-post-list__post:hover img, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) img {
+#speaker-session-names:hover img, .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session:hover img, .tix-js .tix_tickets_table:not(.tix-order-summary) tr[class^=tix-ticket-]:hover img, .wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post:hover img, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post:hover img, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post:hover img, .wp-block-columns.highlighted-columns .wp-block-column:hover:not(:empty) img {
   filter: grayscale(0);
 }
 
@@ -4596,85 +4584,61 @@ h6 + .notation {
 }
 
 /*_______ WordCamp lists _______*/
-.wordcamp-organizers,
-.wordcamp-speakers,
-.wordcamp-sessions {
+.wordcamp-post-list.wordcamp-organizers, .wordcamp-post-list.wordcamp-speakers, .wordcamp-post-list.wordcamp-sessions {
   padding: 0 2rem;
   margin: 2rem auto;
 }
-.wordcamp-organizers.has-layout-list .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-list .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-list .wordcamp-post-list__post {
+.wordcamp-post-list.wordcamp-organizers.has-layout-list .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-speakers.has-layout-list .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-sessions.has-layout-list .wordcamp-post-list__post {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
-.wordcamp-organizers.has-layout-grid,
-.wordcamp-speakers.has-layout-grid,
-.wordcamp-sessions.has-layout-grid {
+.wordcamp-post-list.wordcamp-organizers.has-layout-grid, .wordcamp-post-list.wordcamp-speakers.has-layout-grid, .wordcamp-post-list.wordcamp-sessions.has-layout-grid {
   display: grid;
   grid-column-gap: 1rem;
   grid-row-gap: 0;
   grid-template-columns: 100%;
 }
 @media (min-width: 480px) {
-  .wordcamp-organizers.has-layout-grid,
-.wordcamp-speakers.has-layout-grid,
-.wordcamp-sessions.has-layout-grid {
+  .wordcamp-post-list.wordcamp-organizers.has-layout-grid, .wordcamp-post-list.wordcamp-speakers.has-layout-grid, .wordcamp-post-list.wordcamp-sessions.has-layout-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.wordcamp-organizers.has-layout-grid.has-grid-columns-2,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-2,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
+.wordcamp-post-list.wordcamp-organizers.has-layout-grid.has-grid-columns-2, .wordcamp-post-list.wordcamp-speakers.has-layout-grid.has-grid-columns-2, .wordcamp-post-list.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
   padding: 0;
 }
 @media (min-width: 480px) {
-  .wordcamp-organizers.has-layout-grid.has-grid-columns-2,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-2,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
+  .wordcamp-post-list.wordcamp-organizers.has-layout-grid.has-grid-columns-2, .wordcamp-post-list.wordcamp-speakers.has-layout-grid.has-grid-columns-2, .wordcamp-post-list.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
     padding: 0 2rem;
   }
 }
 @media (min-width: 769px) {
-  .wordcamp-organizers.has-layout-grid.has-grid-columns-3,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-3,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-3 {
+  .wordcamp-post-list.wordcamp-organizers.has-layout-grid.has-grid-columns-3, .wordcamp-post-list.wordcamp-speakers.has-layout-grid.has-grid-columns-3, .wordcamp-post-list.wordcamp-sessions.has-layout-grid.has-grid-columns-3 {
     grid-template-columns: repeat(23rem, 1fr);
   }
 }
 @media (min-width: 769px) {
-  .wordcamp-organizers.has-layout-grid.has-grid-columns-4,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-4,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-4 {
+  .wordcamp-post-list.wordcamp-organizers.has-layout-grid.has-grid-columns-4, .wordcamp-post-list.wordcamp-speakers.has-layout-grid.has-grid-columns-4, .wordcamp-post-list.wordcamp-sessions.has-layout-grid.has-grid-columns-4 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-.wordcamp-organizers .wordcamp-post-list__post,
-.wordcamp-speakers .wordcamp-post-list__post,
-.wordcamp-sessions .wordcamp-post-list__post {
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post {
   padding: 1.5rem;
 }
 @media (min-width: 769px) {
-  .wordcamp-organizers .wordcamp-post-list__post,
-.wordcamp-speakers .wordcamp-post-list__post,
-.wordcamp-sessions .wordcamp-post-list__post {
+  .wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post {
     padding: 2rem;
   }
 }
-.wordcamp-organizers .wordcamp-post-list__post .wordcamp-organizers__post,
-.wordcamp-organizers .wordcamp-post-list__post .wordcamp-speakers__post,
-.wordcamp-speakers .wordcamp-post-list__post .wordcamp-organizers__post,
-.wordcamp-speakers .wordcamp-post-list__post .wordcamp-speakers__post,
-.wordcamp-sessions .wordcamp-post-list__post .wordcamp-organizers__post,
-.wordcamp-sessions .wordcamp-post-list__post .wordcamp-speakers__post {
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post .wordcamp-organizers__post,
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post .wordcamp-speakers__post, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post .wordcamp-organizers__post,
+.wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post .wordcamp-speakers__post, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post .wordcamp-organizers__post,
+.wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post .wordcamp-speakers__post {
   position: relative;
   display: flex;
   flex-flow: column wrap;
 }
-.wordcamp-organizers .wordcamp-post-list__post .wordcamp-image__avatar-container,
-.wordcamp-speakers .wordcamp-post-list__post .wordcamp-image__avatar-container,
-.wordcamp-sessions .wordcamp-post-list__post .wordcamp-image__avatar-container {
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post .wordcamp-image__avatar-container, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post .wordcamp-image__avatar-container, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post .wordcamp-image__avatar-container {
   top: 0;
   left: 0;
   order: -1;
@@ -4685,28 +4649,20 @@ h6 + .notation {
   overflow: hidden;
   background-color: white;
 }
-.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-title,
-.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-title,
-.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-title {
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-title, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-title, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-title {
   font-size: 1.75rem;
   line-height: 100%;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
-.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-title a,
-.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-title a,
-.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-title a {
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-title a, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-title a, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-title a {
   text-decoration: none;
 }
-.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-content,
-.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-content,
-.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-content {
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-content, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-content, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-content {
   display: flex;
   flex-flow: column wrap;
 }
-.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-content p,
-.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-content p,
-.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-content p {
+.wordcamp-post-list.wordcamp-organizers .wordcamp-post-list__post .wordcamp-block__item-content p, .wordcamp-post-list.wordcamp-speakers .wordcamp-post-list__post .wordcamp-block__item-content p, .wordcamp-post-list.wordcamp-sessions .wordcamp-post-list__post .wordcamp-block__item-content p {
   font-size: 1rem;
   line-height: 140%;
   margin-bottom: 0;
