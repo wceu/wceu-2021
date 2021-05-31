@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .email-form .fav-session-share-tab, .entry-content a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-post-list .wordcamp-image__featured-image-link, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
+.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .email-form .fav-session-share-tab, .entry-content a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sponsors .wordcamp-image__featured-image-link, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
 .single .post-navigation .nav-links div a:before,
 .single .post-navigation .nav-links div a:after, .single .posts-navigation .nav-links div a,
 .single .post-navigation .nav-links div a, .single .posts-navigation .nav-links div,
@@ -4612,7 +4612,7 @@ h6 + .notation {
 .wordcamp-organizers.has-layout-grid,
 .wordcamp-speakers.has-layout-grid,
 .wordcamp-sessions.has-layout-grid {
-  display: flex;
+  display: grid;
   grid-column-gap: 1rem;
   grid-row-gap: 0;
   grid-template-columns: 100%;
@@ -4624,45 +4624,30 @@ h6 + .notation {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.wordcamp-organizers.has-layout-grid .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-grid .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-grid .wordcamp-post-list__post {
-  margin-bottom: 2rem;
+.wordcamp-organizers.has-layout-grid.has-grid-columns-2,
+.wordcamp-speakers.has-layout-grid.has-grid-columns-2,
+.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
+  padding: 0;
 }
-.wordcamp-organizers.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {
-  flex: 1 1 100%;
-}
-@media (min-width: 769px) {
-  .wordcamp-organizers.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {
-    flex: 0 1 48%;
+@media (min-width: 480px) {
+  .wordcamp-organizers.has-layout-grid.has-grid-columns-2,
+.wordcamp-speakers.has-layout-grid.has-grid-columns-2,
+.wordcamp-sessions.has-layout-grid.has-grid-columns-2 {
+    padding: 0 2rem;
   }
 }
-.wordcamp-organizers.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
-  flex: 1 1 100%;
-}
 @media (min-width: 769px) {
-  .wordcamp-organizers.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
-    flex: 0 1 31.333%;
+  .wordcamp-organizers.has-layout-grid.has-grid-columns-3,
+.wordcamp-speakers.has-layout-grid.has-grid-columns-3,
+.wordcamp-sessions.has-layout-grid.has-grid-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-.wordcamp-organizers.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
-  flex: 1 1 100%;
-}
 @media (min-width: 769px) {
-  .wordcamp-organizers.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post,
-.wordcamp-speakers.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post,
-.wordcamp-sessions.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
-    flex: 0 1 23%;
+  .wordcamp-organizers.has-layout-grid.has-grid-columns-4,
+.wordcamp-speakers.has-layout-grid.has-grid-columns-4,
+.wordcamp-sessions.has-layout-grid.has-grid-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .wordcamp-organizers .wordcamp-post-list__post,
@@ -5299,31 +5284,31 @@ h6 + .notation {
   padding: 4rem 2rem;
 }
 
-.wordcamp-post-list.has-layout-grid {
+.wordcamp-sponsors.has-layout-grid {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.wordcamp-post-list.has-layout-grid .wordcamp-post-list__post {
+.wordcamp-sponsors.has-layout-grid .wordcamp-post-list__post {
   margin-bottom: 0;
 }
-.wordcamp-post-list.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {
+.wordcamp-sponsors.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {
   flex: 0 1 48%;
   width: 48%;
 }
-.wordcamp-post-list.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
+.wordcamp-sponsors.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
   flex: 0 1 31.333%;
   width: 31.333%;
 }
-.wordcamp-post-list.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
+.wordcamp-sponsors.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
   flex: 0 1 23%;
   width: 23%;
 }
-.wordcamp-post-list.has-layout-grid.has-grid-columns-5 .wordcamp-post-list__post {
+.wordcamp-sponsors.has-layout-grid.has-grid-columns-5 .wordcamp-post-list__post {
   flex: 0 1 18%;
   width: 18%;
 }
-.wordcamp-post-list .wordcamp-image__featured-image-link:hover {
+.wordcamp-sponsors .wordcamp-image__featured-image-link:hover {
   opacity: 0.7;
 }
 
