@@ -104,25 +104,14 @@ input[type=submit] {
   }
 }
 
-.session-categories-links {
+.session-categories-links, .single.single-wcb_sponsor .entry-image {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 769px) {
-  .session-categories-links {
+  .session-categories-links, .single.single-wcb_sponsor .entry-image {
     max-width: 600px;
-  }
-}
-
-.single.single-wcb_sponsor .entry-image {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 769px) {
-  .single.single-wcb_sponsor .entry-image {
-    max-width: 400px;
   }
 }
 
