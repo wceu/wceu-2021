@@ -28,7 +28,7 @@
 			}
 			&.has-grid-columns-3{
 				@media (min-width: 769px){
-					grid-template-columns: repeat(23rem, 1fr);
+					grid-template-columns: repeat(3, 1fr);
 				}
 			}
 			&.has-grid-columns-4{

@@ -4614,7 +4614,7 @@ h6 + .notation {
 }
 @media (min-width: 769px) {
   .wordcamp-post-list.wordcamp-organizers.has-layout-grid.has-grid-columns-3, .wordcamp-post-list.wordcamp-speakers.has-layout-grid.has-grid-columns-3, .wordcamp-post-list.wordcamp-sessions.has-layout-grid.has-grid-columns-3 {
-    grid-template-columns: repeat(23rem, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 769px) {
