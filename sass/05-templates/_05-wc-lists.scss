@@ -29,7 +29,7 @@
 		}
 		&.has-grid-columns-3{
 			@media (min-width: 769px){
-				grid-template-columns: repeat(3, 1fr);
+				grid-template-columns: repeat(23rem, 1fr);
 			}
 		}
 		&.has-grid-columns-4{
@@ -146,38 +146,21 @@
 }
 .wordcamp-speakers__sessions{
 	width: 100%;
+	padding: 1rem;
+	background-color: $color__lightcream;
 	margin-top: auto;
 	.wordcamp-speakers__sessions-list-item{
-		position: relative;
-		padding: .25rem .25rem .25rem .75rem;
+		padding: 0;
 		margin-bottom: 0;
 		z-index: 2;
 		overflow: hidden;
-		&:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: .25rem;
-			height: 100%;
-			background-color: $color__tertiary;
-			z-index: -1;
-			@extend %transition;
-		}
-		&:hover{
-			&:before{
-				width: 20rem;
-			}
-			.wordcamp-speakers__session-info{
-				color: $color__primary;
-			}
-		}
 	}
 	.wordcamp-speakers__sessions-heading{
 		font-size: 1.125rem;
 		margin-bottom: .5rem;
 		&:after{
 			content: ':';
+			margin-left: -.25rem;
 		}
 	}
 	.wordcamp-speakers__sessions-list{
@@ -186,11 +169,11 @@
 	}
 	.wordcamp-speakers__session-link{
 		display: block;
-		font-weight: 700;
-		font-size: 1.5rem;
+		font-weight: 600;
+		font-size: 1.125rem;
 		line-height: 110%;
-		text-decoration: none;
-		margin-bottom: 1rem;
+		color: $color__tertiary;
+		margin-bottom: .5rem;
 		&:hover{
 			text-decoration: underline !important;
 		}
@@ -198,8 +181,9 @@
 	.wordcamp-speakers__session-info{
 		display: block;
 		font-style: normal;
-		font-size: 1.25rem;
-		font-weight: 700;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 100%;
 		color: $color__secondary;
 		@extend %transition;
 	}

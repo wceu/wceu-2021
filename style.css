@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .email-form .fav-session-share-tab, .entry-content a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sponsors .wordcamp-image__featured-image-link, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
+.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .email-form .fav-session-share-tab, .entry-content a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sponsors .wordcamp-image__featured-image-link, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
 .single .post-navigation .nav-links div a:before,
 .single .post-navigation .nav-links div a:after, .single .posts-navigation .nav-links div a,
 .single .post-navigation .nav-links div a, .single .posts-navigation .nav-links div,
@@ -4640,7 +4640,7 @@ h6 + .notation {
   .wordcamp-organizers.has-layout-grid.has-grid-columns-3,
 .wordcamp-speakers.has-layout-grid.has-grid-columns-3,
 .wordcamp-sessions.has-layout-grid.has-grid-columns-3 {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(23rem, 1fr);
   }
 }
 @media (min-width: 769px) {
@@ -4760,30 +4760,15 @@ h6 + .notation {
 
 .wordcamp-speakers__sessions {
   width: 100%;
+  padding: 1rem;
+  background-color: #FFF8F8;
   margin-top: auto;
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item {
-  position: relative;
-  padding: 0.25rem 0.25rem 0.25rem 0.75rem;
+  padding: 0;
   margin-bottom: 0;
   z-index: 2;
   overflow: hidden;
-}
-.wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0.25rem;
-  height: 100%;
-  background-color: #157573;
-  z-index: -1;
-}
-.wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:hover:before {
-  width: 20rem;
-}
-.wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:hover .wordcamp-speakers__session-info {
-  color: #333333;
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__sessions-heading {
   font-size: 1.125rem;
@@ -4791,6 +4776,7 @@ h6 + .notation {
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__sessions-heading:after {
   content: ":";
+  margin-left: -0.25rem;
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list {
   padding-left: 0;
@@ -4798,11 +4784,11 @@ h6 + .notation {
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__session-link {
   display: block;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
   line-height: 110%;
-  text-decoration: none;
-  margin-bottom: 1rem;
+  color: #157573;
+  margin-bottom: 0.5rem;
 }
 .wordcamp-speakers__sessions .wordcamp-speakers__session-link:hover {
   text-decoration: underline !important;
@@ -4810,8 +4796,9 @@ h6 + .notation {
 .wordcamp-speakers__sessions .wordcamp-speakers__session-info {
   display: block;
   font-style: normal;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
   color: #CF006C;
 }
 
