@@ -54,7 +54,7 @@ input[type=submit] {
 }
 
 .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
@@ -66,7 +66,7 @@ input[type=submit] {
 }
 @media (min-width: 769px) {
   .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
@@ -5295,144 +5295,29 @@ h6 + .notation {
   padding: 4rem 2rem;
 }
 
-.wceu-sponsors-title {
-  font-size: 2.5rem;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .wceu-sponsors-title {
-    font-size: 3rem;
-  }
-}
-
-div[class^=wcorg-sponsor-level-] {
+.wordcamp-post-list.has-layout-grid {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
 }
-div[class^=wcorg-sponsor-level-]:not(:last-of-type) {
-  margin-bottom: 4rem;
+.wordcamp-post-list.has-layout-grid .wordcamp-post-list__post {
+  margin-bottom: 0;
 }
-div[class^=wcorg-sponsor-level-] h1, div[class^=wcorg-sponsor-level-] h2, div[class^=wcorg-sponsor-level-] h3,
-div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[class^=wcorg-sponsor-level-] h6 {
-  flex: 1 1 100%;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
+.wordcamp-post-list.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {
+  flex: 0 1 48%;
+  width: 48%;
 }
-@media (min-width: 768px) {
-  div[class^=wcorg-sponsor-level-] h1, div[class^=wcorg-sponsor-level-] h2, div[class^=wcorg-sponsor-level-] h3,
-div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[class^=wcorg-sponsor-level-] h6 {
-    font-size: 2rem;
-  }
+.wordcamp-post-list.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
+  flex: 0 1 30%;
+  width: 30%;
 }
-div[class^=wcorg-sponsor-level-] h1:before, div[class^=wcorg-sponsor-level-] h2:before, div[class^=wcorg-sponsor-level-] h3:before,
-div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:before, div[class^=wcorg-sponsor-level-] h6:before {
-  content: "";
-  display: block;
-  width: 2rem;
-  height: 0.25rem;
-  background-color: #CF006C;
-  margin: 0 auto 0.5rem;
+.wordcamp-post-list.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
+  flex: 0 1 24%;
+  width: 24%;
 }
-
-.wcorg-sponsor {
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .wcorg-sponsor {
-    max-width: inherit;
-    margin: 0;
-  }
-}
-.wcorg-sponsor a {
-  display: block;
-}
-.wcorg-sponsor img {
-  display: block;
-  margin: 0 auto;
-}
-
-.wcorg-sponsor-level-super-admin .wcorg-sponsor {
-  flex: 1 1 100%;
-}
-@media (min-width: 768px) {
-  .wcorg-sponsor-level-super-admin .wcorg-sponsor {
-    flex: 0 1 50%;
-  }
-}
-.wcorg-sponsor-level-super-admin .wcorg-sponsor img {
-  width: auto;
-  max-height: 14rem;
-}
-
-.wcorg-sponsor-level-administrator .wcorg-sponsor {
-  flex: 0 1 80%;
-}
-@media (min-width: 768px) {
-  .wcorg-sponsor-level-administrator .wcorg-sponsor {
-    flex: 0 1 33.333%;
-  }
-}
-.wcorg-sponsor-level-administrator .wcorg-sponsor img {
-  width: auto;
-  max-height: 12rem;
-}
-
-.wcorg-sponsor-level-editor .wcorg-sponsor {
-  flex: 0 1 80%;
-}
-@media (min-width: 768px) {
-  .wcorg-sponsor-level-editor .wcorg-sponsor {
-    flex: 0 1 25%;
-  }
-}
-.wcorg-sponsor-level-editor .wcorg-sponsor img {
-  width: auto;
-  max-height: 10rem;
-}
-
-.wcorg-sponsor-level-author .wcorg-sponsor {
-  flex: 0 1 80%;
-}
-@media (min-width: 768px) {
-  .wcorg-sponsor-level-author .wcorg-sponsor {
-    flex: 0 1 20%;
-  }
-}
-.wcorg-sponsor-level-author .wcorg-sponsor img {
-  width: auto;
-  max-height: 8rem;
-}
-
-.wcorg-sponsor-level-smb .wcorg-sponsor {
-  flex: 0 1 70%;
-}
-@media (min-width: 768px) {
-  .wcorg-sponsor-level-smb .wcorg-sponsor {
-    flex: 0 1 20%;
-  }
-}
-.wcorg-sponsor-level-smb .wcorg-sponsor img {
-  width: auto;
-  max-height: 8rem;
-}
-
-@media (min-width: 768px) {
-  .wcorg-sponsor-level-after-party .wcorg-sponsor,
-.wcorg-sponsor-level-coffee-break .wcorg-sponsor,
-.wcorg-sponsor-level-media-partners .wcorg-sponsor,
-.wcorg-sponsor-level-partner .wcorg-sponsor {
-    flex: 0 1 31.333%;
-  }
-}
-.wcorg-sponsor-level-after-party .wcorg-sponsor img,
-.wcorg-sponsor-level-coffee-break .wcorg-sponsor img,
-.wcorg-sponsor-level-media-partners .wcorg-sponsor img,
-.wcorg-sponsor-level-partner .wcorg-sponsor img {
-  width: auto;
-  max-height: 10rem;
+.wordcamp-post-list.has-layout-grid.has-grid-columns-5 .wordcamp-post-list__post {
+  flex: 0 1 19%;
+  width: 19%;
 }
 
 /*_______ Sponsors single _______*/
@@ -6108,6 +5993,7 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   margin: 0 auto;
 }
 
+/*_______ Speaker single _______*/
 .single-wcb_speaker .entry-header {
   padding: 7rem 2rem 3rem;
   margin-bottom: -3rem;
@@ -6119,26 +6005,11 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
   line-height: 100%;
 }
 
-.single-wcb_session .entry-header {
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-}
-.single-wcb_session .entry-title {
-  text-align: left;
-}
-.single-wcb_session .entry-title:before {
-  content: "_Session";
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 100%;
-  margin: 0 0 1rem;
-}
-
-/*_______ Speaker single _______*/
 .speaker-avatar {
   display: block;
   width: 6rem;
   height: 6rem;
+  background-color: white;
   border-radius: 5rem;
   margin-left: 1rem !important;
   margin-bottom: 2rem;
@@ -6190,6 +6061,29 @@ div[class^=wcorg-sponsor-level-] h4:before, div[class^=wcorg-sponsor-level-] h5:
 }
 
 /*_______ Session single _______*/
+.single-wcb_session .entry-header {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.single-wcb_session .entry-title {
+  font-size: 15vw;
+  line-height: 95%;
+  text-align: left;
+}
+@media (min-width: 769px) {
+  .single-wcb_session .entry-title {
+    font-size: 96px;
+    font-size: 6rem;
+  }
+}
+.single-wcb_session .entry-title:before {
+  content: "_Session";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 100%;
+  margin: 0 0 0.5rem;
+}
+
 .session-speakers {
   display: inline-block;
   font-family: "Work Sans", sans-serif;
