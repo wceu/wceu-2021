@@ -204,9 +204,9 @@
 .wcpt-schedule{
 	td{
 		&.wcpt-session-type-session{
-			.wcpt-session-title{
+			&.wcb-session-cell-content{
 				&:before{
-					display: table-cell;
+					display: inline-block;
 					width: auto !important;
 					height: auto !important;
 					font-weight: 400;
@@ -220,28 +220,23 @@
 				}
 			}
 			&.wcb-session-category-talk{
-				.wcpt-session-title:before{
+				&:before{
 					content: "Talk";
 				}
 			}
 			&.wcb-session-category-lightning-talk{
-				.wcpt-session-title:before{
+				&:before{
 					content: "Lightning talk";
 				}
 			}
 			&.wcb-session-category-workshop{
-				.wcpt-session-title:before{
+				&:before{
 					content: "Workshop";
 				}
 			}
 			&.wcb-session-category-discussion-panel{
-				.wcpt-session-title:before{
+				&:before{
 					content: "Discussion panel";
-				}
-			}
-			&.wcb-session-category-development{
-				.wcpt-session-title:before{
-					content: "Development";
 				}
 			}
 		}

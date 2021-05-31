@@ -5738,8 +5738,8 @@ h6 + .notation {
 }
 
 /*_______ Adding session categories on the schedule table _______*/
-.wcpt-schedule td.wcpt-session-type-session .wcpt-session-title:before {
-  display: table-cell;
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-cell-content:before {
+  display: inline-block;
   width: auto !important;
   height: auto !important;
   font-weight: 400;
@@ -5751,20 +5751,17 @@ h6 + .notation {
   margin-left: 0;
   margin-bottom: 0.5rem;
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-talk .wcpt-session-title:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-talk:before {
   content: "Talk";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-lightning-talk .wcpt-session-title:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-lightning-talk:before {
   content: "Lightning talk";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-workshop .wcpt-session-title:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-workshop:before {
   content: "Workshop";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel .wcpt-session-title:before {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel:before {
   content: "Discussion panel";
-}
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-development .wcpt-session-title:before {
-  content: "Development";
 }
 
 /*_______ Adding 2 timezones to the schedule time cells - Sjoerd Blom (@vertizio) _______*/
