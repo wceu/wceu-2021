@@ -5745,9 +5745,10 @@ h6 + .notation {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 100%;
-  color: #CF006C;
-  background-color: white;
+  color: white;
+  background-color: #CF006C;
   padding: 0.125rem 0.25rem;
+  margin-left: 0;
   margin-bottom: 0.5rem;
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-talk .wcpt-session-title:before {

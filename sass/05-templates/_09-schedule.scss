@@ -212,9 +212,10 @@
 					font-weight: 400;
 					font-size: .875rem;
 					line-height: 100%;
-					color: $color__secondary;
-					background-color: white;
+					color: white;
+					background-color: $color__secondary;
 					padding: .125rem .25rem;
+					margin-left: 0;
 					margin-bottom: .5rem;
 				}
 			}
