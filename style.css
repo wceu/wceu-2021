@@ -5748,17 +5748,17 @@ h6 + .notation {
   padding: 0.25rem 0.75rem;
   margin-top: 0.5rem;
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-business:after {
-  content: "Business";
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-talk:after {
+  content: "Talk";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-community:after {
-  content: "Community";
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-lightning-talk:after {
+  content: "Lightning talk";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-content:after {
-  content: "Content";
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-workshop:after {
+  content: "Workshop";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-design:after {
-  content: "Design";
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel:after {
+  content: "Discussion Panel";
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-development:after {
   content: "Development";

@@ -214,24 +214,24 @@
 				padding: .25rem .75rem;
 				margin-top: .5rem;
 			}
-			&.wcb-session-category-business{
+			&.wcb-session-category-talk{
 				&:after{
-					content: "Business";
+					content: "Talk";
 				}
 			}
-			&.wcb-session-category-community{
+			&.wcb-session-category-lightning-talk{
 				&:after{
-					content: "Community";
+					content: "Lightning talk";
 				}
 			}
-			&.wcb-session-category-content{
+			&.wcb-session-category-workshop{
 				&:after{
-					content: "Content";
+					content: "Workshop";
 				}
 			}
-			&.wcb-session-category-design{
+			&.wcb-session-category-discussion-panel{
 				&:after{
-					content: "Design";
+					content: "Discussion Panel";
 				}
 			}
 			&.wcb-session-category-development{
