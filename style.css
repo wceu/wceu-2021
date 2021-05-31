@@ -5720,7 +5720,7 @@ h6 + .notation {
   content: "";
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session {
-  background-color: #157573;
+  background-color: #B9D6D5;
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons {
   color: #CF006C;
@@ -5748,21 +5748,26 @@ h6 + .notation {
   line-height: 100%;
   color: #333333;
   background-color: #DADADD;
-  padding: 0.25rem 0.25rem;
-  margin-left: 0;
-  margin-bottom: 0.5rem;
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-talk .wcb-session-cell-content:before {
   content: "Talk";
+  padding: 0.25rem 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-lightning-talk .wcb-session-cell-content:before {
   content: "Lightning talk";
+  padding: 0.25rem 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-workshop .wcb-session-cell-content:before {
   content: "Workshop";
+  padding: 0.25rem 0.25rem;
+  margin-bottom: 0.5rem;
 }
 .wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel .wcb-session-cell-content:before {
   content: "Discussion panel";
+  padding: 0.25rem 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 /*_______ Adding 2 timezones to the schedule time cells - Sjoerd Blom (@vertizio) _______*/
