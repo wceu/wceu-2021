@@ -5308,16 +5308,16 @@ h6 + .notation {
   width: 48%;
 }
 .wordcamp-post-list.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
-  flex: 0 1 30%;
-  width: 30%;
+  flex: 0 1 31.333%;
+  width: 31.333%;
 }
 .wordcamp-post-list.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
-  flex: 0 1 24%;
-  width: 24%;
+  flex: 0 1 23%;
+  width: 23%;
 }
 .wordcamp-post-list.has-layout-grid.has-grid-columns-5 .wordcamp-post-list__post {
-  flex: 0 1 19%;
-  width: 19%;
+  flex: 0 1 18%;
+  width: 18%;
 }
 
 /*_______ Sponsors single _______*/
