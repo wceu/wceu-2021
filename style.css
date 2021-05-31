@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Variables
 --------------------------------------------------------------*/
-.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .fav-session-share-tab, .entry-content a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
+.error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before, .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link, .error404 .page-content .widget ul li a, .fav-session-share-tab, .entry-content a.show-email-form, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before, .wordcamp-post-list .wordcamp-image__featured-image-link, .wordcamp-sessions .wordcamp-sessions__time-location, .wordcamp-speakers__sessions .wordcamp-speakers__session-info, .wordcamp-speakers__sessions .wordcamp-speakers__sessions-list-item:before, .single .posts-navigation .nav-links div a:before, .single .posts-navigation .nav-links div a:after,
 .single .post-navigation .nav-links div a:before,
 .single .post-navigation .nav-links div a:after, .single .posts-navigation .nav-links div a,
 .single .post-navigation .nav-links div a, .single .posts-navigation .nav-links div,
@@ -5308,10 +5308,18 @@ h6 + .notation {
   flex: 0 1 18%;
   width: 18%;
 }
+.wordcamp-post-list .wordcamp-image__featured-image-link:hover {
+  opacity: 0.7;
+}
 
 /*_______ Sponsors single _______*/
 .single-wcb_sponsor .entry-header {
-  padding: 7rem 2rem 3rem;
+  padding: 9rem 2rem 3rem;
+}
+@media (min-width: 769px) {
+  .single-wcb_sponsor .entry-header {
+    padding: 7rem 2rem 3rem;
+  }
 }
 .single-wcb_sponsor .entry-title {
   width: 100%;
@@ -5334,7 +5342,6 @@ h6 + .notation {
   line-height: 100%;
 }
 .single-wcb_sponsor .entry-image {
-  padding: 0 2rem;
   background-color: #FFF8F8;
   margin-bottom: 0;
 }
