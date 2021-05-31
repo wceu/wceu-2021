@@ -204,7 +204,7 @@
 .wcpt-schedule{
 	td{
 		&.wcpt-session-type-session{
-			&.wcb-session-cell-content{
+			.wcb-session-cell-content{
 				&:before{
 					display: inline-block;
 					width: auto !important;
@@ -220,22 +220,22 @@
 				}
 			}
 			&.wcb-session-category-talk{
-				&:before{
+				.wcb-session-cell-content:before{
 					content: "Talk";
 				}
 			}
 			&.wcb-session-category-lightning-talk{
-				&:before{
+				.wcb-session-cell-content:before{
 					content: "Lightning talk";
 				}
 			}
 			&.wcb-session-category-workshop{
-				&:before{
+				.wcb-session-cell-content:before{
 					content: "Workshop";
 				}
 			}
 			&.wcb-session-category-discussion-panel{
-				&:before{
+				.wcb-session-cell-content:before{
 					content: "Discussion panel";
 				}
 			}
