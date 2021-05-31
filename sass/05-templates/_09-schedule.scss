@@ -207,14 +207,15 @@
 			.wcb-session-cell-content{
 				&:before{
 					display: inline-block;
+					float: none;
 					width: auto !important;
 					height: auto !important;
 					font-weight: 400;
-					font-size: .875rem;
+					font-size: .75rem;
 					line-height: 100%;
 					color: $color__primary;
-					background-color: $color__grey_light;
-					padding: .125rem .25rem;
+					background-color: $color__grey_minimus;
+					padding: .25rem .25rem;
 					margin-left: 0;
 					margin-bottom: .5rem;
 				}
