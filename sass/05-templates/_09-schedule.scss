@@ -221,35 +221,35 @@
 				.wcb-session-cell-content:before{
 					content: "Talk";
 					padding: .25rem .25rem;
-					margin-bottom: .5rem;
+					margin-bottom: .25rem;
 				}
 			}
 			&.wcb-session-category-lightning-talk{
 				.wcb-session-cell-content:before{
 					content: "Lightning talk";
 					padding: .25rem .25rem;
-					margin-bottom: .5rem;
+					margin-bottom: .25rem;
 				}
 			}
 			&.wcb-session-category-workshop{
 				.wcb-session-cell-content:before{
 					content: "Workshop";
 					padding: .25rem .25rem;
-					margin-bottom: .5rem;
+					margin-bottom: .25rem;
 				}
 			}
 			&.wcb-session-category-interview{
 				.wcb-session-cell-content:before{
 					content: "Interview";
 					padding: .25rem .25rem;
-					margin-bottom: .5rem;
+					margin-bottom: .25rem;
 				}
 			}
 			&.wcb-session-category-discussion-panel{
 				.wcb-session-cell-content:before{
 					content: "Discussion panel";
 					padding: .25rem .25rem;
-					margin-bottom: .5rem;
+					margin-bottom: .25rem;
 				}
 			}
 		}
@@ -399,7 +399,7 @@
 		border: none;
 		border-radius: 0;
 		margin-bottom: 0;
-		box-shadow: 0 0 1rem transparentize($color__primary, .25);
+		box-shadow: 0 0 1rem transparentize($color__primary, .75);
 		@media (min-width: 480px){
 			left: inherit;
 			right: 1rem;
