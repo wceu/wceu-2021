@@ -70,7 +70,7 @@
 						margin-bottom: .25rem;
 					}
 					&:after {
-						content: " CEST";
+						content: " UTC";
 						font-size: 80%;
 					}
 				}
@@ -145,9 +145,6 @@
 						}
 						.wcpt-session-speakers{
 							width: auto;
-							font-weight: 700;
-							font-size: 1.25rem;
-							color: $color__primary;
 							padding: 0;
 							margin-top: auto;
 							margin-bottom: 0;
@@ -156,10 +153,12 @@
 								font-weight: 400;
 								font-style: normal;
 								font-size: 1.125rem;
-								color: $color__tertiary;
+								color: $color__secondary;
 							}
 							a{
 								@extend %camptix-nice-link;
+								font-weight: 700;
+								font-size: 1.25rem;
 							}
 						}
 					}
