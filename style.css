@@ -4624,6 +4624,11 @@ h6 + .notation {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.wordcamp-organizers.has-layout-grid .wordcamp-post-list__post,
+.wordcamp-speakers.has-layout-grid .wordcamp-post-list__post,
+.wordcamp-sessions.has-layout-grid .wordcamp-post-list__post {
+  margin-bottom: 2rem;
+}
 .wordcamp-organizers.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post,
 .wordcamp-speakers.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post,
 .wordcamp-sessions.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {

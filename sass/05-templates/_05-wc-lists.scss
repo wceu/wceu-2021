@@ -21,6 +21,9 @@
 		@media (min-width: 480px){
 			grid-template-columns: repeat(2, 1fr);
 		}
+		.wordcamp-post-list__post{
+			margin-bottom: 2rem;
+		}
 		&.has-grid-columns-2{
 			.wordcamp-post-list__post{
 				flex: 1 1 100%;
