@@ -5541,7 +5541,7 @@ h6 + .notation {
 }
 @media (min-width: 769px) {
   .wcpt-schedule {
-    max-width: 1200px;
+    max-width: 1200px !important;
   }
 }
 .wcpt-schedule thead {
