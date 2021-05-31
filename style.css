@@ -5738,29 +5738,29 @@ h6 + .notation {
 }
 
 /*_______ Adding session categories on the schedule table _______*/
-.wcpt-schedule td.wcpt-session-type-session:after {
+.wcpt-schedule td.wcpt-session-type-session:before {
   display: inline-block;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 100%;
-  color: #333333;
-  background-color: #D0E3E3;
-  padding: 0.25rem 0.75rem;
-  margin-top: 0.5rem;
+  color: #CF006C;
+  background-color: white;
+  padding: 0.125rem 0.25rem;
+  margin-bottom: 0.5rem;
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-talk:after {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-talk:before {
   content: "Talk";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-lightning-talk:after {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-lightning-talk:before {
   content: "Lightning talk";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-workshop:after {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-workshop:before {
   content: "Workshop";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel:after {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-discussion-panel:before {
   content: "Discussion Panel";
 }
-.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-development:after {
+.wcpt-schedule td.wcpt-session-type-session.wcb-session-category-development:before {
   content: "Development";
 }
 
