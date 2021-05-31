@@ -54,7 +54,7 @@ input[type=submit] {
 }
 
 .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .single-wcb_sponsor .entry-header, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
@@ -66,7 +66,7 @@ input[type=submit] {
 }
 @media (min-width: 769px) {
   .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .single-wcb_sponsor .entry-header, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
@@ -5311,6 +5311,7 @@ h6 + .notation {
 
 /*_______ Sponsors single _______*/
 .single-wcb_sponsor .entry-header {
+  width: 100%;
   padding: 7rem 2rem 3rem;
 }
 .single-wcb_sponsor .entry-title {

@@ -42,10 +42,11 @@
 /*_______ Sponsors single _______*/
 .single-wcb_sponsor{
 	.entry-header{
+		@extend %inner;
+		width: 100%;
 		padding: 7rem 2rem 3rem;
 	}
 	.entry-title{
-		@extend %inner;
 		font-size: 15vw;
 		line-height: 95%;
 		text-align: left;
