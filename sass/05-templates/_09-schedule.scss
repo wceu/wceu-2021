@@ -206,7 +206,7 @@
 		&.wcpt-session-type-session{
 			.wcpt-session-title{
 				&:before{
-					display: block;
+					display: table-cell;
 					width: auto !important;
 					height: auto !important;
 					font-weight: 400;

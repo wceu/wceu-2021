@@ -5739,7 +5739,7 @@ h6 + .notation {
 
 /*_______ Adding session categories on the schedule table _______*/
 .wcpt-schedule td.wcpt-session-type-session .wcpt-session-title:before {
-  display: block;
+  display: table-cell;
   width: auto !important;
   height: auto !important;
   font-weight: 400;
