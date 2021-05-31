@@ -104,13 +104,13 @@ input[type=submit] {
   }
 }
 
-.session-categories-links, .single.single-wcb_sponsor .entry-image {
+.session-categories-links, .single-wcb_sponsor .entry-image {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 769px) {
-  .session-categories-links, .single.single-wcb_sponsor .entry-image {
+  .session-categories-links, .single-wcb_sponsor .entry-image {
     max-width: 600px;
   }
 }
@@ -5310,13 +5310,32 @@ h6 + .notation {
 }
 
 /*_______ Sponsors single _______*/
-.single.single-wcb_sponsor .entry-image {
-  padding: 0 2rem;
-  background: white;
-  margin-bottom: -5.5rem;
+.single-wcb_sponsor .entry-header {
+  padding: 7rem 2rem 3rem;
+  margin-bottom: -3rem;
 }
-.single.single-wcb_sponsor .entry-title {
+.single-wcb_sponsor .entry-title {
+  font-size: 15vw;
+  line-height: 95%;
+  text-align: left;
   margin-bottom: 4rem;
+}
+@media (min-width: 769px) {
+  .single-wcb_sponsor .entry-title {
+    font-size: 96px;
+    font-size: 6rem;
+  }
+}
+.single-wcb_sponsor .entry-title:before {
+  content: "_Sponsor";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 100%;
+}
+.single-wcb_sponsor .entry-image {
+  padding: 0 2rem;
+  background: #F6D5D5;
+  margin-bottom: -5.5rem;
 }
 
 .sponsor-booths {

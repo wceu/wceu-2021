@@ -40,17 +40,31 @@
 }
 
 /*_______ Sponsors single _______*/
-.single{
-	&.single-wcb_sponsor{
-		.entry-image{
-			@extend %inner-moretiny;
-			padding: 0 2rem;
-			background: white;
-			margin-bottom: -5.5rem;
+.single-wcb_sponsor{
+	.entry-header{
+		padding: 7rem 2rem 3rem;
+		margin-bottom: -3rem;
+	}
+	.entry-title{
+		font-size: 15vw;
+		line-height: 95%;
+		text-align: left;
+		margin-bottom: 4rem;
+		@media (min-width: 769px){
+			@include font-size(6);
 		}
-		.entry-title{
-			margin-bottom: 4rem;
+		&:before{
+			content: "_Sponsor";
+			font-weight: 400;
+			font-size: 1.5rem;
+			line-height: 100%;
 		}
+	}
+	.entry-image{
+		@extend %inner-moretiny;
+		padding: 0 2rem;
+		background: $color__secondary-lighter;
+		margin-bottom: -5.5rem;
 	}
 }
 
