@@ -3,8 +3,12 @@
 	padding: 0 1rem;
 }
 .wcpt-schedule{
-	@extend %inner;
-	@extend %inner-padding;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	@media (min-width: 769px){
+		max-width: $size__content-max;
+	}
 	border-collapse: collapse;
 	margin-left: auto !important;
 	margin-right: auto !important;

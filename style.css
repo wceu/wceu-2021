@@ -54,7 +54,7 @@ input[type=submit] {
 }
 
 .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .wcpt-schedule, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
@@ -66,7 +66,7 @@ input[type=submit] {
 }
 @media (min-width: 769px) {
   .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .wcpt-schedule, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
 .search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
@@ -115,7 +115,7 @@ input[type=submit] {
   }
 }
 
-.error404 .page-content, .wcpt-schedule, .single .entry-footer,
+.error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
 .archive .site-main,
@@ -124,7 +124,7 @@ input[type=submit] {
   margin-right: 2rem;
 }
 @media (min-width: 769px) {
-  .error404 .page-content, .wcpt-schedule, .single .entry-footer,
+  .error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
 .archive .site-main,
@@ -5532,9 +5532,17 @@ h6 + .notation {
 }
 
 .wcpt-schedule {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   border-collapse: collapse;
   margin-left: auto !important;
   margin-right: auto !important;
+}
+@media (min-width: 769px) {
+  .wcpt-schedule {
+    max-width: 1200px;
+  }
 }
 .wcpt-schedule thead {
   border: none;
