@@ -5314,11 +5314,11 @@ h6 + .notation {
 
 /*_______ Sponsors single _______*/
 .single-wcb_sponsor .entry-header {
-  padding: 9rem 2rem 3rem;
+  padding: 7rem 2rem 2rem;
 }
 @media (min-width: 769px) {
   .single-wcb_sponsor .entry-header {
-    padding: 7rem 2rem 3rem;
+    padding: 9rem 2rem 3rem;
   }
 }
 .single-wcb_sponsor .entry-title {
