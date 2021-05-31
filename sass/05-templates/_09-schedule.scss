@@ -406,14 +406,15 @@
 }
 
 .fav-session-share-tab {
-	background-color: $color__secondary-third;
-	border: none;
+	background-color: $color__secondary-third !important;
+	border: none !important;
 	@extend %transition;
 	.fav-session-tablinks{
 		font-size: 1rem;
 		color: $color__tertiary;
 		padding: .5rem 1rem;
 		&:hover{
+			color: white;
 			background-color: $color__tertiary;
 		}
 		&.active {

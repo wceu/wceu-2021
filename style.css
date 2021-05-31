@@ -5829,8 +5829,8 @@ h6 + .notation {
 }
 
 .fav-session-share-tab {
-  background-color: #FCE2E2;
-  border: none;
+  background-color: #FCE2E2 !important;
+  border: none !important;
 }
 .fav-session-share-tab .fav-session-tablinks {
   font-size: 1rem;
@@ -5838,6 +5838,7 @@ h6 + .notation {
   padding: 0.5rem 1rem;
 }
 .fav-session-share-tab .fav-session-tablinks:hover {
+  color: white;
   background-color: #157573;
 }
 .fav-session-share-tab .fav-session-tablinks.active {
