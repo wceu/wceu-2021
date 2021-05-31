@@ -3,6 +3,8 @@
 	padding: 0 1rem;
 }
 .wcpt-schedule{
+	@extend %inner;
+	@extend %inner-padding;
 	border-collapse: collapse;
 	margin-left: auto !important;
 	margin-right: auto !important;
