@@ -43,9 +43,9 @@
 .single-wcb_sponsor{
 	.entry-header{
 		padding: 7rem 2rem 3rem;
-		margin-bottom: -3rem;
 	}
 	.entry-title{
+		@extend %inner;
 		font-size: 15vw;
 		line-height: 95%;
 		text-align: left;
@@ -54,6 +54,7 @@
 			@include font-size(6);
 		}
 		&:before{
+			display: block;
 			content: "_Sponsor";
 			font-weight: 400;
 			font-size: 1.5rem;
