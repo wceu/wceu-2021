@@ -5896,7 +5896,7 @@ h6 + .notation {
   order: -1;
 }
 .wp-block-wordcamp-live-schedule .wordcamp-live-schedule .wordcamp-live-schedule__session-details .wordcamp-live-schedule__session-time:after {
-  content: " UTC";
+  content: " CEST";
   font-weight: 400;
   font-size: 80%;
 }
