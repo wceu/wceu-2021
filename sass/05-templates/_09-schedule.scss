@@ -16,13 +16,12 @@
 				color: $color__primary;
 				padding: 1rem !important;
 				background-color: $color__secondary-lighter !important;
-				border: .125rem solid $color__secondary_half !important;
 				&.is-column-time{
 					font-size: 0;
 					text-indent: -9999px;
 					color: $color__lightcream;
 					padding: 0;
-					background-color: $color__lightcream;
+					background-color: transparent;
 					border: none;
 					margin: 0;
 				}
@@ -40,8 +39,7 @@
 				display: flex !important;
 				flex-flow: column wrap !important;
 				background-color: $color__lightcream;
-				border: .125rem solid $color__secondary_half !important;
-				box-shadow: none !important;
+				box-shadow: 0 0 1px 1px $color__secondary_half !important;
 				margin-bottom: 0 !important;
 				.is-spanning-some-tracks,
 				.is-spanning-all-tracks{

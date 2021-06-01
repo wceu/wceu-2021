@@ -5485,14 +5485,13 @@ h6 + .notation {
   color: #333333;
   padding: 1rem !important;
   background-color: #F6D5D5 !important;
-  border: 0.125rem solid #E780B5 !important;
 }
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-time {
   font-size: 0;
   text-indent: -9999px;
   color: #FFF8F8;
   padding: 0;
-  background-color: #FFF8F8;
+  background-color: transparent;
   border: none;
   margin: 0;
 }
@@ -5506,8 +5505,7 @@ h6 + .notation {
   display: flex !important;
   flex-flow: column wrap !important;
   background-color: #FFF8F8;
-  border: 0.125rem solid #E780B5 !important;
-  box-shadow: none !important;
+  box-shadow: 0 0 1px 1px #E780B5 !important;
   margin-bottom: 0 !important;
 }
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .is-spanning-some-tracks,
