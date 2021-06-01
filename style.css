@@ -5483,8 +5483,9 @@ h6 + .notation {
   font-size: 1.75rem;
   text-align: center;
   color: #333333;
-  padding: 1rem;
-  background-color: #F6D5D5;
+  padding: 1rem !important;
+  background-color: #F6D5D5 !important;
+  border: 0.125rem solid #E780B5 !important;
 }
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-time {
   font-size: 0;
@@ -5495,6 +5496,69 @@ h6 + .notation {
   border: none;
   margin: 0;
 }
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__time-slot-header {
+  justify-content: start;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__time-slot-header.is-empty {
+  display: none;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session {
+  display: flex !important;
+  flex-flow: column wrap !important;
+  background-color: #FFF8F8;
+  border: 0.125rem solid #E780B5 !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .is-spanning-some-tracks,
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .is-spanning-all-tracks {
+  text-align: center;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title {
+  display: block !important;
+  font-size: 1.5rem;
+  line-height: 100%;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+  order: 1;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-title + p {
+  display: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-category {
+  font-weight: 400 !important;
+  font-size: 0.75rem !important;
+  font-style: normal !important;
+  line-height: 100% !important;
+  color: #333333 !important;
+  padding: 0.25rem 0.25rem;
+  background-color: #DADADD;
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  order: -1;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wordcamp-schedule__session-speakers {
+  order: 2;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wcb-session-favourite-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wcb-session-favourite-icon .fav-session-button .dashicons {
+  color: #CF006C;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wcb-session-favourite-icon .fav-session-button .dashicons:before {
+  content: "";
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wcb-session-favourite-icon .fav-session-button .dashicons:hover:before {
+  content: "";
+  color: #157573;
+}
+
 /*_______ Schedule shortcut _____*/
 .wcpt-schedule {
   max-width: 100%;

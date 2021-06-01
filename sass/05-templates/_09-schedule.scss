@@ -14,8 +14,9 @@
 				font-size: 1.75rem;
 				text-align: center;		
 				color: $color__primary;
-				padding: 1rem;
-				background-color: $color__secondary-lighter;
+				padding: 1rem !important;
+				background-color: $color__secondary-lighter !important;
+				border: .125rem solid $color__secondary_half !important;
 				&.is-column-time{
 					font-size: 0;
 					text-indent: -9999px;
@@ -27,11 +28,72 @@
 				}
 			}
 			.wordcamp-schedule__time-slot-header{
+				justify-content: start;
 				&.has-sessions{
 
 				}
 				&.is-empty{
-
+					display: none;
+				}
+			}
+			.wordcamp-schedule__session{
+				display: flex !important;
+				flex-flow: column wrap !important;
+				background-color: $color__lightcream;
+				border: .125rem solid $color__secondary_half !important;
+				box-shadow: none !important;
+				margin-bottom: 0 !important;
+				.is-spanning-some-tracks,
+				.is-spanning-all-tracks{
+					text-align: center;
+				}
+				.wordcamp-schedule__session-title{
+					display: block !important;
+					font-size: 1.5rem;
+					line-height: 100%;
+					padding-right: 2rem;
+					margin-bottom: 1rem;
+					order: 1;
+					+ p{
+						display: none;
+						font-size: 0.875rem;
+						font-weight: 400;
+						margin-bottom: .5rem;
+					}
+				}
+				.wordcamp-schedule__session-category{
+					font-weight: 400 !important;
+					font-size: .75rem !important;
+					font-style: normal !important;
+					line-height: 100% !important;
+					color: $color__primary !important;
+					padding: .25rem .25rem;
+					background-color: $color__grey_minimus;
+					margin-top: 0 !important;
+					margin-bottom: .25rem !important;
+					order: -1;
+				}
+				.wordcamp-schedule__session-speakers{
+					order: 2;
+				}
+				.wcb-session-favourite-icon{
+					position: absolute;
+					top: .75rem;
+					right: .75rem;
+					.fav-session-button{
+						.dashicons{
+							color: $color__secondary;
+							&:before{
+								content: "\f155";
+							}
+							&:hover{
+								&:before{
+									content: "\f154";
+									color: $color__tertiary;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
