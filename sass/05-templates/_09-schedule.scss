@@ -2,6 +2,43 @@
 .schedule-block{
 	padding: 0 1rem;
 }
+/*_______ Schedule block _______*/
+.wp-block-wordcamp-schedule{
+	.wordcamp-schedule{
+		.wordcamp-schedule__date{
+			text-align: center;
+		}
+		.wordcamp-schedule__day{
+			.wordcamp-schedule__column-header{
+				font-weight: 700;
+				font-size: 1.75rem;
+				text-align: center;		
+				color: $color__primary;
+				padding: 1rem;
+				background-color: $color__secondary-lighter;
+				&.is-column-time{
+					font-size: 0;
+					text-indent: -9999px;
+					color: $color__lightcream;
+					padding: 0;
+					background-color: $color__lightcream;
+					border: none;
+					margin: 0;
+				}
+			}
+			.wordcamp-schedule__time-slot-header{
+				&.has-sessions{
+
+				}
+				&.is-empty{
+
+				}
+			}
+		}
+	}
+}
+
+/*_______ Schedule shortcut _____*/
 .wcpt-schedule{
 	max-width: 100%;
 	margin-left: auto;
@@ -203,6 +240,35 @@
 					@media (max-width: 700px){
 						display: none;
 					}
+				}
+				&.wcpt-session-empty{
+					border-top: none;
+					border-bottom: none;
+				}
+				&[data-session-id="24367"],
+				&[data-session-id="24293"],
+				&[data-session-id="24370"],
+				&[data-session-id="24307"],
+				&[data-session-id="23373"],
+				&[data-session-id="24310"],
+				&[data-session-id="24390"],
+				&[data-session-id="23351"],
+				&[data-session-id="24392"],
+				&[data-session-id="23345"],
+				&[data-session-id="24394"],
+				&[data-session-id="24396"],
+				&[data-session-id="24573"],
+				&[data-session-id="24398"],
+				&[data-session-id="23377"],
+				&[data-session-id="23371"],
+				&[data-session-id="23343"],
+				&[data-session-id="24404"],
+				&[data-session-id="23347"],
+				&[data-session-id="23375"],
+				&[data-session-id="24385"],
+				&[data-session-id="23339"],
+				&[data-session-id="24410"]{
+					border-bottom: none;
 				}
 			}
 		}

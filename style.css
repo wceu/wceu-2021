@@ -5474,6 +5474,28 @@ h6 + .notation {
   padding: 0 1rem;
 }
 
+/*_______ Schedule block _______*/
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__date {
+  text-align: center;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__column-header {
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #333333;
+  padding: 1rem;
+  background-color: #F6D5D5;
+}
+.wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__column-header.is-column-time {
+  font-size: 0;
+  text-indent: -9999px;
+  color: #FFF8F8;
+  padding: 0;
+  background-color: #FFF8F8;
+  border: none;
+  margin: 0;
+}
+/*_______ Schedule shortcut _____*/
 .wcpt-schedule {
   max-width: 100%;
   margin-left: auto;
@@ -5683,6 +5705,13 @@ h6 + .notation {
   .wcpt-schedule tbody tr td.wcpt-session-empty {
     display: none;
   }
+}
+.wcpt-schedule tbody tr td.wcpt-session-empty {
+  border-top: none;
+  border-bottom: none;
+}
+.wcpt-schedule tbody tr td[data-session-id="24367"], .wcpt-schedule tbody tr td[data-session-id="24293"], .wcpt-schedule tbody tr td[data-session-id="24370"], .wcpt-schedule tbody tr td[data-session-id="24307"], .wcpt-schedule tbody tr td[data-session-id="23373"], .wcpt-schedule tbody tr td[data-session-id="24310"], .wcpt-schedule tbody tr td[data-session-id="24390"], .wcpt-schedule tbody tr td[data-session-id="23351"], .wcpt-schedule tbody tr td[data-session-id="24392"], .wcpt-schedule tbody tr td[data-session-id="23345"], .wcpt-schedule tbody tr td[data-session-id="24394"], .wcpt-schedule tbody tr td[data-session-id="24396"], .wcpt-schedule tbody tr td[data-session-id="24573"], .wcpt-schedule tbody tr td[data-session-id="24398"], .wcpt-schedule tbody tr td[data-session-id="23377"], .wcpt-schedule tbody tr td[data-session-id="23371"], .wcpt-schedule tbody tr td[data-session-id="23343"], .wcpt-schedule tbody tr td[data-session-id="24404"], .wcpt-schedule tbody tr td[data-session-id="23347"], .wcpt-schedule tbody tr td[data-session-id="23375"], .wcpt-schedule tbody tr td[data-session-id="24385"], .wcpt-schedule tbody tr td[data-session-id="23339"], .wcpt-schedule tbody tr td[data-session-id="24410"] {
+  border-bottom: none;
 }
 
 /*_______ Adding session categories on the schedule table _______*/
