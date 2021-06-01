@@ -5550,7 +5550,7 @@ h6 + .notation {
   margin-bottom: 0.25rem;
 }
 .wcpt-schedule tbody tr td:first-of-type:after, .wcpt-schedule tbody tr td.wcpt-time:after {
-  content: " UTC";
+  content: " CEST";
   font-size: 80%;
 }
 @media (min-width: 700px) {
