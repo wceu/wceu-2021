@@ -363,17 +363,14 @@
 		a{
 			display: inline-block;
 			vertical-align: middle;
-			font-size: 1.25rem;
+			font-size: 1rem;
 			color: $color__tertiary !important;
-			padding: .75em 1.25em;
+			padding: .5em 1em;
 			background-color: transparent;
 			border: .125rem solid $color__tertiary;
 			@extend %transition;
-			@media (min-width: 350px){
-				font-size: 1rem;
-			}
 			@media (min-width: 768px){
-				font-size: 1.25rem;
+				font-size: 1.125rem;
 			}
 			&:focus{
 				outline: none;

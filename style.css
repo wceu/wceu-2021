@@ -2102,22 +2102,16 @@ body.admin-bar .site-header {
 .post-navigation .nav-links a {
   display: inline-block;
   vertical-align: middle;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #157573 !important;
-  padding: 0.75em 1.25em;
+  padding: 0.5em 1em;
   background-color: transparent;
   border: 0.125rem solid #157573;
-}
-@media (min-width: 350px) {
-  .posts-navigation .nav-links a,
-.post-navigation .nav-links a {
-    font-size: 1rem;
-  }
 }
 @media (min-width: 768px) {
   .posts-navigation .nav-links a,
 .post-navigation .nav-links a {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 .posts-navigation .nav-links a:focus,
