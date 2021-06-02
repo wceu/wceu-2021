@@ -363,13 +363,11 @@
 		a{
 			display: inline-block;
 			vertical-align: middle;
-			font-weight: 700;
-			font-size: .875rem;
-			line-height: 80%;
-			padding: .75rem;
-			color: $color__primary;
-			background-color: $color__secondary;
-			border: .125rem solid $color__secondary;
+			font-size: 1.25rem;
+			color: $color__tertiary !important;
+			padding: .75em 1.25em;
+			background-color: transparent;
+			border: .125rem solid $color__tertiary;
 			@extend %transition;
 			@media (min-width: 350px){
 				font-size: 1rem;
@@ -377,15 +375,14 @@
 			@media (min-width: 768px){
 				font-size: 1.25rem;
 			}
-			&:hover{
-				color: $color__primary;
-				background-color: transparent;
-				border-color: $color__primary;
+			&:focus{
+				outline: none;
 			}
-			&:active{
-				color: $color__tertiary;
-				background-color: $color__primary;
-				border-color: $color__primary;
+			&:focus,
+			&:hover{
+				color: $color__tertiary_half !important;
+				border-color: $color__tertiary_half;
+				box-shadow: 0 0 0 $color__tertiary_half;
 			}
 		}
 	}

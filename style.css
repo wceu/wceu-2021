@@ -2102,13 +2102,11 @@ body.admin-bar .site-header {
 .post-navigation .nav-links a {
   display: inline-block;
   vertical-align: middle;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 80%;
-  padding: 0.75rem;
-  color: #333333;
-  background-color: #CF006C;
-  border: 0.125rem solid #CF006C;
+  font-size: 1.25rem;
+  color: #157573 !important;
+  padding: 0.75em 1.25em;
+  background-color: transparent;
+  border: 0.125rem solid #157573;
 }
 @media (min-width: 350px) {
   .posts-navigation .nav-links a,
@@ -2122,17 +2120,16 @@ body.admin-bar .site-header {
     font-size: 1.25rem;
   }
 }
-.posts-navigation .nav-links a:hover,
-.post-navigation .nav-links a:hover {
-  color: #333333;
-  background-color: transparent;
-  border-color: #333333;
+.posts-navigation .nav-links a:focus,
+.post-navigation .nav-links a:focus {
+  outline: none;
 }
-.posts-navigation .nav-links a:active,
-.post-navigation .nav-links a:active {
-  color: #157573;
-  background-color: #333333;
-  border-color: #333333;
+.posts-navigation .nav-links a:focus, .posts-navigation .nav-links a:hover,
+.post-navigation .nav-links a:focus,
+.post-navigation .nav-links a:hover {
+  color: #8ABAB9 !important;
+  border-color: #8ABAB9;
+  box-shadow: 0 0 0 #8ABAB9;
 }
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
