@@ -50,10 +50,10 @@ input[type=submit] {
 }
 
 .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
+.search-results .site-main, #footer-widget-3, #footer-widget-2, #footer-widget-1 .module-header, #secondary, .custom-posts-pagination, .posts-navigation,
 .post-navigation, .alignwide,
 .is-style-wide {
   max-width: 100%;
@@ -62,10 +62,10 @@ input[type=submit] {
 }
 @media (min-width: 769px) {
   .single-wcb_speaker .entry-title,
-.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wp-block-jetpack-contact-form, .single .posts-navigation,
+.single-wcb_session .entry-title, .single-wcb_sponsor .entry-title, .wcorg-sponsors, .wp-block-jetpack-contact-form, .single .posts-navigation,
 .single .post-navigation, .blog .site-main,
 .archive .site-main,
-.search-results .site-main, .footer-widgets-block, #secondary, .custom-posts-pagination, .posts-navigation,
+.search-results .site-main, #footer-widget-3, #footer-widget-2, #footer-widget-1 .module-header, #secondary, .custom-posts-pagination, .posts-navigation,
 .post-navigation, .alignwide,
 .is-style-wide {
     max-width: 1200px;
@@ -2199,21 +2199,15 @@ body.admin-bar .site-header {
 
 /*_______ Footer _______*/
 .site-footer {
-  margin-top: 8rem;
+  margin-top: 4rem;
   width: 100%;
   padding: 0;
   clear: both;
 }
-.site-footer:before {
-  content: "";
-  display: block;
-  height: 8rem;
-  margin: -8rem 0 0;
-}
 
 #footer-widgets {
   background-position: top left;
-  padding: 3rem 0;
+  padding: 0;
 }
 
 .footer-widgets-block {
@@ -2317,7 +2311,26 @@ body.admin-bar .site-header {
 }
 
 /*_______ 1st widget area: sponsors _______*/
+#footer-widget-1 {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #D0E3E3;
+}
+#footer-widget-1 .widget {
+  text-align: center;
+}
+#footer-widget-1 .widget .widget-title {
+  color: #333333;
+  margin-bottom: 2rem;
+}
+#footer-widget-1 .module-header {
+  margin-bottom: 1rem;
+}
+
 /*_______ 2nd widget area: extra navigation _______*/
+#footer-widget-2 {
+  padding-top: 4rem;
+}
 @media (min-width: 480px) {
   #footer-widget-2 .widget:nth-of-type(1), #footer-widget-2 .widget:nth-of-type(2), #footer-widget-2 .widget:nth-of-type(3) {
     flex: 0 1 45%;
@@ -2372,7 +2385,7 @@ body.admin-bar .site-header {
 
 /*_______ 3rd widget area: Subscription, Social links and Search widgets _______*/
 #footer-widget-3 {
-  padding-top: 2rem;
+  padding: 2rem;
   border-top: 1px solid #CF006C;
 }
 #footer-widget-3 .widget {
@@ -5213,11 +5226,91 @@ h6 + .notation {
 }
 
 /*_______ Sponsors list _______*/
-.home-sponsors {
-  background-color: #157573;
-  padding: 4rem 2rem;
+/*_______ Sponsors list on footer widget _______*/
+.wceu-sponsors-title {
+  color: #CF006C;
 }
 
+div[class^=wcorg-sponsor-level-] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+div[class^=wcorg-sponsor-level-]:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+div[class^=wcorg-sponsor-level-] h1, div[class^=wcorg-sponsor-level-] h2, div[class^=wcorg-sponsor-level-] h3,
+div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[class^=wcorg-sponsor-level-] h6 {
+  flex: 1 1 100%;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  div[class^=wcorg-sponsor-level-] h1, div[class^=wcorg-sponsor-level-] h2, div[class^=wcorg-sponsor-level-] h3,
+div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[class^=wcorg-sponsor-level-] h6 {
+    font-size: 1.5rem;
+  }
+}
+
+.wcorg-sponsor {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .wcorg-sponsor {
+    max-width: inherit;
+    margin: 0;
+  }
+}
+.wcorg-sponsor a {
+  display: block;
+}
+.wcorg-sponsor img {
+  display: block;
+  margin: 0 auto;
+}
+
+.wcorg-sponsor-level-super-admin .wcorg-sponsor {
+  flex: 0 1 90%;
+}
+@media (min-width: 768px) {
+  .wcorg-sponsor-level-super-admin .wcorg-sponsor {
+    flex: 0 1 33.333%;
+  }
+}
+.wcorg-sponsor-level-super-admin .wcorg-sponsor img {
+  width: auto;
+}
+
+.wcorg-sponsor-level-administrator .wcorg-sponsor {
+  flex: 0 1 80%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .wcorg-sponsor-level-administrator .wcorg-sponsor {
+    flex: 0 1 23%;
+    margin: 0 1%;
+  }
+}
+.wcorg-sponsor-level-administrator .wcorg-sponsor img {
+  width: auto;
+  max-height: 7rem;
+}
+
+.wcorg-sponsor-level-editor .wcorg-sponsor {
+  flex: 0 1 80%;
+}
+@media (min-width: 768px) {
+  .wcorg-sponsor-level-editor .wcorg-sponsor {
+    flex: 0 1 25%;
+  }
+}
+.wcorg-sponsor-level-editor .wcorg-sponsor img {
+  width: auto;
+  max-height: 10rem;
+}
+
+/*_______ Sponsors block _______*/
 .wordcamp-sponsors.has-layout-grid {
   display: flex;
   flex-flow: row wrap;
@@ -5227,20 +5320,44 @@ h6 + .notation {
   margin-bottom: 0;
 }
 .wordcamp-sponsors.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {
-  flex: 0 1 48%;
-  width: 48%;
+  flex: 0 1 80%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .wordcamp-sponsors.has-layout-grid.has-grid-columns-2 .wordcamp-post-list__post {
+    flex: 0 1 48%;
+    width: 48%;
+  }
 }
 .wordcamp-sponsors.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
-  flex: 0 1 31.333%;
-  width: 31.333%;
+  flex: 0 1 80%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .wordcamp-sponsors.has-layout-grid.has-grid-columns-3 .wordcamp-post-list__post {
+    flex: 0 1 31.333%;
+    width: 31.333%;
+  }
 }
 .wordcamp-sponsors.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
-  flex: 0 1 23%;
-  width: 23%;
+  flex: 0 1 80%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .wordcamp-sponsors.has-layout-grid.has-grid-columns-4 .wordcamp-post-list__post {
+    flex: 0 1 23%;
+    width: 23%;
+  }
 }
 .wordcamp-sponsors.has-layout-grid.has-grid-columns-5 .wordcamp-post-list__post {
-  flex: 0 1 18%;
-  width: 18%;
+  flex: 0 1 80%;
+  width: 80%;
+}
+@media (min-width: 768px) {
+  .wordcamp-sponsors.has-layout-grid.has-grid-columns-5 .wordcamp-post-list__post {
+    flex: 0 1 18%;
+    width: 18%;
+  }
 }
 .wordcamp-sponsors .wordcamp-image__featured-image-link:hover {
   opacity: 0.7;

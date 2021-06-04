@@ -1,9 +1,93 @@
 /*_______ Sponsors list _______*/
-.home-sponsors{
-	background-color: $color__tertiary;
-	padding: 4rem 2rem;
+// .home-sponsors{
+// 	background-color: $color__tertiary;
+// 	padding: 4rem 2rem;
+// }
+
+/*_______ Sponsors list on footer widget _______*/
+.wcorg-sponsors{
+	@extend %inner;
 }
 
+.wceu-sponsors-title{
+	color: $color__secondary;
+}
+
+div[class^="wcorg-sponsor-level-"] {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	&:not(:last-of-type){
+		margin-bottom: 4rem;
+	}
+	%headings{
+		flex: 1 1 100%;
+		font-size: 1.25rem;
+		margin-bottom: 0;
+		@media(min-width: 768px){
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.wcorg-sponsor{
+	margin: 0;
+	@media(min-width: 768px){
+		max-width: inherit;
+		margin: 0;
+	}
+	a{
+		display: block;
+	}
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.wcorg-sponsor-level-super-admin{
+	.wcorg-sponsor{
+		flex: 0 1 90%;
+		@media(min-width: 768px){
+			flex: 0 1 33.333%;
+		}
+		img{
+			width: auto;
+		}
+	}	
+}
+
+.wcorg-sponsor-level-administrator{
+	.wcorg-sponsor{
+		flex: 0 1 80%;
+		margin: 0 auto;
+		@media(min-width: 768px){
+			flex: 0 1 23%;
+			margin: 0 1%;
+		}
+		img{
+			width: auto;
+			max-height: 7rem;
+		}
+	}	
+}
+
+.wcorg-sponsor-level-editor{
+	.wcorg-sponsor{
+		flex: 0 1 80%;
+		@media(min-width: 768px){
+			flex: 0 1 25%;
+		}
+		img{
+			width: auto;
+			max-height: 10rem;
+		}
+	}
+}
+
+
+/*_______ Sponsors block _______*/
 .wordcamp-sponsors{
 	&.has-layout-grid{
 		display: flex;
@@ -14,26 +98,42 @@
 		}
 		&.has-grid-columns-2{
 			.wordcamp-post-list__post{
-				flex: 0 1 48%;
-				width: 48%;
+				flex: 0 1 80%;
+				width: 80%;
+				@media(min-width: 768px){
+					flex: 0 1 48%;
+					width: 48%;
+				}
 			}
 		}
 		&.has-grid-columns-3{
 			.wordcamp-post-list__post{
-				flex: 0 1 31.333%;
-				width: 31.333%;
+				flex: 0 1 80%;
+				width: 80%;
+				@media(min-width: 768px){
+					flex: 0 1 31.333%;
+					width: 31.333%;
+				}
 			}
 		}
 		&.has-grid-columns-4{
 			.wordcamp-post-list__post{
-				flex: 0 1 23%;
-				width: 23%;
+				flex: 0 1 80%;
+				width: 80%;
+				@media(min-width: 768px){
+					flex: 0 1 23%;
+					width: 23%;
+				}
 			}
 		}
 		&.has-grid-columns-5{
 			.wordcamp-post-list__post{
-				flex: 0 1 18%;
-				width: 18%;
+				flex: 0 1 80%;
+				width: 80%;
+				@media(min-width: 768px){
+					flex: 0 1 18%;
+					width: 18%;
+				}
 			}
 		}
 	}
