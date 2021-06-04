@@ -2323,6 +2323,7 @@ body.admin-bar .site-header {
 }
 #footer-widget-1 .widget {
   text-align: center;
+  margin: 0 auto;
 }
 #footer-widget-1 .widget .widget-title {
   color: #333333;
