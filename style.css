@@ -2311,6 +2311,11 @@ body.admin-bar .site-header {
 }
 
 /*_______ 1st widget area: sponsors _______*/
+.page-slug-sponsors #footer-widget-1,
+.single-wcb_sponsor #footer-widget-1 {
+  display: none;
+}
+
 #footer-widget-1 {
   width: 100%;
   padding: 4rem 2rem;
