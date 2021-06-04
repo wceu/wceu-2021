@@ -8,7 +8,12 @@
 .wcorg-sponsors{
 	@extend %inner;
 }
-
+.wceu-sponsors-maintitle{
+	font-size: 2.5rem;
+	@media(min-width: 768px){
+		font-size: 3rem;
+	}
+}
 .wceu-sponsors-title{
 	color: $color__secondary;
 }

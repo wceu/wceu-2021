@@ -5233,6 +5233,15 @@ h6 + .notation {
 
 /*_______ Sponsors list _______*/
 /*_______ Sponsors list on footer widget _______*/
+.wceu-sponsors-maintitle {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .wceu-sponsors-maintitle {
+    font-size: 3rem;
+  }
+}
+
 .wceu-sponsors-title {
   color: #CF006C;
 }
