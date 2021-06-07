@@ -1046,11 +1046,11 @@ select,
 select option[value=""], select option:first-child,
 .select2-selection__rendered option[value=""],
 .select2-selection__rendered option:first-child {
-  color: #737477;
+  color: #5E6167;
 }
 select:invalid,
 .select2-selection__rendered:invalid {
-  color: #737477;
+  color: #5E6167;
 }
 
 _:-ms-lang(x),
@@ -1544,12 +1544,12 @@ input[type=submit].outlined:hover {
 }
 .comment-list .comment-metadata a {
   display: block;
-  color: #968f88;
+  color: #888789;
 }
 .comment-list .comment-awaiting-moderation {
   display: block;
   font-size: 1rem;
-  color: #30394A;
+  color: #4B4B4B;
   border-left: 0.125rem solid;
   padding-left: 0.5rem;
 }
@@ -2256,8 +2256,8 @@ body.admin-bar .site-header {
 .footer-widgets-block input[type=submit]:active {
   outline: none;
   color: #157573;
-  background-color: #30394A;
-  border-color: #30394A;
+  background-color: #4B4B4B;
+  border-color: #4B4B4B;
 }
 .footer-widgets-block .widget-title {
   font-size: 1.5rem;
@@ -2304,7 +2304,7 @@ body.admin-bar .site-header {
 .footer-widgets-block .widget_nav_menu .menu .menu-item .sub-menu {
   list-style: none;
   padding-left: 0.5rem;
-  border-left: 0.125rem solid #968f88;
+  border-left: 0.125rem solid #888789;
   margin-top: 1rem;
   margin-left: 0;
   margin-bottom: 1rem;
@@ -2551,7 +2551,7 @@ body.admin-bar .site-header {
   }
 }
 .site-info a:hover {
-  color: #737477;
+  color: #5E6167;
 }
 .site-info span {
   display: none;
@@ -2693,12 +2693,16 @@ body.admin-bar .site-header {
   display: block;
 }
 .wp-block-image figcaption {
-  display: block;
+  display: block !important;
   font-size: 16px;
   font-size: 1rem;
   text-align: center;
-  color: #9e9e9e;
+  color: #4B4B4B;
   margin: 0.5rem 0 0;
+}
+.wp-block-image.aligncenter {
+  display: block !important;
+  width: fit-content;
 }
 .wp-block-image.tinted {
   position: relative;
@@ -3026,7 +3030,7 @@ table thead th {
   font-style: normal;
   line-height: 120%;
   text-align: left !important;
-  color: #737477;
+  color: #5E6167;
 }
 .wp-block-quote cite a {
   color: #FFF8F8;
@@ -3096,7 +3100,7 @@ table thead th {
   font-size: 1rem;
   font-style: normal;
   line-height: 100%;
-  color: #30394A;
+  color: #4B4B4B;
 }
 .wp-block-pullquote cite a {
   color: #CF006C;
@@ -3240,7 +3244,7 @@ table thead th {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 100%;
-  color: #737477;
+  color: #5E6167;
   margin-bottom: 0.5rem;
 }
 .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt {
@@ -3678,7 +3682,7 @@ h6 + .notation {
 .session-categories-links a:focus, #session-speaker-names li a:focus, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:focus, .wordcamp-sessions .wordcamp-sessions__speakers a:focus, .personal-links a:focus,
 .organizer-links a:focus, .session-categories-links a:hover, #session-speaker-names li a:hover, .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-cell-content .wcpt-session-speakers a:hover, .wordcamp-sessions .wordcamp-sessions__speakers a:hover, .personal-links a:hover,
 .organizer-links a:hover {
-  color: #737477;
+  color: #5E6167;
   text-decoration: underline;
 }
 
@@ -3976,7 +3980,7 @@ h6 + .notation {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 100%;
-  color: #737477;
+  color: #5E6167;
   margin-bottom: 0.5rem;
 }
 .blog .hentry .entry-header .entry-meta .byline,
@@ -4113,7 +4117,7 @@ h6 + .notation {
   font-weight: 400;
   font-size: 1rem;
   line-height: 100%;
-  color: #30394A;
+  color: #4B4B4B;
   padding: 0.5rem 1rem;
   background-color: #FFF8F8;
   margin-top: 0;
@@ -4128,7 +4132,7 @@ h6 + .notation {
   display: block;
 }
 .single .entry-meta a {
-  color: #30394A;
+  color: #4B4B4B;
   text-decoration: none;
 }
 .single .entry-meta .byline {
@@ -4697,7 +4701,7 @@ h6 + .notation {
 
 .wordcamp-organizer.slug-svetlana-guzovskaia .wordcamp-organizers__title, .wordcamp-organizer.slug-justina-baskyte .wordcamp-organizers__title, .wordcamp-organizer.slug-sjoerd-blom .wordcamp-organizers__title, .wordcamp-organizer.slug-aleksandar-savkovic .wordcamp-organizers__title, .wordcamp-organizer.slug-abha-thakor .wordcamp-organizers__title, .wordcamp-organizer.slug-roberto-tunon .wordcamp-organizers__title, .wordcamp-organizer.slug-fotis-routsis .wordcamp-organizers__title, .wordcamp-organizer.slug-pantelis-orfanos .wordcamp-organizers__title, .wordcamp-organizer.slug-laura-sacco .wordcamp-organizers__title {
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: 1.5rem !important;
 }
 .wordcamp-organizer.slug-svetlana-guzovskaia .wordcamp-organizers__title:before, .wordcamp-organizer.slug-justina-baskyte .wordcamp-organizers__title:before, .wordcamp-organizer.slug-sjoerd-blom .wordcamp-organizers__title:before, .wordcamp-organizer.slug-aleksandar-savkovic .wordcamp-organizers__title:before, .wordcamp-organizer.slug-abha-thakor .wordcamp-organizers__title:before, .wordcamp-organizer.slug-roberto-tunon .wordcamp-organizers__title:before, .wordcamp-organizer.slug-fotis-routsis .wordcamp-organizers__title:before, .wordcamp-organizer.slug-pantelis-orfanos .wordcamp-organizers__title:before, .wordcamp-organizer.slug-laura-sacco .wordcamp-organizers__title:before {
   content: "Team Lead";
@@ -4791,14 +4795,14 @@ h6 + .notation {
   font-size: 0.875rem;
   text-transform: uppercase;
   line-height: 100%;
-  color: #968f88;
+  color: #888789;
 }
 .wordcamp-sessions .wordcamp-sessions__time-location {
   display: block;
   font-style: normal;
   font-size: 1rem;
   font-weight: 700;
-  color: #737477;
+  color: #5E6167;
   padding-left: 0.5rem;
   border-left: 0.25rem solid #157573;
   margin-bottom: 0.5rem;

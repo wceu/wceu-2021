@@ -5,11 +5,15 @@
 		display: block;
 	}
 	figcaption{
-		display: block;
+		display: block !important;
 		@include font-size(1);
 		text-align: center;
-		color: $color__grey_morelight;
+		color: $color__grey_dark;
 		margin: .5rem 0 0;
+	}
+	&.aligncenter{
+		display: block !important;
+		width: fit-content;
 	}
 	&.tinted{
 		position: relative;
