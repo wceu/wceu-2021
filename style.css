@@ -3956,7 +3956,7 @@ h6 + .notation {
 
 /*_______ Sessions Category archive _______*/
 .archive.tax-wcb_session_category .site-main {
-  margin-top: 0;
+  margin: 0;
 }
 .archive.tax-wcb_session_category .page-header {
   position: relative;
