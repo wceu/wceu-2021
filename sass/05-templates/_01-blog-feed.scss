@@ -172,10 +172,12 @@
 			margin-top: 0;
 		}
 		.page-header{
-			padding: 2rem;
+			position: relative;
+			padding: 8rem 1.5rem 2rem;
 			margin-bottom: 4rem;
 			@media(min-width: 769px){
-				padding: 4rem 0;
+				padding: 10rem 10% 5.5rem;
+				margin-bottom: 4rem;
 			}
 		}
 		.hentry{
