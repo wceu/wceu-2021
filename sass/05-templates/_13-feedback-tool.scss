@@ -87,6 +87,7 @@
 	}
 }
 .speaker-feedback__field{
+	margin-bottom: 1rem;
 	.is-required{
 		font-weight: 400;
 		font-size: 1rem;
@@ -102,7 +103,9 @@
 		width: 2rem;
 		height: 2rem;
 	}
-	input:checked+label{
+	input:checked+label,
+	input:hover+label, 
+	input:focus+label{
 		color: $color__secondary;
 	}
 }

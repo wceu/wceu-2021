@@ -6479,6 +6479,9 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   color: #333333;
 }
 
+.speaker-feedback__field {
+  margin-bottom: 1rem;
+}
 .speaker-feedback__field .is-required {
   font-weight: 400;
   font-size: 1rem;
@@ -6493,6 +6496,8 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   width: 2rem;
   height: 2rem;
 }
-.speaker-feedback__field-rating input:checked + label {
+.speaker-feedback__field-rating input:checked + label,
+.speaker-feedback__field-rating input:hover + label,
+.speaker-feedback__field-rating input:focus + label {
   color: #CF006C;
 }
