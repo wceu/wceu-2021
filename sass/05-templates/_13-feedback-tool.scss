@@ -1,0 +1,84 @@
+/*_______ Feedback tool select _______*/
+.speaker-feedback-navigation{
+	@extend %inner-tiny;
+	@extend %inner-padding;
+	.speaker-feedback__wrapper{
+		width: 100%;
+		.speaker-feedback__field{
+			display: block;
+			width: 100%;
+			.select2-container{
+				width: 100% !important;
+				max-width: 100% !important;
+				.select2-selection__rendered{
+					display: block !important;
+					font-weight: 400;
+					font-size: 1rem;
+					line-height: 100% !important;
+					color: $color__primary !important;
+					padding: 1rem 2rem 1rem 1rem !important;
+					margin: 0 !important;
+					white-space: pre-wrap !important;
+					background-image: url('https://europe.wordcamp.org/2021/files/2021/04/chevron-down.png');
+					background-repeat: no-repeat;
+					background-position: right .75em top 50%;
+					background-size: 1.5rem;
+					@media (min-width: 480px){
+						font-size: 1.25rem;
+						white-space: nowrap !important;
+					}
+				}
+			}
+		}
+		input[type="submit"]{
+			margin: 2rem auto;
+		}
+	}
+}
+.select2-selection--single{
+	border: none !important;
+	border-radius: 0 !important;
+	&:focus{
+		outline: none !important;
+		border: none !important;
+		border-radius: 0 !important;
+		.select2-selection__rendered{
+			border-color: $color__secondary;
+		}
+	}
+}
+.select2-selection__arrow{
+	display: none !important;
+}
+.select2-dropdown{
+	border: .1875rem solid $color__tertiary !important;
+	border-radius: 0 !important;
+	.select2-results__options{
+		border: none !important;
+		border-radius: 0 !important;
+	}
+	.select2-results__option{
+		font-weight: 600;
+		font-size: 1.25rem;
+		line-height: 100%;
+		padding: 1rem !important;
+		&--highlighted{
+			color: $color__primary !important;
+			background-color: $color__tertiary_half !important;
+		}
+		&:focus{
+			outline: none !important;
+		}
+	}
+}
+
+/*_______ Feedback screen _______*/
+.speaker-feedback__notice{
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: $color__primary;
+	padding: .5rem;
+	background-color: $color__secondary-third;
+	border-left: .25rem solid $color__secondary;
+	border-radius: 0;
+}

@@ -83,7 +83,7 @@ input[type=submit] {
   }
 }
 
-.error404 .page-content, .single-wcb_speaker .entry-content,
+.speaker-feedback-navigation, .error404 .page-content, .single-wcb_speaker .entry-content,
 .single-wcb_session .entry-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .search-no-results .content-area, .wp-block-group .wp-block-group__inner-container > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .no-comments, .comments-title, .comment-respond, .comment-list {
@@ -92,7 +92,7 @@ input[type=submit] {
   margin-right: auto;
 }
 @media (min-width: 769px) {
-  .error404 .page-content, .single-wcb_speaker .entry-content,
+  .speaker-feedback-navigation, .error404 .page-content, .single-wcb_speaker .entry-content,
 .single-wcb_session .entry-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .search-no-results .content-area, .wp-block-group .wp-block-group__inner-container > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .no-comments, .comments-title, .comment-respond, .comment-list {
@@ -111,7 +111,7 @@ input[type=submit] {
   }
 }
 
-.error404 .page-content, .single .entry-footer,
+.speaker-feedback-navigation, .error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
 .archive .site-main,
@@ -120,7 +120,7 @@ input[type=submit] {
   margin-right: 2rem;
 }
 @media (min-width: 769px) {
-  .error404 .page-content, .single .entry-footer,
+  .speaker-feedback-navigation, .error404 .page-content, .single .entry-footer,
 .page .entry-footer, .single .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide),
 .page .entry-content > *:not(.alignleft):not(.alignright):not(.alignwide):not(.alignfull):not(.is-style-wide), .blog .site-main,
 .archive .site-main,
@@ -1033,8 +1033,7 @@ input[type=radio] + label {
   margin-bottom: 0;
 }
 
-select,
-.select2-selection__rendered {
+select {
   position: relative;
   font-size: 1.125rem;
   padding-right: 2rem;
@@ -1043,13 +1042,10 @@ select,
   background-position: right 0.5em top 50%;
   background-size: 1rem;
 }
-select option[value=""], select option:first-child,
-.select2-selection__rendered option[value=""],
-.select2-selection__rendered option:first-child {
+select option[value=""], select option:first-child {
   color: #5E6167;
 }
-select:invalid,
-.select2-selection__rendered:invalid {
+select:invalid {
   color: #5E6167;
 }
 
@@ -1064,84 +1060,6 @@ textarea {
 
 input[type=hidden] {
   display: none;
-}
-
-/*_______ Feedback tool select _______*/
-.speaker-feedback__wrapper {
-  flex-flow: row wrap;
-}
-.speaker-feedback__wrapper input[type=submit] {
-  margin: 0;
-}
-.speaker-feedback__wrapper .speaker-feedback__field {
-  display: block;
-}
-
-.select2-container {
-  width: auto !important;
-  max-width: 30rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.speaker-feedback-navigation .select2-selection {
-  height: auto;
-}
-
-.select2-selection--single {
-  border: none !important;
-  border-radius: 0 !important;
-}
-.select2-selection--single:focus {
-  outline: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-}
-.select2-selection--single:focus .select2-selection__rendered {
-  border-color: #CF006C;
-}
-
-.select2-selection__rendered {
-  display: block !important;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 100% !important;
-  color: #333333 !important;
-  padding-right: 2rem !important;
-  margin: 0 !important;
-  white-space: pre-wrap !important;
-}
-@media (min-width: 480px) {
-  .select2-selection__rendered {
-    font-size: 1.5rem;
-    white-space: nowrap !important;
-  }
-}
-
-.select2-selection__arrow {
-  display: none !important;
-}
-
-.select2-dropdown {
-  border: 0.1875rem solid #333333 !important;
-  border-radius: 0 !important;
-}
-
-.select2-results__options {
-  border: none !important;
-  border-radius: 0 !important;
-}
-
-.select2-results__option {
-  margin-bottom: 1rem;
-  padding: 1rem !important;
-}
-.select2-results__option--highlighted {
-  color: #333333 !important;
-  background-color: #CF006C !important;
-}
-.select2-results__option:focus {
-  outline: none !important;
 }
 
 .btn,
@@ -3683,15 +3601,6 @@ h6 + .notation {
 .organizer-links a:hover {
   color: #5E6167;
   text-decoration: underline;
-}
-
-.speaker-feedback__notice {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333333;
-  background-color: #157573;
-  border-left: 0.25rem solid #CF006C;
-  border-radius: 0;
 }
 
 .wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
@@ -6483,4 +6392,90 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
 }
 .wordcamp-facilitators-grid .wp-block-group__inner-container .wordcamp-facilitator-grid-item .wordcamp-facilitator-title a {
   text-decoration: none;
+}
+
+/*_______ Feedback tool select _______*/
+.speaker-feedback-navigation .speaker-feedback__wrapper {
+  width: 100%;
+}
+.speaker-feedback-navigation .speaker-feedback__wrapper .speaker-feedback__field {
+  display: block;
+  width: 100%;
+}
+.speaker-feedback-navigation .speaker-feedback__wrapper .speaker-feedback__field .select2-container {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.speaker-feedback-navigation .speaker-feedback__wrapper .speaker-feedback__field .select2-container .select2-selection__rendered {
+  display: block !important;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100% !important;
+  color: #333333 !important;
+  padding: 1rem 2rem 1rem 1rem !important;
+  margin: 0 !important;
+  white-space: pre-wrap !important;
+  background-image: url("https://europe.wordcamp.org/2021/files/2021/04/chevron-down.png");
+  background-repeat: no-repeat;
+  background-position: right 0.75em top 50%;
+  background-size: 1.5rem;
+}
+@media (min-width: 480px) {
+  .speaker-feedback-navigation .speaker-feedback__wrapper .speaker-feedback__field .select2-container .select2-selection__rendered {
+    font-size: 1.25rem;
+    white-space: nowrap !important;
+  }
+}
+.speaker-feedback-navigation .speaker-feedback__wrapper input[type=submit] {
+  margin: 2rem auto;
+}
+
+.select2-selection--single {
+  border: none !important;
+  border-radius: 0 !important;
+}
+.select2-selection--single:focus {
+  outline: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.select2-selection--single:focus .select2-selection__rendered {
+  border-color: #CF006C;
+}
+
+.select2-selection__arrow {
+  display: none !important;
+}
+
+.select2-dropdown {
+  border: 0.1875rem solid #157573 !important;
+  border-radius: 0 !important;
+}
+.select2-dropdown .select2-results__options {
+  border: none !important;
+  border-radius: 0 !important;
+}
+.select2-dropdown .select2-results__option {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 100%;
+  padding: 1rem !important;
+}
+.select2-dropdown .select2-results__option--highlighted {
+  color: #333333 !important;
+  background-color: #8ABAB9 !important;
+}
+.select2-dropdown .select2-results__option:focus {
+  outline: none !important;
+}
+
+/*_______ Feedback screen _______*/
+.speaker-feedback__notice {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #333333;
+  padding: 0.5rem;
+  background-color: #FCE2E2;
+  border-left: 0.25rem solid #CF006C;
+  border-radius: 0;
 }

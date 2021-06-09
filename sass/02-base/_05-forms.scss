@@ -125,8 +125,7 @@ input[type="radio"] + label{
 	margin-bottom: 0;
 }
 
-select,
-.select2-selection__rendered{
+select{
 	position: relative;
 	font-size: 1.125rem;
 	padding-right: 2rem;
@@ -156,73 +155,4 @@ textarea {
 
 input[type="hidden"]{
 	display: none;
-}
-
-
-/*_______ Feedback tool select _______*/
-.speaker-feedback__wrapper{
-	flex-flow: row wrap;
-	input[type="submit"]{
-		margin: 0;
-	}
-	.speaker-feedback__field{
-		display: block;
-	}
-}
-.select2-container{
-	width: auto !important;
-	max-width: 30rem;
-	font-weight: 700;
-	font-size: 1.5rem;
-}
-.speaker-feedback-navigation .select2-selection{
-	height: auto;
-}
-.select2-selection--single{
-	border: none !important;
-	border-radius: 0 !important;
-	&:focus{
-		outline: none !important;
-		border: none !important;
-		border-radius: 0 !important;
-		.select2-selection__rendered{
-			border-color: $color__secondary;
-		}
-	}
-}
-.select2-selection__rendered{
-	display: block !important;
-	font-weight: 700;
-	font-size: 1rem;
-	line-height: 100% !important;
-	color: $color__primary !important;
-	padding-right: 2rem !important;
-	margin: 0 !important;
-	white-space: pre-wrap !important;
-	@media (min-width: 480px){
-		font-size: 1.5rem;
-    	white-space: nowrap !important;
-	}
-}
-.select2-selection__arrow{
-	display: none !important;
-}
-.select2-dropdown{
-	border: .1875rem solid $color__primary !important;
-	border-radius: 0 !important;
-}
-.select2-results__options{
-	border: none !important;
-	border-radius: 0 !important;
-}
-.select2-results__option{
-	margin-bottom: 1rem;
-	padding: 1rem !important;
-	&--highlighted{
-		color: $color__primary !important;
-		background-color: $color__secondary !important;
-	}
-	&:focus{
-		outline: none !important;
-	}
 }
