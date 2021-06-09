@@ -86,3 +86,22 @@
 		color: $color__primary;
 	}
 }
+.speaker-feedback__field{
+	.is-required{
+		font-weight: 400;
+		font-size: 1rem;
+		color: $color__secondary;
+	}
+}
+.speaker-feedback__field-rating{
+	label{
+		padding: 0 !important;
+	}
+	svg{
+		width: 2rem;
+		height: 2rem;
+	}
+	input:checked+label{
+		color: $color__secondary;
+	}
+}

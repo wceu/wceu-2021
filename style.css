@@ -6155,12 +6155,12 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
-  margin-right: 0.5rem !important;
   padding: 0 !important;
   background-image: none !important;
 }
 .session-speakers:after {
   content: ":";
+  margin-right: 0.5rem;
 }
 
 #session-speaker-names {
@@ -6477,4 +6477,21 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   font-size: 1.125rem;
   font-weight: 400;
   color: #333333;
+}
+
+.speaker-feedback__field .is-required {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #CF006C;
+}
+
+.speaker-feedback__field-rating label {
+  padding: 0 !important;
+}
+.speaker-feedback__field-rating svg {
+  width: 2rem;
+  height: 2rem;
+}
+.speaker-feedback__field-rating input:checked + label {
+  color: #CF006C;
 }

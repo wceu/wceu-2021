@@ -108,11 +108,11 @@
 	font-family: $font__main;
 	font-weight: 700;
 	font-size: 1.25rem;
-	margin-right: .5rem !important;
 	padding: 0 !important;
 	background-image: none !important;
 	&:after{
 		content: ':';
+		margin-right: .5rem;
 	}
 }
 #session-speaker-names{
