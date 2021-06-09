@@ -6396,11 +6396,13 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
 
 /*_______ Feedback tool select _______*/
 .speaker-feedback-navigation .speaker-feedback__wrapper {
+  display: block !important;
   width: 100%;
 }
 .speaker-feedback-navigation .speaker-feedback__wrapper .speaker-feedback__field {
   display: block;
   width: 100%;
+  padding: 0;
 }
 .speaker-feedback-navigation .speaker-feedback__wrapper .speaker-feedback__field .select2-container {
   width: 100% !important;
@@ -6412,7 +6414,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   font-size: 1rem;
   line-height: 100% !important;
   color: #333333 !important;
-  padding: 1rem 2rem 1rem 1rem !important;
+  padding: 1rem 3rem 1rem 1rem !important;
   margin: 0 !important;
   white-space: pre-wrap !important;
   background-image: url("https://europe.wordcamp.org/2021/files/2021/04/chevron-down.png");
@@ -6456,7 +6458,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   border-radius: 0 !important;
 }
 .select2-dropdown .select2-results__option {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.25rem;
   line-height: 100%;
   padding: 1rem !important;
@@ -6471,11 +6473,13 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
 
 /*_______ Feedback screen _______*/
 .speaker-feedback__notice {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #333333;
   padding: 0.5rem;
   background-color: #FCE2E2;
   border-left: 0.25rem solid #CF006C;
   border-radius: 0;
+}
+.speaker-feedback__notice p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #333333;
 }

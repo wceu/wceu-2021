@@ -3,10 +3,12 @@
 	@extend %inner-tiny;
 	@extend %inner-padding;
 	.speaker-feedback__wrapper{
+		display: block !important;
 		width: 100%;
 		.speaker-feedback__field{
 			display: block;
 			width: 100%;
+			padding: 0;
 			.select2-container{
 				width: 100% !important;
 				max-width: 100% !important;
@@ -16,7 +18,7 @@
 					font-size: 1rem;
 					line-height: 100% !important;
 					color: $color__primary !important;
-					padding: 1rem 2rem 1rem 1rem !important;
+					padding: 1rem 3rem 1rem 1rem !important;
 					margin: 0 !important;
 					white-space: pre-wrap !important;
 					background-image: url('https://europe.wordcamp.org/2021/files/2021/04/chevron-down.png');
@@ -58,7 +60,7 @@
 		border-radius: 0 !important;
 	}
 	.select2-results__option{
-		font-weight: 600;
+		font-weight: 400;
 		font-size: 1.25rem;
 		line-height: 100%;
 		padding: 1rem !important;
@@ -74,11 +76,13 @@
 
 /*_______ Feedback screen _______*/
 .speaker-feedback__notice{
-	font-size: 1.25rem;
-	font-weight: 400;
-	color: $color__primary;
 	padding: .5rem;
 	background-color: $color__secondary-third;
 	border-left: .25rem solid $color__secondary;
 	border-radius: 0;
+	p{
+		font-size: 1.125rem;
+		font-weight: 400;
+		color: $color__primary;
+	}
 }
