@@ -6099,10 +6099,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   font-size: 1.5rem;
   padding: 0 !important;
   background-image: none !important;
-  margin-top: 4rem;
-}
-.speaker-sessions:after {
-  content: ":";
+  margin-top: 4rem !important;
 }
 
 #speaker-session-names {
