@@ -1056,6 +1056,7 @@ select {
 
 textarea {
   width: 100%;
+  min-height: 6rem;
 }
 
 input[type=hidden] {
@@ -3958,15 +3959,17 @@ h6 + .notation {
   margin-top: 0;
 }
 .archive.tax-wcb_session_category .page-header {
-  background-color: white;
-  padding: 4rem 2rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+@media (min-width: 769px) {
+  .archive.tax-wcb_session_category .page-header {
+    padding: 4rem 0;
+  }
 }
 .archive.tax-wcb_session_category .hentry {
-  padding: 0;
-  border-left: 0.25rem solid #157573;
-}
-.archive.tax-wcb_session_category .hentry:focus, .archive.tax-wcb_session_category .hentry:focus-within, .archive.tax-wcb_session_category .hentry:hover {
-  background-color: white;
+  padding: 1.25rem;
+  background-color: #FFF8F8;
 }
 .archive.tax-wcb_session_category .hentry .entry-title {
   font-size: 1.5rem;

@@ -172,17 +172,15 @@
 			margin-top: 0;
 		}
 		.page-header{
-			background-color: white;
-			padding: 4rem 2rem;
+			padding: 2rem;
+			margin-bottom: 4rem;
+			@media(min-width: 769px){
+				padding: 4rem 0;
+			}
 		}
 		.hentry{
-			padding: 0;
-			border-left: .25rem solid $color__tertiary;
-			&:focus,
-			&:focus-within,
-			&:hover{
-				background-color: white;
-			}
+			padding: 1.25rem;
+			background-color: $color__lightcream;
 			.entry-title{
 				font-size: 1.5rem;
 			}
