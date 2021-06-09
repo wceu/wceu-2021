@@ -3300,11 +3300,6 @@ table thead th {
     flex: 0 1 31%;
   }
 }
-@media (min-width: 1024px) {
-  .high-links .wp-block-column {
-    flex: 0 1 31%;
-  }
-}
 .high-links .wp-block-column:focus, .high-links .wp-block-column:focus-within, .high-links .wp-block-column:hover {
   background-color: #CF006C;
   border-color: #CF006C;
@@ -3508,6 +3503,10 @@ table thead th {
   margin-top: 0;
   color: #333333;
   padding-left: 1rem;
+}
+.notation .wp-block-columns {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .notation .wp-block-jetpack-contact-form,
 .notation .contact-form {
