@@ -50,23 +50,18 @@
 	}
 }
 .speaker-sessions{
+	font-size: 1.5rem;
+	padding: 0 !important;
+	background-image: none !important;
+	margin-top: 4rem;
 	&:after{
 		content: ':';
 	}
 }
 #speaker-session-names{
 	list-style: none;
-	@extend %camptix-item;
-	margin-left: 2rem;
-	margin-right: 2rem;
+	padding: 0;
 	margin-bottom: 2rem;
-	@media (min-width: 800px){
-		margin-left: auto;
-		margin-right: auto;
-	}
-	&:hover{
-		transform: none;
-	}
 	li{
 		padding: 0;
 		margin: 0;
@@ -75,9 +70,9 @@
 		}
 		a{
 			font-family: $font__main;
-			font-size: 1.75rem;
+			font-size: 1.5rem;
 			font-weight: 700;
-			line-height: 110%;
+			line-height: 120%;
 			color: $color__secondary;
 			&:focus,
 			&:hover{
@@ -117,6 +112,8 @@
 	font-weight: 700;
 	font-size: 1.25rem;
 	margin-right: .5rem !important;
+	padding: 0 !important;
+	background-image: none !important;
 	&:after{
 		content: ':';
 	}
