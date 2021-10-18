@@ -14,7 +14,8 @@
 }
 
 .dotted-bg{
-	background-image: url(https://robertotunon.com/wceu2021/wp-content/themes/wceu2021-campsite2017/assets/images/dot.svg);
+	// background-image: url(https://robertotunon.com/wceu2021/wp-content/themes/wceu2021-campsite2017/assets/images/dot.svg);
+	background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='5' fill='%23FDECF1'/%3E%3C/svg%3E");
 	background-size: 15px;
 	background-position: bottom right;
 }

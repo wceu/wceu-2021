@@ -1000,7 +1000,7 @@ input[type=radio]:focus {
 }
 
 input[type=checkbox]:checked:after {
-  content: "";
+  content: "\f147";
   position: absolute;
   top: -0.125rem;
   left: -0.125rem;
@@ -1228,16 +1228,16 @@ input[type=submit].outlined:hover {
   margin-left: 0.5rem;
 }
 .wp-block-button.with-icon.right-arrow .wp-block-button__link:after {
-  content: "";
+  content: "\f344";
 }
 .wp-block-button.with-icon.down-arrow .wp-block-button__link:after {
-  content: "";
+  content: "\f346";
 }
 .wp-block-button.with-icon.external .wp-block-button__link:after {
-  content: "";
+  content: "\f504";
 }
 .wp-block-button.with-icon.map .wp-block-button__link:after {
-  content: "";
+  content: "\f231";
   font-family: "dashicons";
 }
 .wp-block-button.external-link {
@@ -1256,7 +1256,7 @@ input[type=submit].outlined:hover {
 .wp-block-button.external-link .wp-block-button__link:before {
   display: inline-block;
   vertical-align: middle;
-  content: "";
+  content: "\f504";
   font-family: "dashicons";
   font-weight: normal;
   font-size: 1rem;
@@ -1270,7 +1270,7 @@ input[type=submit].outlined:hover {
   box-shadow: none;
 }
 .wp-block-button.anchor-link .wp-block-button__link:after {
-  content: " ";
+  content: " \f346";
   font-family: "dashicons";
   vertical-align: middle;
 }
@@ -1523,7 +1523,7 @@ input[type=submit].outlined:hover {
   background-color: #333333;
 }
 .no-comments:before {
-  content: "";
+  content: "\f158";
   font-family: "dashicons";
   vertical-align: middle;
 }
@@ -1582,7 +1582,7 @@ body.admin-bar .site-header {
 .page .entry-content > h2:not(:first-child), .single .entry-header:before, .blog .site-main > header:before,
 .archive .site-main > header:before,
 .search-results .site-main > header:before, .home-big-hero:before, .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media:after, .wp-block-media-text .wp-block-media-text__media:after, #footer-widgets {
-  background-image: url(https://robertotunon.com/wceu2021/wp-content/themes/wceu2021-campsite2017/assets/images/dot.svg);
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='5' fill='%23FDECF1'/%3E%3C/svg%3E");
   background-size: 15px;
   background-position: bottom right;
 }
@@ -1780,7 +1780,7 @@ body.admin-bar .site-header {
 }
 @media (min-width: 900px) {
   .main-navigation .menu .menu-item.menu-item-has-children > a:after {
-    content: "";
+    content: "\f543";
     font-family: "dashicons";
     display: inline-block;
     vertical-align: middle;
@@ -1991,7 +1991,7 @@ body.admin-bar .site-header {
   right: 0;
 }
 .main-navigation.toggled-on .menu-toggle:before {
-  content: "";
+  content: "\f335";
   font-family: "dashicons";
   font-weight: 400;
   font-size: 3rem;
@@ -2050,7 +2050,7 @@ body.admin-bar .site-header {
 }
 .posts-navigation .nav-previous a:before,
 .post-navigation .nav-previous a:before {
-  content: " ";
+  content: "\f340  ";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -2063,7 +2063,7 @@ body.admin-bar .site-header {
 }
 .posts-navigation .nav-next a:after,
 .post-navigation .nav-next a:after {
-  content: " ";
+  content: " \f344";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -2436,15 +2436,15 @@ body.admin-bar .site-header {
   color: #8ABAB9;
 }
 #menu-social .menu-item.facebook a:before {
-  content: "";
+  content: "\f305";
   font-family: "dashicons";
 }
 #menu-social .menu-item.twitter a:before {
-  content: "";
+  content: "\f301";
   font-family: "dashicons";
 }
 #menu-social .menu-item.instagram a:before {
-  content: "";
+  content: "\f12d";
   font-family: "dashicons";
 }
 
@@ -2482,7 +2482,7 @@ body.admin-bar .site-header {
   line-height: 100%;
 }
 .site-info-generator:after {
-  content: "";
+  content: "\f324";
   display: block;
   font-family: "dashicons";
   font-size: 3rem;
@@ -3184,7 +3184,7 @@ table thead th {
   margin: 1rem 0 1rem auto;
 }
 .wp-block-latest-posts.is-grid .wp-block-latest-posts__post-excerpt a:after {
-  content: "";
+  content: "\f345";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -3373,7 +3373,7 @@ table thead th {
   color: #333333;
 }
 .high-links-inline .wp-block-media-text .wp-block-media-text__content p a:after {
-  content: "";
+  content: "\f344";
   font-family: "dashicons";
   margin-left: 1rem;
   margin-right: 0;
@@ -3458,7 +3458,7 @@ h6 + .notation {
   padding-left: 2.25rem;
 }
 .schedule-time:before {
-  content: "";
+  content: "\f508";
   position: absolute;
   top: 0;
   left: 0;
@@ -3486,7 +3486,7 @@ h6 + .notation {
   background-color: #157573;
 }
 .tags-block strong:before {
-  content: "";
+  content: "\f147";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -4187,7 +4187,7 @@ h6 + .notation {
   margin-bottom: 0.5rem;
 }
 .tags-links a:before {
-  content: "";
+  content: "\f323";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -4310,7 +4310,7 @@ h6 + .notation {
 }
 .single .posts-navigation .nav-links div.nav-previous a:before,
 .single .post-navigation .nav-links div.nav-previous a:before {
-  content: " ";
+  content: "\f340  ";
   font-family: "dashicons";
   font-weight: 800;
   left: -1.5rem;
@@ -4349,7 +4349,7 @@ h6 + .notation {
 }
 .single .posts-navigation .nav-links div.nav-next a:after,
 .single .post-navigation .nav-links div.nav-next a:after {
-  content: " ";
+  content: " \f344";
   font-family: "dashicons";
   right: -1.5rem;
 }
@@ -4875,7 +4875,7 @@ h6 + .notation {
 }
 #tix #tix-errors .tix-error:before,
 #tix #tix-infos .tix-error:before {
-  content: "";
+  content: "\f153";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -4884,7 +4884,7 @@ h6 + .notation {
 }
 #tix #tix-errors .tix-info:before,
 #tix #tix-infos .tix-info:before {
-  content: "";
+  content: "\f529";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
@@ -5590,10 +5590,10 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   color: #CF006C;
 }
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wcb-session-favourite-icon .fav-session-button .dashicons:before {
-  content: "";
+  content: "\f155";
 }
 .wp-block-wordcamp-schedule .wordcamp-schedule .wordcamp-schedule__day .wordcamp-schedule__session .wcb-session-favourite-icon .fav-session-button .dashicons:hover:before {
-  content: "";
+  content: "\f154";
   color: #157573;
 }
 
@@ -5784,10 +5784,10 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   text-decoration: none;
 }
 .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:before {
-  content: "";
+  content: "\f154";
 }
 .wcpt-schedule tbody tr td.wcpt-session-type-session .wcb-session-favourite-icon .dashicons:hover:before {
-  content: "";
+  content: "\f155";
   color: #CF006C;
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session {
@@ -5797,10 +5797,10 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   color: #CF006C;
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons:before {
-  content: "";
+  content: "\f155";
 }
 .wcpt-schedule tbody tr td.wcb-favourite-session .wcb-session-favourite-icon .dashicons:hover:before {
-  content: "";
+  content: "\f154";
   color: #157573;
 }
 @media (max-width: 700px) {
@@ -5871,7 +5871,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   background-color: #8ABAB9;
 }
 .entry-content a.show-email-form .dashicons-star-filled:before {
-  content: "";
+  content: "\f537";
   vertical-align: middle;
 }
 .entry-content a.show-email-form .dashicons-email-alt {
@@ -5968,7 +5968,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   font-size: 1.25rem;
 }
 .email-form #fav-session-print:before {
-  content: "";
+  content: "\f491";
   font-family: "dashicons";
   vertical-align: middle;
 }
@@ -6224,7 +6224,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   }
 }
 .error404 .page-header .page-title:before {
-  content: "";
+  content: "\f530";
   display: block;
   font-family: "dashicons";
   font-weight: 400;
@@ -6332,7 +6332,7 @@ div[class^=wcorg-sponsor-level-] h4, div[class^=wcorg-sponsor-level-] h5, div[cl
   margin-bottom: 1rem;
 }
 .error404 .page-content .widget.widget_tag_cloud .tag-cloud-link:before {
-  content: "";
+  content: "\f323";
   font-family: "dashicons";
   display: inline-block;
   vertical-align: middle;
