@@ -1582,7 +1582,7 @@ body.admin-bar .site-header {
 .page .entry-content > h2:not(:first-child), .single .entry-header:before, .blog .site-main > header:before,
 .archive .site-main > header:before,
 .search-results .site-main > header:before, .home-big-hero:before, .wp-block-media-text.has-media-on-the-right .wp-block-media-text__media:after, .wp-block-media-text .wp-block-media-text__media:after, #footer-widgets {
-  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7.5' cy='7.5' r='5' fill='%23FDECF1'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNy41IiBjeT0iNy41IiByPSI1IiBmaWxsPSIjRkRFQ0YxIi8+Cjwvc3ZnPgo=");
   background-size: 15px;
   background-position: bottom right;
 }
